@@ -1,6 +1,12 @@
+/* portfolio purple: #6E53A1 */
+/* darker purple: #382B50 */
+/* lighter purple: #D5BFFF */
+
 body {
-  font-family: 'Noto Sans Display', sans-serif;
+  /* font-family: 'Noto Sans Display', sans-serif; */
+  font-family: Inconsolata, sans-serif;
   font-size: 15px;
+  color: #382B50;
 }
 
 body, ul {
@@ -9,7 +15,8 @@ body, ul {
 }
 
 h1, h2, .skillslist {
-  font-family: 'Bakbak One', sans-serif ;
+  /* font-family: 'Bakbak One', sans-serif ; */
+  font-family: AerojonesNF, sans-serif;
 }
 
 img {
@@ -19,7 +26,7 @@ img {
   background-color: none;
 }
 nav {
-  background-color: #DBEBF4;
+  background-color: #6E53A1;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -27,18 +34,20 @@ nav {
 
 li.empty{
   width:50px;
-  border-top: 1px solid black;
+  border-top: 0.5px solid #382B50;
   top: -5px;
   position:relative;
 }
 
 nav li a{
   text-decoration: none;
-  color: black;
+  color: #382B50;
+  transition: 0.3 ease-in-out;
 }
 
 nav li a:hover{
   text-decoration: underline;
+  color: white;
 }
 
 nav ul li {
@@ -92,9 +101,9 @@ p {
 }
 
 .button {
-  border: 1px solid black;
+  border: 1px solid #6E53A1;
   text-decoration: none;
-  color: black;
+  color: #382B50;
   margin-top: 30px;
   display: inline-block;
   border-radius: 20px;
@@ -104,7 +113,7 @@ p {
 }
 
 .button:hover{
-  background: black;
+  background: #6E53A1;
   color: white;
 
 }
@@ -121,7 +130,7 @@ figcaption {
 
 .skills-list {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 150%;
   margin-bottom: 50px;
 }
@@ -132,7 +141,7 @@ figcaption {
 }
 
 .blue{
-  background-color:#DBEBF4;
+  background-color: #D5BFFF;
 }
 
 .project .button{
