@@ -15,7 +15,9 @@ h1, h2, .skillslist {
 img {
   max-width: 100%;
 }
-
+.intro-img{
+  background-color: none;
+}
 nav {
   background-color: #DBEBF4;
   position: fixed;
