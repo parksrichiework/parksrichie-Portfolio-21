@@ -1,7 +1,7 @@
 /* portfolio purple: #6E53A1 */
 /* darker purple: #382B50 */
 /* lighter purple: #D5BFFF */
-/* PORFOLIO BLUE: #333FFF */
+
 body {
   /* font-family: 'Noto Sans Display', sans-serif; */
   /* font-family: 'Dela Gothic One', cursive; */
@@ -42,7 +42,7 @@ img {
 }
 
 nav {
-  background-color: #6E53A1;
+  background-color: #382B50;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -50,14 +50,14 @@ nav {
 
 li.empty {
   width: 50px;
-  border-top: 0.5px solid #382B50;
+  border-top: 0.5px solid #D5BFFF;
   top: -5px;
   position: relative;
 }
 
 nav li a {
   text-decoration: none;
-  color: #382B50;
+  color: #D5BFFF;
   transition: 0.3 ease-in-out;
 }
 
@@ -151,7 +151,7 @@ figcaption {
 }
 
 .project {
-  margin: 70px;
+  margin: 70px 0px;
   padding: 20px;
 }
 
@@ -171,6 +171,7 @@ footer {
 footer h2 {
   font-size: 50px;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .right-alignment {
