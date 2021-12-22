@@ -1,0 +1,152 @@
+body {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-size: 15px;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, .skillslist {
+  font-family: 'Bakbak One', sans-serif ;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  background-color: #DBEBF4;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+li.empty{
+  width:50px;
+  border-top: 1px solid black;
+  top: -5px;
+  position:relative;
+}
+
+nav li a{
+  text-decoration: none;
+  color: black;
+}
+
+nav li a:hover{
+  text-decoration: underline;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+  /*refers to top/bottm and 15px left/right */
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+nav ul {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+header {
+  top: 70px;
+  position: relative;
+  margin-bottom: 220px;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -145px;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 130px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 130%;
+  margin-top: 5px;
+}
+
+
+h1, h2 {
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  line-height: 150%;
+}
+
+.button {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 30px;
+  transition: background 0.5s ease-in-out;
+  color: background 0.5s ease-in-out;
+}
+
+.button:hover{
+  background: black;
+  color: white;
+
+}
+
+figcaption {
+  font-size: 10px;
+  margin-top:10px;
+}
+
+.intro-img {
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  }
+
+.skills-list {
+  text-align: center;
+  font-size: 50px;
+  line-height: 150%;
+  margin-bottom: 50px;
+}
+
+.project{
+  margin:70px;
+  padding:20px;
+}
+
+.blue{
+  background-color:#DBEBF4;
+}
+
+.project .button{
+  margin:10px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer h2{
+  font-size: 50px;
+  margin-bottom:50px;
+}
+
+.right-alignment{
+  text-align: right;
+}
