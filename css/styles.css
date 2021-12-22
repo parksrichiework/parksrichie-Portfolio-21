@@ -55,6 +55,7 @@ li.empty {
   position: relative;
 }
 
+
 nav li a {
   text-decoration: none;
   color: #D5BFFF;
@@ -161,6 +162,14 @@ figcaption {
 
 .project .button {
   margin: 10px;
+}
+
+li.divider {
+  width: 100%;
+  border-top: 2px solid #D5BFFF;
+  top: -5px;
+  position: relative;
+  margin-bottom: 200px;
 }
 
 footer {
