@@ -3,7 +3,7 @@
 /* lighter purple: #D5BFFF */
 
 @media only screen and (max-width: 480px) {
-  body footer h2{
+  body {
     width: 100%;
   }
 
