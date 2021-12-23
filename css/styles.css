@@ -100,11 +100,10 @@ header {
   top: 70px;
   position: relative;
   margin-bottom: 220px;
-  background-image: url('../img/toy-dispenser.png');
+  background-image: url('../img/header-background.jpg');
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-position-y: -99px;
-  background-position-x: 244px;
+  background-size: cover;
+  background-position-y: -145px;
 }
 
 h1 {
