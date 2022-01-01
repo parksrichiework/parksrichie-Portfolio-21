@@ -1,0 +1,161 @@
+body{
+	font-family: helvetica, sans-serif;
+}
+
+h1{
+	color: #D5BFFF;
+}
+
+.left{
+	position: fixed;
+	background-color: #6E53A1;
+	width:  50%;
+	height: 100%;
+	top: 0;
+	left: 0px;	
+}
+
+.interface{
+	text-align: center;
+	padding: 20px;
+
+}
+
+a.button{
+	display: inline-block;
+	background: lavender;
+	text: black;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	border-radius: 10px ;
+	text-decoration: none;
+	transition: color, 300ms;
+
+}
+
+a.button:hover{
+	background: aquamarine;
+	color:  #6E53A1;
+}
+
+
+/*RIGHT SIDE*/
+
+.right{
+position: fixed;
+	background-color: lavender;
+	width:  50%;
+	height: 100%;
+	top: 0;
+	right: 0px;	
+}
+
+.rocket{
+	    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 270px;
+    height: 270px;
+    margin-left: -127px;
+    background: url(../img/state1.png) no-repeat 0 0;
+    transition: bottom 10000ms;
+}
+
+/*background img*/
+body.body-state2 .rocket{
+	background: url(../img/state2.png) no-repeat 0 0;
+
+}
+body.body-state3 .rocket{
+	background: url(../img/state3.png) no-repeat 0 0;
+
+}
+body.body-state4 .rocket{
+	background: url(../img/state4.png) no-repeat 0 0;
+
+}
+
+body.body-state5 .rocket{
+	background:  url(../img/state5.png) no-repeat 0 0;
+}
+
+body.body-state1 .rocket{
+	transition: none;
+
+}
+
+.rocket.flying{
+	bottom: 1000px;
+}
+
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	bottom: 1000px;
+}
+
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+	display: none;
+}
+
+body.body-state1 .state1{display: block;}
+body.body-state2 .state2{display: block;}
+body.body-state3 .state3{display: block;}
+body.body-state4 .state4{display: block;}
+body.body-state5 .state5{display: block;}
+
+
+.ground{
+	background-color: #D5BFFF;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height:  20px;
+
+}
+
+
+.hol-up{
+	position:  absolute;
+	bottom:  80px;
+	left: 50%;
+	background: url(../img/hol-up.png) no-repeat 0 0;
+	width:  270px;
+	height:  270px;
+	margin-left: -10px;
+	display: none;
+}
+
+
+.hol-up.show{
+	display: block;
+}
+
+.not-this{
+	position: absolute;
+	bottom: 80px;
+	left: 30%;
+	background: url(../img/not-this.png) no-repeat 0 0;
+	width: 270px;
+	height: 270px;
+	margin-left: -46px;
+	display: none;
+}
+
+.not-this.show{
+	display: block;
+}
+
+a{
+
+}
+
+
+
