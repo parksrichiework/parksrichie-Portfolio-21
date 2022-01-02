@@ -51,7 +51,7 @@ img {
 }
 
 .intro-img:hover{
-  transform: rotate3d(180deg)90deg;
+  transform: rotate3d(180deg);
 }
 
 nav {
