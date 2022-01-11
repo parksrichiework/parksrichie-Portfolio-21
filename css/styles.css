@@ -52,6 +52,7 @@ img {
 
 .intro-img:hover{
   transform: translate(0px, -20%);
+  cursor: pointer;
   /*transform: rotate(360deg)*/;
  -webkit-animation-name: thumb;
     -webkit-animation-duration: 1000ms;
