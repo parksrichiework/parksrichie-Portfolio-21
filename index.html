@@ -16,6 +16,64 @@
         <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 
+        <!-- NEW SKILLS LIST STYLE 1.8.22 -->
+        <style type="text/css">
+              .left{
+                position: relative;
+                max-width: 100%;
+                width:  50%;
+                height: 100%;
+                top: 0;
+                left: 0px;
+                margin:  0 auto;
+                text-align: center; 
+              }
+
+              .left img{
+                position: relative;
+                max-width: 100%;
+                transition: 100ms ease-in-out;
+                padding: 50px;
+
+              }
+
+              .left img:hover{
+                transform: scale(1.125);
+              }
+
+              .right{
+                position: relative;
+                max-width:  100%;
+                width:  50%;
+                height:  100%;
+                top:  0px;
+                right:  0px;
+                margin: 0 auto;
+                margin-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+              }
+
+
+              .right img{
+                position: relative;
+                max-width: 50%;
+                transition: 100ms ease-in-out;
+              }
+
+              .right img:hover{
+                transform: scale(1.2);
+              }
+
+              .all-capsules img{
+               display:  none;
+
+
+              }
+
+          </style>
+
       </head>
 
   <!-- body starts -->
@@ -67,162 +125,41 @@
             </div>
           </header>
 
+        <!-- NEW SKILLS LIST -->
+        <section class="row">
+          <div class="dispenser left">
+            
+            <img class="dispenser-img" src="img/skills-dispenser.png" id="dispenser-click" onclick="dispense()"/> 
+                
+          </div>
 
-          <!-- skills list -->
-            <section class="container">
+          <!-- RIGHT SIDE START -->
+          <div class="all-capsules col-sm" id="right-side">
+            <!-- graphic design -->
+            <div> 
+              <img class="skills" onmouseover="" onclick= "skills1Reveal()" src="img/graphic-design-closed.png" id="skills1"/>
+              <div onclick="skills1Reveal()" class= "explain" id="explain1"></div>
+            </div>
 
-              <div class="row">
-                <div class="col-sm">
-                  <img class="skills-toy-dispenser" src="img/toy-dispenser.png"/>
-                </div>
-                  <!-- <div class="col-sm">
-                <ul class="skillslist">
-                  <li>01_graphic design</li>
-                  <li>02_design thinking</li>
-                  <li>03_web development</li>
-                  <li>04_illustration</li>
+            <!-- design thinking -->
+            <div>
+              <img onclick="skills2Reveal()" src="img/design-thinking-closed.png" id="skills2"/>
+              <div onclick="skills2Reveal()" class= "explain" id="explain2"></div>
+            </div></br>
 
-                  </ul>
-                </div> -->
-              </div>
-            </section>
+            <!-- web design -->
+            <div class="skill3">
+              <img onclick="skills3Reveal()" src="img/web-design-closed.png" id="skills3"/>
+              <div onclick="skills3Reveal()" class= "explain" id="explain3"></div>
+            </div>
 
-            <!-- services -->
-              <!-- graphic design -->
-                <section id="projects" class="project blue">
-                    <div class="container">
-                      <div class="row">
-                      <!-- left column -->
-                        <div class="col-sm">
-                          <figure>
-                          <img src="img/graphic-design.png"  alt="graphic design icon" />
-                          <!-- <figcaption class="right-alignment">
-                            made in Adobe Ai
-                          </figcaption> -->
-                        </figure>
-                      </div>
-                      <!-- right column -->
-                      <div class="col-sm">
-                        <h2>
-                          graphic</br>
-                          design
-                        </h2>
-                        <p class="services-about">
-                        Poster/Flyer</br>
-                        Logo</br>
-                        Typography</br>
-                        Ai + Id + Ps
-
-                        </p>
-                        <a class="button" href="">see more</a>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-
-              <!-- design thinking -->
-
-                <section class="project">
-                  <div class="container">
-                    <div class="row">
-                      <!-- left column -->
-                      <div class="col-sm right-alignment">
-                        <h2>
-                          design</br>
-                          thinking
-                        </h2>
-                        <p class="services-about">
-
-                          Ideation</br>
-                          Sketching</br>
-                          Branding</br>
-                          Brainstorming</br>
-                          Design research
-                        </p>
-                        <a class="button" href="#">see more</a>
-                      </div>
-
-                      <!-- right column -->
-                      <div class="col-sm">
-                        <figure>
-                          <img src="img/design-thinking.png" alt="design thinking icon" title="Go to portfolio"/>
-                          <!-- <figcaption>
-                            made with Adobe Ai
-                          </figcaption> -->
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-
-                </section>
-
-              <!-- web design -->
-                <section id="projects" class="project blue">
-                  <div class="container">
-                    <div class="row">
-                      <!-- left column -->
-                      <div class="col-sm">
-                        <figure>
-                          <img src="img/web-design.png"  alt="web design icon" />
-                          <!-- <figcaption class="right-alignment">
-                            made in Adobe Ai
-                          </figcaption> -->
-                        </figure>
-                      </div>
-                      <!-- right column -->
-                      <div class="col-sm">
-                        <h2>
-                          web</br>
-                          design
-                        </h2>
-                        <p class="services-about">
-                        Layout Design</br>
-                        Front-end Development</br>
-                        HTML</br>
-                        CSS</br>
-                        Java Script</br>
-                        Atom + Github + Codepen + Sublime Text
-                        </p>
-                        <a class="button" href="https://github.com/parksrichiework" target="_blank"
-                        title="Github profile">see more</a>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-
-              <!-- illustration -->
-                <section class="project">
-                  <div class="container">
-                    <div class="row">
-                      <!-- left column -->
-                      <div class="col-sm right-alignment">
-                        <h2>
-                          illu</br>
-                          stration
-                        </h2>
-                        <p class="services-about">
-                          Sketching</br>
-                          Analog</br>
-                          Digital</br>
-                          Sketch + Ai +
-                        </p>
-                        <a class="button" href="#illustration">see more</a>
-                      </div>
-
-                      <!-- right column -->
-                      <div class="col-sm">
-                        <figure>
-                          <img src="img/illustration.png" alt="illustration icon" />
-                          <!-- <figcaption>
-                            made with Adobe Ai
-                          </figcaption> -->
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-
-                </section>
-
+            <!-- illustration -->
+            <div class="skill4"> 
+              <img onclick="skills4Reveal()" src="img/illustration-closed.png" id="skills4"/>
+              <div onclick="skills4Reveal()" class= "explain" id="explain4"></div>
+            </div>
+        </section>
+          
           <!-- project divider between illustration and portfolio spreads -->
             <div>
               <ul>
@@ -260,13 +197,131 @@
             </div>
 
         </main>
+
+
+          <!-- JAVASCRIPT -->
+    <script type="text/javascript">
+    
+    // // onclick: SHOW SKILLS VIA DISPENSER
+      document.getElementById("dispenser-click").onclick = function() {
+        dispense()
+          };
+
+      function dispense(){
+        var turn = document.getElementById("right-side");
+        var Image_Id = document.getElementById("dispenser-click")   
+        
+        if (Image_Id.src.match(document.getElementById("dispenser-click"))){
+          turn.className= "right"
+      };
+
+    // onclick: EXPLAIN SKILLS
+        document.getElementById("skills1").onclick = function() {skills1Reveal()
+          }};
+
+              function skills1Reveal() {
+
+               var Image_Id = document.getElementById('skills1');
+               var explain1 = document.getElementById('explain1');
+              
+               if (Image_Id.src.match("img/graphic-design-closed.png")) {
+                   Image_Id.src = "img/graphic-design-open.png";
+                }
+               else {
+                  Image_Id.src = "img/graphic-design-closed.png";
+                }
+                if (Image_Id.src.match("img/graphic-design-open.png")) {
+                   explain1.innerHTML = "<p>Adobe(CC+CS6), Posters, Album Art, Style Guide</p>"
+
+                }
+              if (Image_Id.src.match("img/graphic-design-closed.png")) {
+                   explain1.innerHTML = "<p> </p>"              
+                }           
+                };
+
+
+              document.getElementById("skills2").onclick = function() {
+            skills2Reveal()
+          };
+                function skills2Reveal() {
+
+               var Image_Id = document.getElementById('skills2');
+               var explain2 = document.getElementById('explain2');
+              
+               if (Image_Id.src.match("img/design-thinking-closed.png")) {
+                   Image_Id.src = "img/design-thinking-open.png";
+                }
+               else {
+                  Image_Id.src = "img/design-thinking-closed.png";
+                }
+                if (Image_Id.src.match("img/design-thinking-open.png")) {
+                   explain2.innerHTML = "<p>Brainstorming, Sketching, Wireframes, Mindmapping, Design Research, Branding</p>"
+
+                }
+              if (Image_Id.src.match("img/design-thinking-closed.png")) {
+                   explain2.innerHTML = "<p> </p>"              
+                }           
+                };
+
+              document.getElementById("skills3").onclick = function() {
+          skills3Reveal()
+          };
+                function skills3Reveal() {
+
+               var Image_Id = document.getElementById('skills3');
+               var explain3 = document.getElementById('explain3')
+              
+               if (Image_Id.src.match("img/web-design-closed.png")) {
+                   Image_Id.src = "img/web-design-open.png";
+                }
+               else {
+                  Image_Id.src = "img/web-design-closed.png";
+                }
+                if (Image_Id.src.match("img/web-design-open.png")) {
+                   explain3.innerHTML = "<p>HTML, CSS, Javascript, Github, Codepen</p>"
+
+                }
+              if (Image_Id.src.match("img/web-design-closed.png")) {
+                   explain3.innerHTML = "<p> </p>"              
+                }           
+                };
+
+              document.getElementById("skills4").onclick = function() {
+          skills4Reveal()
+          };
+
+              function skills4Reveal() {
+
+               var Image_Id = document.getElementById('skills4');
+               var explain4 = document.getElementById('explain4');
+                            
+
+             if (Image_Id.src.match("img/illustration-closed.png")) {
+                   Image_Id.src = "img/illustration-open.png"              
+                }
+               else {
+                  Image_Id.src = "img/illustration-closed.png";
+                }
+
+              if (Image_Id.src.match("img/illustration-open.png")) {
+                   explain4.innerHTML = "<p>Sketch, Adobe(Ai+Ps)</p>"
+
+                }
+              if (Image_Id.src.match("img/illustration-closed.png")) {
+                   explain4.innerHTML = "<p> </p>"              
+                }          
+                };  
+
+    </script>
+
+
   </body>
 
     <!--footer -->
     <footer id="contacts">
       <h2>
         any questions?</br>
-        looking for services?</br> <a href="mailto:parksrichiework@gmail.com?subject="Freelance Services" target="_blank" class="email-me"">parksrichiework@gmail.com</a>
+        looking for services?</br> <a href="mailto:parksrichiework@gmail.com?subject="Freelance Services" target="_blank" class="email-me">parksrichiework@gmail.com</a>
       </h2>
 
       <p class="services-about">designed & developed by richie parks 2021</p>
