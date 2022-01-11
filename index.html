@@ -39,19 +39,18 @@
 
               .left img:hover{
                 transform: scale(1.125);
-                  -webkit-animation-name: spin;
+                  /*-webkit-animation-name: spin;
                   -webkit-animation-duration: 1000ms;
                   -webkit-transform-origin:50% 50%;
-                  -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
-                  -webkit-animation-timing-function: linear;
-                 
-              }
+                  -webkit-animation-iteration-count: infinite; 
+                  -webkit-animation-timing-function: linear; */                
+                }
 
-              @-webkit-keyframes spin {
-                  0% { -webkit-transform: rotate(10deg), transform: translate(0px, -20%); }
+             @-webkit-keyframes spin {
+                 0% { -webkit-transform: rotate(10deg), transform: translate(0px, -20%); }
                   50% { -webkit-transform: rotate(-10deg); }
                   100% { -webkit-transform: rotate(10deg), transform: translate(0px, 20%); }
-              }
+                }
 
               .right{
                 position: relative;
@@ -183,9 +182,9 @@
               <div onclick="skills4Reveal()" class= "explain" 
              alt="explanation of illustration skills" id="explain4"></div>
             </div>
-        </section>
+            </section>
           
-          <!-- project divider between illustration and portfolio spreads -->
+            <!-- project divider between illustration and portfolio spreads -->
             <!-- <div>
               <ul>
                 <li class="divider"></li>
