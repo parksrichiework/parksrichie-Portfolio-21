@@ -156,7 +156,7 @@
         <section class="row">
           <div class="dispenser left">
             
-            <img class="dispenser-img" src="img/skills-dispenser.png" alt="dispenser icon image" id="dispenser-click" onclick="dispense()"/> 
+            <img class="dispenser-img" src="img/skills-dispenser-click-me.png" alt="dispenser icon image" id="dispenser-click" onclick="dispense()"/> 
                 
           </div>
 
@@ -242,7 +242,9 @@
         var Image_Id = document.getElementById("dispenser-click")   
         
         if (Image_Id.src.match(document.getElementById("dispenser-click"))){
-          turn.className= "right"
+          turn.className= "right";
+          Image_Id.src = "img/skills-dispenser-open.png";
+
       };
 
     // onclick: EXPLAIN SKILLS
