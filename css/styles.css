@@ -216,6 +216,7 @@ transition: 100ms ease-in-out;
 
 .portfolio-pgs img:hover{
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 div div.resume{
