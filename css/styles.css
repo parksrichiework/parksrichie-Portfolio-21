@@ -210,6 +210,14 @@ li.divider {
   margin-top: 80px;
 }
 
+.portfolio-pgs img{
+transition: 100ms ease-in-out;
+}
+
+.portfolio-pgs img:hover{
+  transform: scale(1.2);
+}
+
 div div.resume{
   margin-top: 80px;
   text-align: center;
