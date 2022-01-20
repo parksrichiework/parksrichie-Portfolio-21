@@ -210,24 +210,68 @@ li.divider {
   margin-top: 80px;
 }
 
-.portfolio-pgs-graphics{
+/*.portfolio-pgs-graphics{
 transition: 100ms ease-in-out;
 }
 
 .portfolio-pgs-graphics:hover{
-  transform: scale(1.2);
+  transform: scale(1.2);  
   cursor: pointer;
-}
+}*/
 
 .fade img:hover{
   transform: none;
 }
 
+/*image hover styles for graphics portfolio*/
+  .contain {
+    position: relative;    
+      }
+
+  .image {
+    /*display: block*/;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #382B50;
+  }
+
+  .contain:hover .overlay {
+    opacity: 1;
+    cursor: pointer;    
+  }
+
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
 #myBtn{
 text-decoration: none;
 }
+
 /* The Modal (background) */
-.graphics-modal {
+  .graphics-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
