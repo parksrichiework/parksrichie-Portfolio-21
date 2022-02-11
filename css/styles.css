@@ -469,8 +469,9 @@ a.email-me:hover {
 }
 
 .button-container{
-  top: -275px;
+  top: -20px;
   position: relative;
+  margin: 0;
 }
 
 .slider-button {
