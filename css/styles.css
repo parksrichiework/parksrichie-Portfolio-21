@@ -442,16 +442,19 @@ a.email-me:hover {
 
 
 .slide-container{
-  width: 1080;
+  width: 1080px;
   height: 416px;
   margin-left: auto;
   margin-right: auto;  
   text-align: center;
-  margin-top: 50px;
+  margin: 60px;
   overflow: hidden;
 }
 
-.image-container {
+
+
+
+  .image-container {
   width: 27000px;
   height:  417px;
   position: relative;
@@ -461,6 +464,8 @@ a.email-me:hover {
   -o-transition: left 2s;
 }
 
+
+
 .slider-image{
   float: left;
   margin: 0px;
@@ -469,7 +474,7 @@ a.email-me:hover {
 }
 
 .button-container{
-  top: -20px;
+  top: -300px;
   position: relative;
   margin: 0;
 }
@@ -483,9 +488,11 @@ a.email-me:hover {
   
 }
 
+
 #slider-image-01:target ~ .image-container{
   left: 0px;
-}
+  }
+
 #slider-image-02:target ~ .image-container{
   left: -1080px;
 }
