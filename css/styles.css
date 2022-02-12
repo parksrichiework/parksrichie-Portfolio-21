@@ -442,7 +442,7 @@ a.email-me:hover {
 
 
 .slide-container{
-  width: 1080px;
+  width: 640px;
   height: 500px;
   margin-left: auto;
   margin-right: auto;  
@@ -478,61 +478,59 @@ a.email-me:hover {
   position: relative;
   margin: 0;
   text-align: center;
-
-  
-
+  margin-left: auto;
 }
 
 .slider-button {
   display: inline-block;
-  height:  10px;
-  width: 10px;
-  border-radius: 5px;
+  height:  20px;
+  width: 20px;
+  border-radius: 20px;
   background-color: #382B50;
   
 }
 
 .slider-button-tide {
   display: inline-block;
-  height:  10px;
-  width: 10px;
-  border-radius: 5px;
+  height:  25px;
+  width: 25px;
+  border-radius: 25px;
   background-color: rgba(107, 200, 192, 1.0);
   
 }
 
 .slider-button-slat {
   display: inline-block;
-  height:  10px;
-  width: 10px;
-  border-radius: 5px;
+  height:  25px;
+  width: 25px;
+  border-radius: 25px;
   background-color: rgba(231, 154, 40, 1.0);
   
 }
 
 .slider-button-volv {
   display: inline-block;
-  height:  10px;
-  width: 10px;
-  border-radius: 5px;
+  height:  25px;
+  width: 25px;
+  border-radius: 25px;
   background-color: rgba(87, 79, 162, 1.0);
   
 }
 
 .slider-button-klense {
   display: inline-block;
-  height:  10px;
-  width: 10px;
-  border-radius: 5px;
+  height:  25px;
+  width: 25px;
+  border-radius: 25px;
   background-color: rgba(165, 205, 67, 1.0);
   
 }
 
 .slider-button-tilt {
   display: inline-block;
-  height:  10px;
-  width: 10px;
-  border-radius: 5px;
+  height:  25px;
+  width: 25px;
+  border-radius: 25px;
   background-color: rgba(230, 32, 81, 1.0);
   
 }
