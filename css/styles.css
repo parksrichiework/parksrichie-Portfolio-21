@@ -441,174 +441,27 @@ a.email-me:hover {
 }
 
 
-.slide-container{
-  width: 1080px;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;  
-  text-align: center;
-  margin-top: 80px;
-  overflow: hidden;
-}
 
 
+/*--------------------"Virtual slides" slideshow (swiperjs.com/demos)-----------------*/
 
+ .swiper {
+        width: 300px;
+        height: 150px;
+      }
 
-  .image-container {
-  width: 27000px;
-  height:  500px;
-  position: relative;
-  transition: left 2s;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
-  margin-top:  80px;
-}
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+      }
 
+      .swiper-slide:nth-child(1n) {
+        background-color: rgb(255, 255, 255);
+      }
 
-
-.slider-image{
-  float: left;
-  margin: 0px;
-  padding: 0;
-  text-align: center;
-}
-
-.button-container{
-  position: relative;
-  margin: 0;
-  text-align: center;
-  margin-left: auto;
-}
-
-.slider-button {
-  display: inline-block;
-  height:  25px;
-  width: 25px;
-  border-radius: 25px;
-  background-color: #382B50;
-  
-}
-
-.slider-button-tide {
-  display: inline-block;
-  height:  25px;
-  width: 25px;
-  border-radius: 25px;
-  background-color: rgba(107, 200, 192, 1.0);
-  
-}
-
-.slider-button-slat {
-  display: inline-block;
-  height:  25px;
-  width: 25px;
-  border-radius: 25px;
-  background-color: rgba(231, 154, 40, 1.0);
-  
-}
-
-.slider-button-volv {
-  display: inline-block;
-  height:  25px;
-  width: 25px;
-  border-radius: 25px;
-  background-color: rgba(87, 79, 162, 1.0);
-  
-}
-
-.slider-button-klense {
-  display: inline-block;
-  height:  25px;
-  width: 25px;
-  border-radius: 25px;
-  background-color: rgba(165, 205, 67, 1.0);
-  
-}
-
-.slider-button-tilt {
-  display: inline-block;
-  height:  25px;
-  width: 25px;
-  border-radius: 25px;
-  background-color: rgba(230, 32, 81, 1.0);
-  
-}
-
-
-#slider-image-01:target ~ .image-container{
-  left: 0px;
-  }
-
-#slider-image-02:target ~ .image-container{
-  left: -1090px;
-}
-#slider-image-03:target ~ .image-container{
-  left: -2160px;
-}
-#slider-image-04:target ~ .image-container{
-  left: -3240px;
-}
-#slider-image-05:target ~ .image-container{
-  left: -4320px;
-}
-#slider-image-06:target ~ .image-container{
-  left: -5400px;
-}
-#slider-image-07:target ~ .image-container{
-  left: -6480px;
-}
-#slider-image-08:target ~ .image-container{
-  left: -7560px;
-}
-#slider-image-09:target ~ .image-container{
-  left: -8640px;
-}
-#slider-image-010:target ~ .image-container{
-  left: -9720px;
-}
-#slider-image-011:target ~ .image-container{
-  left: -10800px;
-}
-#slider-image-012:target ~ .image-container{
-  left: -11880px;
-}
-#slider-image-013:target ~ .image-container{
-  left: -12960px;
-}
-#slider-image-014:target ~ .image-container{
-  left: -14040px;
-}
-#slider-image-015:target ~ .image-container{
-  left: -15120px;
-}
-#slider-image-016:target ~ .image-container{
-  left: -16200px;
-}
-#slider-image-017:target ~ .image-container{
-  left: -17280px;
-}
-#slider-image-018:target ~ .image-container{
-  left: -18360px;
-}
-#slider-image-019:target ~ .image-container{
-  left: -19440px;
-}
-#slider-image-020:target ~ .image-container{
-  left: -20520px;
-}
-#slider-image-021:target ~ .image-container{
-  left: -21600px;
-}
-#slider-image-022:target ~ .image-container{
-  left: -22680px;
-}
-#slider-image-023:target ~ .image-container{
-  left: -23760px;
-}
-#slider-image-024:target ~ .image-container{
-  left: -24840px;
-}
-#slider-image-025:target ~ .image-container{
-  left: -25920px;
-}
+      
