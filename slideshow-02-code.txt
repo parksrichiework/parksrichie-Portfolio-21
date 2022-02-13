@@ -1,0 +1,72 @@
+///////////---------------HTML--------------------//////////////
+
+ <!-- Swiper -->
+
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/product-01.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-02.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-03.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-04.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-05.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-06.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-07.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-08.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-09.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-010.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-011.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-012.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-013.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-014.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-015.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-016.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-017.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-018.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-019.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-020.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-021.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-022.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-023.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-024.jpg"/></div>
+                      <div class="swiper-slide"><img src="img/product-025.jpg"/></div>
+                    </div>
+                  </div>
+
+
+
+////////////////////------------------------------------------------CSS-------------/////////////////////////////
+
+ .swiper {
+        width: 100%;
+        height: 20vh;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .swiper-slide:nth-child(1n) {
+        background-color: rgb(255, 255, 255);
+      }
+
+
+
+<<----------------------------------------------JAVASCRIPT--------------------------------------------------->>
+
+<!-- // NEW GALLERY ("virtual slides" - swiperjs.com/demos) ------------------------------------------------------------------------ -->
+     <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+       <!-- Initialize Swiper
+    
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
