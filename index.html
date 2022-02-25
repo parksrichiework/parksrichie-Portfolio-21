@@ -81,7 +81,7 @@
         <!-- NEW SKILLS LIST -->
         <section class="container">
         <section class="row">
-          <div class="dispenser left">
+          <div class="dispenser left" id="dispenser-scroll">
             
             <img class="dispenser-img" src="img/skills-dispenser-click-me.png" alt="dispenser icon image" id="dispenser-click" onclick="dispense()"/> 
                 
@@ -89,7 +89,7 @@
 
           <!-- RIGHT SIDE START -->
           
-          <div class="all-capsules col-sm"  id="right-side">
+        <div class="all-capsules col-sm"  id="right-side">
             <!-- graphic design -->
             <div> 
               <img class="skills" onmouseover="" onclick= "skills1Reveal()" src="img/graphic-design-closed.png" id="skills1" alt="Graphic design icon image" />
@@ -238,7 +238,7 @@
                   <img src="img/portfolio-pages/07.jpg" alt="Portfolio Page 7"/>
                   <img src="img/portfolio-pages/08.jpg" alt="Portfolio Page 8" id="illustration"/>
 
-<!--                 PRODUCT PORTFOLIO -->
+      <!--                 PRODUCT PORTFOLIO -->
                     
                     <div class="swiper mySwiper">
                       <div class="swiper-wrapper">
@@ -459,12 +459,19 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
       }
-
-    
-      
-      
-
     </script>
+
+     <script>
+        window.onscroll = function() {theFunction()};
+
+            function theFunction() {
+              if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+                document.getElementById("dispenser-scroll").className = "slideUp";
+              }
+            };
+    </script>
+
+
 
     <!-- // NEW GALLERY ("virtual slides" - swiperjs.com/demos) ------------------------------------------------------------------------ -->
      <!-- Swiper JS -->
