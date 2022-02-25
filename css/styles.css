@@ -419,7 +419,7 @@ footer {
 }
 
 footer h2 {
-  font-size: 30px;
+  font-size: 22px;
   margin-bottom: 50px;
   width: 100%;
 }
@@ -446,14 +446,18 @@ a.email-me:hover {
 /*--------------------"Virtual slides" slideshow (swiperjs.com/demos)-----------------*/
 
 .swiper {
-        width: 100%;
+        width: 72%;
         margin-top: 25px;
+        overflow: hidden;
+        
+      }
+
       }
       .swiper-slide {
         height: 100%;
         background: transparent;
         border-radius: 10px;
-        
+        overflow: hidden;
         text-align: center;
       }
       
@@ -475,6 +479,7 @@ a.email-me:hover {
   position: relative;
    max-width: 100%;
    transition: 100ms ease-in-out;
+   
                 
 
  }
