@@ -484,6 +484,10 @@ a.email-me:hover {
 
  }
 
+ .dispenser-img{
+  padding-left: 20px;
+ }
+
  .left img:hover{
    transform: scale(1.125);
    cursor: pointer;

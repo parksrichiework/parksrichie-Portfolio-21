@@ -8,7 +8,7 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <link rel="icon" href="img/logo-2021.png" title="parksrichiework icon">
+        <link rel="icon" href="img/nose-ring.png" title="parksrichiework icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,12 +38,19 @@
               <li><a href="#home" title="you know this one">Home</a></li>
               <li><a href="#work" title="internal link to portfolio">Work</a></li>
               <li><a href="#experience"title="internal link to resume">Experience</a></li>
-              <li class="empty"></li>
-              <li><a href="https://github.com/parksrichiework" target="_blank" title="link to github profile">Github</a></li>
-              <!-- <li><a href="" target="_blank">Twitter</a></li> -->
-              <li><a href="https://www.linkedin.com/in/richard-parks-17459a91/" target="_blank" title="link to LinkedIn profile">LinkedIn</a></li>
               <li><a href="#contacts" title="link to internal contact information">Contacts</a></li>
-              <li><a href="https://parksrichiework.github.io/js-rocket/rocket.html" target="_blank" title="link to a random game I've coded">GAMES:D</a></li>
+              <!-- <li class="empty"></li> -->
+              <!-- Github -->
+              <li><a href="https://github.com/parksrichiework" target="_blank" title="link to github profile"><img style="width: 20px; height: auto;" src="img/github-icon.png"/></a></li>
+              <!-- Twitter -->
+              <li><a href="https://twitter.com/parksrichiework?s=20&t=nciBRedCpyjcYljtdcSaIw" target="_blank"><img style="width: 20px; height: auto;"src="img/twitter-icon.png"/></a></li>
+              <!-- Linkedin -->
+              <li><a href="https://www.linkedin.com/in/richard-parks-17459a91/" target="_blank" title="link to LinkedIn profile"><img style="width: 20px; height: auto;"src="img/linkedin-icon.png"/></a></li>
+              <!-- Instagram -->
+              <li><a href="https://www.instagram.com/richienough/" target="_blank" title="link to Instagram profile"><img style="width: 20px; height: auto;"src="img/instagram-icon.png"/></a></li>
+
+              
+              <!-- <li><a href="https://parksrichiework.github.io/js-rocket/rocket.html" target="_blank" title="link to a random game I've coded">GAMES:D</a></li> -->
 
             </ul>
           </nav>
@@ -90,10 +97,10 @@
           <!-- RIGHT SIDE START -->
           
         <div class="all-capsules col-sm"  id="right-side">
-            <!-- graphic design -->
+            <!-- visual design -->
             <div> 
-              <img class="skills" onmouseover="" onclick= "skills1Reveal()" src="img/graphic-design-closed.png" id="skills1" alt="Graphic design icon image" />
-              <div onclick="skills1Reveal()" class= "explain" alt="explanation of graphic design skills" id="explain1"></div>
+              <img class="skills" onmouseover="" onclick= "skills1Reveal()" src="img/visual-design-closed.png" id="skills1" alt="Visual design icon image" />
+              <div onclick="skills1Reveal()" class= "explain" alt="explanation of visual design skills" id="explain1"></div>
             </div>
 
             <!-- design thinking -->
@@ -315,17 +322,17 @@
                var Image_Id = document.getElementById('skills1');
                var explain1 = document.getElementById('explain1');
               
-               if (Image_Id.src.match("img/graphic-design-closed.png")) {
-                   Image_Id.src = "img/graphic-design-open.png";
+               if (Image_Id.src.match("img/visual-design-closed.png")) {
+                   Image_Id.src = "img/visual-design-open.png";
                 }
                else {
-                  Image_Id.src = "img/graphic-design-closed.png";
+                  Image_Id.src = "img/visual-design-closed.png";
                 }
-                if (Image_Id.src.match("img/graphic-design-open.png")) {
+                if (Image_Id.src.match("img/visual-design-open.png")) {
                    explain1.innerHTML = "<p>Adobe(CC+CS6), Posters, Album Art, Style Guide, Logos, Iconography, Typography</p>"
 
                 }
-                if (Image_Id.src.match("img/graphic-design-closed.png")) {
+                if (Image_Id.src.match("img/visual-design-closed.png")) {
                    explain1.innerHTML = "<p> </p>"              
                 }           
                 };
@@ -493,6 +500,6 @@
         looking for services?</br> <a href="mailto:parksrichiework@gmail.com?subject="Freelance Services" target="_blank" class="email-me">parksrichiework@gmail.com</a>
       </h2>
 
-      <p class="services-about">designed & developed by richie parks 2021</p>
+       <p class="services-about"> <img src="img/logo-2021.png" style="width:15px; height: 15px;"> © 2022 parksrichiework</p>
     </footer>
 </html>
