@@ -176,6 +176,114 @@ figcaption {
   margin-top: 10px;
 }
 
+ /*-----------------------------------------dispenser!!!!--------------------       */
+      
+.left{
+   position: relative;
+   max-width: 100%;
+   width:  50%;
+   height: 100%;
+   top: 0;
+   left: 0px;
+   margin:  0 auto;
+   text-align: center;
+   display: none; 
+ }
+
+.left img{
+  position: relative;
+   max-width: 100%;
+   transition: 100ms ease-in-out;
+   
+                
+
+ }
+
+ .dispenser-img{
+  padding-left: 20px;
+ }
+
+ .left img:hover{
+   transform: scale(1.125);
+   cursor: pointer;
+            }      
+           
+
+  .right{
+     position: relative;
+     max-width:  100%;
+    width:  50%;
+     height:  100%;
+     top:  0px;
+     right:  0px;
+     margin: 0 auto;
+     display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+
+              }
+
+
+  .right img{
+      position: relative;
+      max-width: 50%;
+      transition: 100ms ease-in-out;
+
+              }
+
+ .right img:hover{
+    transform: scale(1.2);
+       cursor: pointer;
+       -webkit-animation-name: thumb;
+       -webkit-animation-duration: 1000ms;
+      -webkit-transform-origin:50% 50%;
+      -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+       -webkit-animation-timing-function: linear;
+                 
+          }
+
+   @-webkit-keyframes thumb {
+     0% { -webkit-transform: rotate(50deg), transform: translate(0px, -20%); }
+     50% { -webkit-transform: rotate(-25deg); }
+     100% { -webkit-transform: rotate(50deg), transform: translate(0px, 20%); }
+              }
+
+    .all-capsules img{
+     display:  none;
+   }
+
+
+
+   .slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+  padding-top: px;
+   position: relative;
+   max-width: 100%;
+   width:  50%;
+   height: 100%;
+   top: 0;
+   left: 0px;
+   margin:  0 auto;
+   text-align: center;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+/*<--------------------------- skills dispenser end ------------------------------->*/
+
+
 .skills-list {
   text-align: center;
   font-size: 40px;
@@ -210,6 +318,8 @@ li.divider {
   margin-bottom: 200px;
 }
 
+
+/*--------------------------PORTFOLIO START------------------------------*/
 .portfolio-start{
   margin-top: 80px;
 }
@@ -238,7 +348,8 @@ transition: 100ms ease-in-out;
     height: auto;
   }
 
-  .overlay {
+  .overlay1 {
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -251,12 +362,15 @@ transition: 100ms ease-in-out;
     background-color: var(--darker-purple);
   }
 
-  .contain:hover .overlay {
+
+  .overlay{
     opacity: 1;
-    cursor: pointer;    
+    cursor: pointer;
+    transition: .5s ease;
+    background-color: var(--darker-purple);
   }
 
-  
+    
   .text {
     color: white;
     font-size: 20px;
@@ -267,10 +381,15 @@ transition: 100ms ease-in-out;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;      
+    transition: .5s ease;
+    background-color: var(--darker-purple);
+
   }
 
 
 #myBtn{
+display: block;
 text-decoration: none;
 }
 
@@ -410,7 +529,7 @@ text-decoration: none;
     from {opacity: .4}
     to {opacity: 1}
   }
-
+/*----------------------------------PORTFOLIO END--------------------------------*/
 
 div div.resume{
   margin-top: 80px;
@@ -480,110 +599,6 @@ a.email-me:hover {
         text-align: center;
       }
       
- /*-----------------------------------------dispenser!!!!--------------------       */
-      
-.left{
-   position: relative;
-   max-width: 100%;
-   width:  50%;
-   height: 100%;
-   top: 0;
-   left: 0px;
-   margin:  0 auto;
-   text-align: center;
-   display: none; 
- }
 
-.left img{
-  position: relative;
-   max-width: 100%;
-   transition: 100ms ease-in-out;
-   
-                
-
- }
-
- .dispenser-img{
-  padding-left: 20px;
- }
-
- .left img:hover{
-   transform: scale(1.125);
-   cursor: pointer;
-            }      
-           
-
-  .right{
-     position: relative;
-     max-width:  100%;
-    width:  50%;
-     height:  100%;
-     top:  0px;
-     right:  0px;
-     margin: 0 auto;
-     display: flex;
-                flex-wrap: wrap;
-                text-align: center;
-
-              }
-
-
-  .right img{
-      position: relative;
-      max-width: 50%;
-      transition: 100ms ease-in-out;
-
-              }
-
- .right img:hover{
-    transform: scale(1.2);
-       cursor: pointer;
-       -webkit-animation-name: thumb;
-       -webkit-animation-duration: 1000ms;
-      -webkit-transform-origin:50% 50%;
-      -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
-       -webkit-animation-timing-function: linear;
-                 
-          }
-
-   @-webkit-keyframes thumb {
-     0% { -webkit-transform: rotate(50deg), transform: translate(0px, -20%); }
-     50% { -webkit-transform: rotate(-25deg); }
-     100% { -webkit-transform: rotate(50deg), transform: translate(0px, 20%); }
-              }
-
-    .all-capsules img{
-     display:  none;
-   }
-
-
-
-   .slideUp {
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
-  padding-top: px;
-   position: relative;
-   max-width: 100%;
-   width:  50%;
-   height: 100%;
-   top: 0;
-   left: 0px;
-   margin:  0 auto;
-   text-align: center;
-}
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  } 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
-}
 
       

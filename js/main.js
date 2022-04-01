@@ -172,27 +172,29 @@
       // Make skills dispenser appear when you scroll:
         // window.onscroll = function() {theFunction()};
 
-        //     function theFunction() {
-        //       if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-        //         document.getElementById("dispenser-scroll").className = "slideUp";
-        //       }
-        //     };
+        //     function theFunction() { if (document.body.scrollTop > 900 ||
+        //     document.documentElement.scrollTop > 900)
+        //     { document.getElementById
+        //     ("dispenser-scroll").className = "slideUp"; } };
 
             window.addEventListener('scroll',() =>{
                 
                 const dispenser = document.getElementById("dispenser-scroll")
                 const scrolled = window.scrollY;
-                const graphicsExplained = document.querySelector('.contain')
+                const graphicsExplained = document.querySelector('.overlay1')
 
                
 
-                 if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                    dispenser.className= "slideUp"
-                 }
+                 if (document.body.scrollTop > 500 ||
+                 document.documentElement.scrollTop > 500)
+                 { dispenser.className= "slideUp"} 
 
-                 if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
-                    graphicsExplained.classname= "conatain overlay"
-                 }
+                 
+
+                 if (document.body.scrollTop > 2700 ||
+                 document.documentElement.scrollTop > 2700  )
+                 { graphicsExplained.className= "overlay"} 
+             
 
                  console.log(scrolled)
 
