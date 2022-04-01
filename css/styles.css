@@ -1,6 +1,10 @@
-/* portfolio purple: #6E53A1 */
-/* darker purple: #382B50 */
-/* lighter purple: #D5BFFF */
+
+
+:root{
+ --portfolio-purple: #6E53A1;
+ --darker-purple: #382B50;
+ --lighter-purple: #D5BFFF;
+}
 
 @media only screen and (max-width: 480px) {
   body {
@@ -16,7 +20,7 @@ body {
   /* font-family: 'Poller One', cursive; */
   font-family: Inconsolata, sans-serif;
   font-size: 15px;
-  color: #382B50;
+  color: var(--darker-purple);
 }
 
 body, ul {
@@ -71,7 +75,7 @@ img {
 
 
 nav {
-  background-color: #382B50;
+  background-color: var(--darker-purple);
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -79,7 +83,7 @@ nav {
 
 li.empty {
   width: 50px;
-  border-top: 0.5px solid #D5BFFF;
+  border-top: 0.5px solid var(--lighter-purple);
   top: -5px;
   position: relative;
 }
@@ -87,7 +91,7 @@ li.empty {
 
 nav li a {
   text-decoration: none;
-  color: #D5BFFF;
+  color: var(--lighter-purple);
   transition: 0.3 ease-in-out;
 }
 
@@ -151,9 +155,9 @@ p {
 }
 
 .button {
-  border: 1px solid #6E53A1;
+  border: 1px solid var(--portfolio-purple);
   text-decoration: none;
-  color: #382B50;
+  color: var(--darker-purple);
   margin-top: 30px;
   display: inline-block;
   border-radius: 20px;
@@ -163,7 +167,7 @@ p {
 }
 
 .button:hover {
-  background: #6E53A1;
+  background: var(--portfolio-purple);
   color: white;
 }
 
@@ -191,7 +195,7 @@ figcaption {
 }
 
 .blue {
-  background-color: #D5BFFF;
+  background-color: var(--lighter-purple);
 }
 
 .project .button {
@@ -200,7 +204,7 @@ figcaption {
 
 li.divider {
   width: 100%;
-  border-top: 2px solid #D5BFFF;
+  border-top: 2px solid var(--lighter-purple);
   top: -5px;
   position: relative;
   margin-bottom: 200px;
@@ -244,7 +248,7 @@ transition: 100ms ease-in-out;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #382B50;
+    background-color: var(--darker-purple);
   }
 
   .contain:hover .overlay {
@@ -288,7 +292,7 @@ text-decoration: none;
 /*Styles for modal*/
   /* Modal Content */
   .graphics-modal-content {
-    background-color: #382B50;
+    background-color: var(--darker-purple);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -386,7 +390,7 @@ text-decoration: none;
   }
 
   .active, .dot:hover {
-    background-color: #382B50;
+    background-color: var(--darker-purple);
   }
 
   /* Fading animation */
@@ -445,14 +449,14 @@ footer h2 {
 
 a.email-me {
   text-decoration: underline;
-  color: #382B50;
+  color: var(--darker-purple);
   transition: 0.3 ease-in-out;
 }
 
 a.email-me:hover {
   text-decoration: none;
-  color: #D5BFFF;
-  background-color: #382B50;
+  color: var(--lighter-purple);
+  background-color: var(--darker-purple);
 }
 
 
