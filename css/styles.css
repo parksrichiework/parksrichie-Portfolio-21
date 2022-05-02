@@ -392,8 +392,20 @@ transition: 100ms ease-in-out;
   .overlay{
     opacity: 1;
     cursor: pointer;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    padding-top: 90px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 100%;
+    width: 100%;      
     transition: .5s ease;
-    background-color: var(--darker-purple);
+    background-color: var(--darker-purple, 100%, 50%, 0.8)
   }
 
     

@@ -8,10 +8,16 @@
        const scrolled = window.scrollY
         const scrollable= document.documentElement.scrollHeight - window.innerHeight
 
+
+
        if(window.scrollY > 900){
         dispenser.classList.remove('noShow')
-       }       
+       } 
 
+       if(window.scrollY > 1900){
+        document.querySelector(".overlay1").className= "overlay";
+       }      
+   console.log(scrolled)
     }
 
 
