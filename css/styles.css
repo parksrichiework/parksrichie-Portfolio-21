@@ -177,7 +177,9 @@ figcaption {
 }
 
  /*-----------------------------------------dispenser!!!!--------------------       */
-      
+.noShow{
+  display: none;
+}      
 .left{
    position: relative;
    max-width: 100%;
@@ -187,41 +189,88 @@ figcaption {
    left: 0px;
    margin:  0 auto;
    text-align: center;
-   display: none; 
+   -webkit-animation-name: slideUp;
+    -webkit-animation-duration: 1000ms;
+    -webkit-transform-origin:50% 50%;
+    /*-webkit-animation-iteration-count: infinite;*/  /*The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
+   
  }
 
 .left img{
   position: relative;
    max-width: 100%;
-   transition: 100ms ease-in-out;
-   
-                
-
+   transition: 100ms ease-in-out;     
  }
 
  .dispenser-img{
   padding-left: 20px;
  }
+  
 
  .left img:hover{
-   transform: scale(1.125);
-   cursor: pointer;
-            }      
-           
+   transform: scale(1.2);
+       cursor: pointer;
+       
+     }
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}           
+
+
+ /*  .slideUp {
+  animation-name: slideUp;
+  animation-duration: 1s;
+   position: relative;
+   max-width: 100%;
+   width:  50%;
+   height: 100%;
+   top: 0;
+   left: 0px;
+   margin:  0 auto;
+   text-align: center;
+  
+}*/
+           
+/***************************** right side (dispenser capsules)**********************************/
   .right{
      position: relative;
      max-width:  100%;
-    width:  50%;
+     width:  50%;
      height:  100%;
      top:  0px;
      right:  0px;
      margin: 0 auto;
      display: flex;
-                flex-wrap: wrap;
-                text-align: center;
+     flex-wrap: wrap;
+     text-align: center;
+      -webkit-animation-name: capsules;
+    -webkit-animation-duration: 500ms;
+    -webkit-transform-origin:50% 50%;
+    /*-webkit-animation-iteration-count: infinite;*/  /*The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
+    }
+     @keyframes capsules {
+      0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30%);
+    ;
+    } 
+     100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    
+    }
+  }
 
-              }
 
 
   .right img{
@@ -242,7 +291,7 @@ figcaption {
                  
           }
 
-   @-webkit-keyframes thumb {
+   @keyframes thumb {
      0% { -webkit-transform: rotate(50deg), transform: translate(0px, -20%); }
      50% { -webkit-transform: rotate(-25deg); }
      100% { -webkit-transform: rotate(50deg), transform: translate(0px, 20%); }
@@ -254,33 +303,10 @@ figcaption {
 
 
 
-   .slideUp {
-  animation-name: slideUp;
-  -webkit-animation-name: slideUp;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
-  padding-top: px;
-   position: relative;
-   max-width: 100%;
-   width:  50%;
-   height: 100%;
-   top: 0;
-   left: 0px;
-   margin:  0 auto;
-   text-align: center;
-}
 
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  } 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
-}
+
+
+
 /*<--------------------------- skills dispenser end ------------------------------->*/
 
 

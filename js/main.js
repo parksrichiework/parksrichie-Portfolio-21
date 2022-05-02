@@ -1,31 +1,51 @@
     
-    // // onclick: SHOW SKILLS VIA DISPENSER
-      document.getElementById("dispenser-click").onclick = function() {
-        dispense()
-          };
+
+// Make skills dispenser appear when you scroll:
+    window.addEventListener('scroll', openDispenser)
+
+    function openDispenser(){
+        let dispenser= document.querySelector('#dispenserScroll')
+       const scrolled = window.scrollY
+        const scrollable= document.documentElement.scrollHeight - window.innerHeight
+
+       if(window.scrollY > 900){
+        dispenser.classList.remove('noShow')
+       }       
+
+    }
+
+
+
+
+    // // Click to open skills dispenser
+      document.querySelector("#dispenserClick").addEventListener('click', dispense)
 
       function dispense(){
-        var turn = document.getElementById("right-side");
+        var rightSide = document.getElementById("right-side");
         var Image_Id = document.getElementById("dispenser-click")   
         
-        if (Image_Id.src.match(document.getElementById("dispenser-click"))){
-          turn.className= "right";
+        
+          rightSide.className= "right";
+          if (Image_Id.src.match('img/skills-dispenser-closed.png')){
           Image_Id.src = "img/skills-dispenser-open.png";
+      }
 
       };
 
-    // onclick: EXPLAIN SKILLS
-        document.getElementById("skills1").onclick = function() {skills1Reveal()
-          }};
+    // click functions: EXPLAIN SKILLS
+    //click to reveal visual design
+        document.getElementById("visualDesign").addEventListener('click', visualDesignReveal)
 
-              function skills1Reveal() {
+              function visualDesignReveal() {
 
-               var Image_Id = document.getElementById('skills1');
-               var explain1 = document.getElementById('explain1');
-              
+               var Image_Id = document.getElementById('visualDesign');
+               var explain1 = document.getElementById('explainVisualDesign');
+
+              //when clicked, if capsule is closed this will open it and change closed capsule img to open capsule img
                if (Image_Id.src.match("img/visual-design-closed.png")) {
                    Image_Id.src = "img/visual-design-open.png";
                 }
+                //when clicked again it will close capsule
                else {
                   Image_Id.src = "img/visual-design-closed.png";
                 }
@@ -38,14 +58,13 @@
                 }           
                 };
 
+            //click to reveal Design Thinking
+              document.querySelector("#designThinking").addEventListener('click', revealDesignThinking)
 
-              document.getElementById("skills2").onclick = function() {
-            skills2Reveal()
-          };
-                function skills2Reveal() {
+                function revealDesignThinking() {
 
-               var Image_Id = document.getElementById('skills2');
-               var explain2 = document.getElementById('explain2');
+               var Image_Id = document.querySelector('#designThinking');
+               var explain2 = document.querySelector('#explainDesignThinking');
               
                if (Image_Id.src.match("img/design-thinking-closed.png")) {
                    Image_Id.src = "img/design-thinking-open.png";
@@ -62,13 +81,13 @@
                 }           
                 };
 
-              document.getElementById("skills3").onclick = function() {
-          skills3Reveal()
-          };
-                function skills3Reveal() {
+            //click to reveal Design Thinking
+              document.querySelector("#webDesign").addEventListener('click', revealWebDesign)
 
-               var Image_Id = document.getElementById('skills3');
-               var explain3 = document.getElementById('explain3')
+                function revealWebDesign() {
+
+               var Image_Id = document.getElementById('webDesign');
+               var explain3 = document.getElementById('explainWebDesign')
               
                if (Image_Id.src.match("img/web-design-closed.png")) {
                    Image_Id.src = "img/web-design-open.png";
@@ -85,18 +104,18 @@
                 }           
                 };
 
-              document.getElementById("skills4").onclick = function() {
-          skills4Reveal()
-          };
+            //click to reveal Illustration capsule
+              document.getElementById("illustration").addEventListener('click', revealIllustration)
 
-              function skills4Reveal() {
+              function revealIllustration() {
 
-               var Image_Id = document.getElementById('skills4');
-               var explain4 = document.getElementById('explain4');
+               var Image_Id = document.getElementById('illustration');
+               var explain4 = document.getElementById('explainIllustration');
                             
 
              if (Image_Id.src.match("img/illustration-closed.png")) {
-                   Image_Id.src = "img/illustration-open.png"              
+                   Image_Id.src = "img/illustration-open.png"
+                   explain4.innerHTML = "<p> </p>"               
                 }
                else {
                   Image_Id.src = "img/illustration-closed.png";
@@ -169,43 +188,9 @@
       }
     
 
-      // Make skills dispenser appear when you scroll:
-        // window.onscroll = function() {theFunction()};
-
-        //     function theFunction() { if (document.body.scrollTop > 900 ||
-        //     document.documentElement.scrollTop > 900)
-        //     { document.getElementById
-        //     ("dispenser-scroll").className = "slideUp"; } };
-
-            window.addEventListener('scroll',() =>{
-                
-                const dispenser = document.getElementById("dispenser-scroll")
-                const scrolled = window.scrollY;
-                const graphicsExplained = document.querySelector('.overlay1')
-
-               
-
-                 if (document.body.scrollTop > 500 ||
-                 document.documentElement.scrollTop > 500)
-                 { dispenser.className= "slideUp"} 
-
-                 
-
-                 if (document.body.scrollTop > 2700 ||
-                 document.documentElement.scrollTop > 2700  )
-                 { graphicsExplained.className= "overlay"} 
-             
-
-                 console.log(scrolled)
-
-             });
+      
 
 
 
         // Make "see project details" appear when you scroll
-       
-    
-
-
-
-   
+          
