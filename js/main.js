@@ -28,13 +28,13 @@
 
       function dispense(){
         var rightSide = document.getElementById("right-side");
-        var Image_Id = document.getElementById("dispenser-click")   
+        var Image_Id = document.getElementById("dispenserClick")   
         
         
           rightSide.className= "right";
-          if (Image_Id.src.match('img/skills-dispenser-closed.png')){
+          if (Image_Id.src.match('img/skills-dispenser-click-me.png')){
           Image_Id.src = "img/skills-dispenser-open.png";
-      }
+      }      
 
       };
 
@@ -92,8 +92,8 @@
 
                 function revealWebDesign() {
 
-               var Image_Id = document.getElementById('webDesign');
-               var explain3 = document.getElementById('explainWebDesign')
+               var Image_Id = document.querySelector('#webDesign');
+               var explain3 = document.querySelector('#explainWebDesign')
               
                if (Image_Id.src.match("img/web-design-closed.png")) {
                    Image_Id.src = "img/web-design-open.png";
@@ -111,12 +111,12 @@
                 };
 
             //click to reveal Illustration capsule
-              document.getElementById("illustration").addEventListener('click', revealIllustration)
+              document.querySelector("#illustration").addEventListener('click', revealIllustration)
 
               function revealIllustration() {
 
-               var Image_Id = document.getElementById('illustration');
-               var explain4 = document.getElementById('explainIllustration');
+               var Image_Id = document.querySelector('#illustration');
+               var explain4 = document.querySelector('#explainIllustration');
                             
 
              if (Image_Id.src.match("img/illustration-closed.png")) {
