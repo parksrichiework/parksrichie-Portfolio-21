@@ -58,17 +58,17 @@ img {
   transform: translate(0px, -20%);
   cursor: pointer;
   /*transform: rotate(360deg)*/;
- -webkit-animation-name: thumb;
-    -webkit-animation-duration: 1000ms;
-    -webkit-transform-origin:50% 50%;
-    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
-    -webkit-animation-timing-function: linear;
+  -webkit-animation-name: thumb;
+  -webkit-animation-duration: 1000ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+  -webkit-animation-timing-function: linear;
 }
 
 @-webkit-keyframes thumb {
-    0% { -webkit-transform: rotate(50deg), transform: translate(0px, -20%); }
+    0% { -webkit-transform: rotate(50deg), translate(0px, -20%); }
     50% { -webkit-transform: rotate(-25deg); }
-    100% { -webkit-transform: rotate(50deg), transform: translate(0px, 20%); }
+    100% { -webkit-transform: rotate(50deg), translate(0px, 20%); }
 }
 
 
@@ -292,9 +292,9 @@ figcaption {
           }
 
    @keyframes thumb {
-     0% { -webkit-transform: rotate(50deg), transform: translate(0px, -20%); }
+     0% { -webkit-transform: rotate(50deg), translate(0px, -20%); }
      50% { -webkit-transform: rotate(-25deg); }
-     100% { -webkit-transform: rotate(50deg), transform: translate(0px, 20%); }
+     100% { -webkit-transform: rotate(50deg), translate(0px, 20%); }
               }
 
     .all-capsules img{
@@ -369,7 +369,7 @@ transition: 100ms ease-in-out;
       }
 
   .image {
-    /*display: block*/;
+    /*display: block;*/
     width: 100%;
     height: auto;
   }
@@ -569,6 +569,143 @@ text-decoration: none;
   }
 /*----------------------------------PORTFOLIO END--------------------------------*/
 
+/*--------------------------------------STYLES FOR POP-UP FORM MODAL------------------------------------------*/
+/* * {
+  box-sizing: border-box;
+} */
+.openBtn {
+  display: flex;
+  justify-content: center;     
+}
+.openButton {
+  color: var(--darker-purple);
+  text-align: center;
+  background-color: var(--lighter-purple);
+  border: solid 2px var(--lighter-purple);				
+  padding: 10px 20px;
+  margin: 7px 0px 60px;				
+  border-radius: 30px;				
+  transition: 0.2s ease-in-out;				
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  
+}
+.openButton:hover {
+  color: var(--lighter-purple);
+  text-align: center;
+  background-color: var(--darker-purple);
+  border: solid var(--darker-purple);				
+  padding: 10px 20px;
+  /* margin-top: 30px;				 */
+  border-radius: 30px;				
+  transition: 0.2s ease-in-out;				
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.loginPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+transition: 0.5s ease-in;
+
+
+}
+.formPopup {
+  color: var(--blue);
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 26%;
+  transform: translate(-50%, 5%);
+  border: 3px solid var(--blue);
+  z-index: 9;
+  transition: 0.5s ease-in;
+  border-radius: 5px;
+  width: 90%;
+height: 600px;	
+margin-top: -20%;
+overflow: scroll;
+
+}
+.formContainer {
+  max-width: auto;
+  padding: 20px;
+  background-color: var(--lighter-purple);
+  border-radius: 5px;
+
+}
+.formContainer input[type=text],
+.formContainer input[type=password],
+.formContainer input[type=email],
+.formContainer input[type=date],
+.formContainer input[type=number],
+/* .formContainer input[type=checkbox], */
+.formContainer select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  border-radius: 100px;
+  background: var(white);
+
+}
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus, 
+.formContainer input[type=email]:focus
+.formContainer input[type=date]:focus,
+.formContainer input[type=number]:focus,
+/* .formContainer input[type=checkbox]:focus, */
+.formContainer select:focus {
+  background-color: var(white);
+  outline: none;
+
+}
+
+.formContainer input[type="date"]:before {
+content: attr(placeholder) !important;
+/* color: #aaa; */
+margin-right: 0.5em;
+}
+/* .formContainer input[type="date"]:focus:before,
+.formContainer input[type="date"]:valid:before {
+content: "";
+}  */
+
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: var(--darker-purple);
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.5;
+  border-radius: 100px;
+}
+
+.formContainer h2{
+font-size: 25px;
+}
+
+
+.formContainer .cancel {
+  background-color: #cc0000;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
+  transition: 0.2 ease-in-out;
+}
+
+
+
+/*---------------------------- End STYLES FOR POP-UP MODAL-------------------------------------- */
+
+
+
 div div.resume{
   margin-top: 80px;
   text-align: center;
@@ -628,7 +765,7 @@ a.email-me:hover {
         
       }
 
-      }
+      
       .swiper-slide {
         height: 100%;
         background: transparent;

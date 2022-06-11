@@ -13,7 +13,7 @@
        if(window.scrollY > 900){
         dispenser.classList.remove('noShow')
        } 
-
+     // Make "see project details" appear when you scroll
        if(window.scrollY > 1900){
         document.querySelector(".overlay1").className= "overlay";
        }      
@@ -102,7 +102,7 @@
                   Image_Id.src = "img/web-design-closed.png";
                 }
                 if (Image_Id.src.match("img/web-design-open.png")) {
-                   explain3.innerHTML = "<p>HTML, CSS, Javascript, Figma, Sublime Text, Atom, Github, Codepen</p>"
+                   explain3.innerHTML = "<p>HTML, CSS, Javascript, Figma, Sublime Text, Atom, Visual Studio Code, OOP, Github, Codepen</p>"
 
                 }
               if (Image_Id.src.match("img/web-design-closed.png")) {
@@ -181,8 +181,12 @@
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
@@ -194,9 +198,38 @@
       }
     
 
+// grab the Consultation form
+const form= document.querySelector('#formConsulting')
+ 
+// OPEN CONSULTING REQUEST BUTTON
+document.querySelector('#consultation').addEventListener('click', open)
+
+function open(){
+form.style.display="block"
+}
+
+
+// CLOSE PRICING AND SHIPPING REQUEST BUTTONS
+document.querySelector('#closeBtnConsulting').addEventListener('click', close);
+
+function close(){       
+form.style.display= "none"    
+}
+
+let formArray = [form]
+window.addEventListener('mouseup', function(e){  
+  
+  for(let i=0; i < formArray.length; i++){
+    let form = formArray[i];
+    if(e.target != form && e.target.parentNode.parentNode != form){
+    form.style.display= "none";    
+    }
+  }
+})
+
       
 
 
 
-        // Make "see project details" appear when you scroll
+   
           
