@@ -56,7 +56,7 @@
                   Image_Id.src = "img/visual-design-closed.png";
                 }
                 if (Image_Id.src.match("img/visual-design-open.png")) {
-                   explain1.innerHTML = "<p>Adobe(CC+CS6), Posters, Album Art, Style Guide, Logos, Iconography, Typography</p>"
+                   explain1.innerHTML = "<p>Adobe(CC+CS6), Posters, Album Art, Style Guide, Logos, Iconography, Typography, Press Kit, Viewer's Guides, Film Posters, Social Media Templates</p>"
 
                 }
                 if (Image_Id.src.match("img/visual-design-closed.png")) {
