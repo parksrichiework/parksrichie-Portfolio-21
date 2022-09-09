@@ -702,6 +702,8 @@ font-size: 25px;
 
 
 
+
+
 /*---------------------------- End STYLES FOR POP-UP MODAL-------------------------------------- */
 
 
@@ -744,7 +746,8 @@ footer h2 {
 a.email-me {
   text-decoration: underline;
   color: var(--darker-purple);
-  transition: 0.3 ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: 30px 0px;
 }
 
 a.email-me:hover {
