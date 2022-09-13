@@ -3,6 +3,7 @@
 :root{
  --portfolio-purple: #6E53A1;
  --darker-purple: #382B50;
+ --darker-purple-opacity: hsla(262, 23%, 30%, 0.76);
  --lighter-purple: #D5BFFF;
 }
 
@@ -374,7 +375,7 @@ transition: 100ms ease-in-out;
     height: auto;
   }
 
-  .overlay1 {
+  /* .overlay1 {
     display: none;
     position: absolute;
     top: 0;
@@ -383,19 +384,26 @@ transition: 100ms ease-in-out;
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
     transition: .5s ease;
-    background-color: var(--darker-purple);
+    background-color: var(--darker-purple-opacity);
+  } */
+
+  div #seeDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
   }
 
 
-  .overlay{
+  .overlay {
     opacity: 1;
     cursor: pointer;
     color: white;
     font-size: 20px;
     position: absolute;
-    padding-top: 90px;
+    /* padding-top: 90px; */
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -405,8 +413,13 @@ transition: 100ms ease-in-out;
     height: 100%;
     width: 100%;      
     transition: .5s ease;
-    background-color: var(--darker-purple, 100%, 50%, 0.8)
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darker-purple-opacity)
   }
+
+  
 
     
   .text {
@@ -452,7 +465,8 @@ text-decoration: none;
     background-color: var(--darker-purple);
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: none;
+    border-radius: 10px;
     width: 80%;
   }
 
