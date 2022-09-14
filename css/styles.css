@@ -815,7 +815,8 @@ a.email-me:hover {
         width: 72%;
         margin-top: 25px;
         overflow: hidden;
-        background: none;
+        background: transparent;
+        
       }
 
       
