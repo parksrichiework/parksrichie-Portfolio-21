@@ -5,6 +5,11 @@
  --darker-purple: #382B50;
  --darker-purple-opacity: hsla(262, 23%, 30%, 0.76);
  --lighter-purple: #D5BFFF;
+ --languid-lavender: #DCCDE8;
+ --fiery-rose: #f45b69;
+ --celadon-blue: #0081A7;
+ --gold-crayola: #EFC88B;
+ --lime-green: #6BD425;
 }
 
 @media only screen and (max-width: 480px) {
@@ -84,7 +89,7 @@ nav {
 
 li.empty {
   width: 50px;
-  border-top: 0.5px solid var(--lighter-purple);
+  border-top: 0.5px solid var(--languid-lavender);
   top: -5px;
   position: relative;
 }
@@ -92,7 +97,7 @@ li.empty {
 
 nav li a {
   text-decoration: none;
-  color: var(--lighter-purple);
+  color: var(--languid-lavender);
   transition: 0.3 ease-in-out;
 }
 
@@ -330,7 +335,7 @@ figcaption {
 }
 
 .blue {
-  background-color: var(--lighter-purple);
+  background-color: var(--languid-lavender);
 }
 
 .project .button {
@@ -339,7 +344,7 @@ figcaption {
 
 li.divider {
   width: 100%;
-  border-top: 2px solid var(--lighter-purple);
+  border-top: 2px solid var(--languid-lavender);
   top: -5px;
   position: relative;
   margin-bottom: 200px;
@@ -581,6 +586,37 @@ text-decoration: none;
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  .relic-container{
+    width: auto;
+    height: end;
+    background-color: var(--lime-green);
+    display: flex;
+    
+  }
+
+  #relic-project h2{
+    color: var(--lime-green);
+  }
+
+  #relic-project div h3{
+    color: none;
+  }
+
+  .relic-container img {
+    width:auto;
+    height: auto;
+    padding: 15px;
+  }
+
+.relic-container div{
+  width: end;
+}
+
+  .relic-container a:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 50%;
+  }
 /*----------------------------------PORTFOLIO END--------------------------------*/
 
 /*--------------------------------------STYLES FOR POP-UP FORM MODAL------------------------------------------*/
@@ -594,8 +630,8 @@ text-decoration: none;
 .openButton {
   color: var(--darker-purple);
   text-align: center;
-  background-color: var(--lighter-purple);
-  border: solid 2px var(--lighter-purple);				
+  background-color: var(--languid-lavender);
+  border: solid 2px var(--languid-lavender);				
   padding: 10px 20px;
   margin: 7px 0px 60px;				
   border-radius: 30px;				
@@ -606,7 +642,7 @@ text-decoration: none;
   
 }
 .openButton:hover {
-  color: var(--lighter-purple);
+  color: var(--languid-lavender);
   text-align: center;
   background-color: var(--darker-purple);
   border: solid var(--darker-purple);				
@@ -647,7 +683,7 @@ overflow: scroll;
 .formContainer {
   max-width: auto;
   padding: 20px;
-  background-color: var(--lighter-purple);
+  background-color: var(--languid-lavender);
   border-radius: 5px;
 
 }
@@ -766,7 +802,7 @@ a.email-me {
 
 a.email-me:hover {
   text-decoration: none;
-  color: var(--lighter-purple);
+  color: var(--languid-lavender);
   background-color: var(--darker-purple);
 }
 
