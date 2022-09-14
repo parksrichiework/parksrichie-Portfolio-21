@@ -815,7 +815,7 @@ a.email-me:hover {
         width: 72%;
         margin-top: 25px;
         overflow: hidden;
-        
+        background: none;
       }
 
       
@@ -828,8 +828,8 @@ a.email-me:hover {
       }
 
 .swiper-slide img{
-        height: 25%;
-        width: auto;
+        height: 750px;
+       
       }
       
 
