@@ -85,6 +85,25 @@ nav {
   width: 100%;
 }
 
+.nav-green{
+  background-color: var(--mantis);
+  color: var(--darker-purple);
+  transition: 0.2s ease-in-out;
+}
+
+.nav-green li a{
+  color: white;
+}
+
+.nav-pink{
+background-color: var(--fiery-rose);
+transition: 0.2s ease-in-out;
+}
+
+.nav-pink li a{
+  color: white;
+}
+
 li.empty {
   width: 50px;
   border-top: 0.5px solid var(--languid-lavender);

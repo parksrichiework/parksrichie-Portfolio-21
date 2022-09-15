@@ -20,6 +20,22 @@
    console.log(scrolled)
     }
 
+    window.addEventListener('scroll', changeNav)
+
+    function changeNav(){
+      let nav= document.querySelector('#nav-bar')
+    if(window.scrollY > 3200 && window.scrollY < 3960){
+      nav.className= "nav-green";
+     } else if(window.scrollY >3960 && window.scrollY < 5600){
+      ;
+      nav.className= "nav-pink";
+     } else {
+      nav.className= "";
+     }
+      
+ console.log("New Section")
+  }
+
 
 
 
