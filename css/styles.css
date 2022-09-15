@@ -10,6 +10,9 @@
  --celadon-blue: #0081A7;
  --gold-crayola: #EFC88B;
  --lime-green: #6BD425;
+ --dark-sea-green: #7FB285;
+ --mantis: #7DC95E;
+ --atomic-tangerine: #F49D6E;
 }
 
 
@@ -585,13 +588,13 @@ text-decoration: none;
   .relic-container{
     width: auto;
     height: end;
-    background-color: var(--lime-green);
+    background-color: var(--mantis);
     display: flex;
     
   }
 
   #relic-project h2{
-    color: var(--lime-green);
+    color: var(--mantis);
   }
 
   #relic-project div h3{
@@ -609,6 +612,21 @@ text-decoration: none;
 }
 
   .relic-container a:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 50%;
+  }
+
+  #manifold-project h2{
+    color: var(--fiery-rose)
+  }
+
+  .manifold-social {
+    margin: 80px 0px;
+    padding: 40px;
+    border: 3px;    
+  }
+
+  .manifold-social a:hover{
     transition: 0.2s ease-in-out;
     opacity: 50%;
   }
