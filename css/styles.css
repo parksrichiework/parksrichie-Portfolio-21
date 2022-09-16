@@ -69,6 +69,15 @@ img {
   -webkit-animation-timing-function: linear;
 }
 
+div .intro ul li img{
+  width: ;
+  height: auto;
+}
+
+div .intro{
+margin: 200px 0px;
+}
+
 @-webkit-keyframes thumb {
     0% { -webkit-transform: rotate(50deg), translate(0px, -20%); }
     50% { -webkit-transform: rotate(-25deg); }
