@@ -926,6 +926,10 @@ a.email-me:hover {
     width: 100%;
   }
 
+  .intro {
+    display: flex;
+  }
+
  
 
 }
