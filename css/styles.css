@@ -42,7 +42,7 @@ h1, h2, .skillslist {
   font-weight: bold;
 }
 
-.skillslist-intro {
+.skillslist-intro, h3 {
   font-family: Inconsolata, sans-serif;
 }
 
