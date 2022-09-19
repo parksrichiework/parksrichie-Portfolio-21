@@ -24,17 +24,39 @@
 
     function changeNav(){
       let nav= document.querySelector('#nav-bar')
-    if(window.scrollY > 3200 && window.scrollY < 3960){
-      nav.className= "nav-green";
-     } else if(window.scrollY >3960 && window.scrollY < 5600){
-      ;
-      nav.className= "nav-pink";
+      let webDesignNav = document.querySelector('#web-design-nav')
+      let visualDesignNav = document.querySelector('#visual-design-nav')
+      let illustrationNav = document.querySelector('#illustration-nav')
+
+    if(window.scrollY > 2300 && window.scrollY < 7450){
+      nav.className= "nav-visual-design";
+      visualDesignNav.className= 'show';
+      webDesignNav.className= 'hidden';
+      illustrationNav.className= 'hidden';       
+
+     } else if(window.scrollY > 7450 && window.scrollY < 8300){
+      nav.className= "nav-web-design";
+      visualDesignNav.className= 'hidden';
+      webDesignNav.className= 'show';
+      illustrationNav.className= 'hidden'; 
+     } else if(window.scrollY > 8300 && window.scrollY < 9000){
+      nav.className= "nav-illustration";
+      visualDesignNav.className= 'hidden';
+      webDesignNav.className= 'hidden';
+      illustrationNav.className= 'show';      
      } else {
       nav.className= "";
+      visualDesignNav.className= 'hidden';
+      webDesignNav.className= 'hidden';
+      illustrationNav.className= 'hidden';       
      }
+
+
       
  console.log("New Section")
   }
+
+
 
 
 

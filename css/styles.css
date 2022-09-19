@@ -94,22 +94,31 @@ nav {
   width: 100%;
 }
 
-.nav-green{
-  background-color: var(--mantis);
+.nav-visual-design{
+  background-color: var(--atomic-tangerine);
   color: var(--darker-purple);
   transition: 0.2s ease-in-out;
 }
 
-.nav-green li a{
+.nav-visual-design li a{
   color: white;
 }
 
-.nav-pink{
-background-color: var(--fiery-rose);
+.nav-web-design{
+background-color: var(--celadon-blue);
 transition: 0.2s ease-in-out;
 }
 
-.nav-pink li a{
+.nav-web-design li a{
+  color: white;
+}
+
+.nav-illustration{
+  background-color: var(--fiery-rose);
+  transition: 0.2s ease-in-out;
+}
+
+.nav-illustration li a{
   color: white;
 }
 
@@ -685,7 +694,7 @@ text-decoration: none;
   .manifold-social {
     margin: 80px 0px;
     padding: 40px;
-    border: solid 3px var(--darker-purple);    
+    border: solid 3px var(--fiery-rose);    
     align-items: center;       
   }
 
@@ -700,6 +709,35 @@ text-decoration: none;
     opacity: 50%;
     transform: translate(20px, 0px);
   }
+
+  .web-design{
+    margin: 12em 0px;
+  }
+  .web-design a:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 50%;
+  }
+  
+#web-design-nav,
+#visual-design-nav,
+#illustration-nav {
+  width: auto;
+  height: 200px;
+  position: fixed;
+  right: 5em;
+  z-index: 10;
+  transition: 0.4s ease-in-out;
+}
+  .hidden{
+    display: none;
+  }
+
+  .show{
+    display: block;
+    
+  }
+
+
 /*----------------------------------PORTFOLIO END--------------------------------*/
 
 /*--------------------------------------STYLES FOR POP-UP FORM MODAL------------------------------------------*/
