@@ -722,12 +722,13 @@ text-decoration: none;
 #visual-design-nav,
 #illustration-nav {
   width: auto;
-  height: 200px;
+  height: 5em;
   position: fixed;
   right: 5em;
   z-index: 10;
   transition: 0.4s ease-in-out;
 }
+
   .hidden{
     display: none;
   }
