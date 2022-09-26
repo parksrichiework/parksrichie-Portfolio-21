@@ -34,18 +34,18 @@
       let visualDesignNav = document.querySelector('#visual-design-nav');
       let illustrationNav = document.querySelector('#illustration-nav');
 
-    if(window.scrollY > 2300 && window.scrollY < 7450){
+    if(window.scrollY > 2300 && window.scrollY < 8000){
       nav.className= "nav-visual-design";
       // visualDesignNav.className= 'show';
       // webDesignNav.className= 'hidden';
       // illustrationNav.className= 'hidden';       
 
-     } else if(window.scrollY > 7450 && window.scrollY < 8300){
+     } else if(window.scrollY > 8000 && window.scrollY < 9700){
       nav.className= "nav-web-design";
       // visualDesignNav.className= 'hidden';
       // webDesignNav.className= 'show';
       // illustrationNav.className= 'hidden'; 
-     } else if(window.scrollY > 8300 && window.scrollY < 9000){
+     } else if(window.scrollY > 9700 && window.scrollY < 10900){
       nav.className= "nav-illustration";
       // visualDesignNav.className= 'hidden';
       // webDesignNav.className= 'hidden';
@@ -100,7 +100,8 @@
                   Image_Id.src = "img/visual-design-closed.png";
                 }
                 if (Image_Id.src.match("img/visual-design-open.png")) {
-                   explain1.innerHTML = "<p>Adobe(CC+CS6), Posters, Album Art, Style Guide, Logos, Iconography, Typography, Press Kit, Viewer's Guides, Film Posters, Social Media Templates</p>"
+                   explain1.innerHTML = "<p>Adobe(CC+CS6), Posters, Album Art, Style Guide, Logos, Iconography, Typography, Press Kit, Viewer's Guides, Film Posters, Social Media Templates</p>";
+                                   
 
                 }
                 if (Image_Id.src.match("img/visual-design-closed.png")) {
