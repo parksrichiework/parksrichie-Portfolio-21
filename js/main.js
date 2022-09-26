@@ -10,50 +10,56 @@
 
 
 
-       if(window.scrollY > 900){
-        dispenser.classList.remove('noShow')
+       if(window.scrollY >= 900){
+        dispenser.classList.remove('noShow');
        } 
-     // Make "see project details" appear when you scroll
-       if(window.scrollY > 1900){
-        document.querySelector(".overlay1").className= "overlay";
-       }      
+       
    console.log(scrolled)
+    }
+
+    window.addEventListener('scroll', openGraphics)
+
+    function openGraphics(){
+        // Make "see project details" appear when you scroll
+        if(window.scrollY >= 1900){
+          document.querySelector(".overlay1").className= "overlay";
+         } 
     }
 
     window.addEventListener('scroll', changeNav)
 
     function changeNav(){
-      let nav= document.querySelector('#nav-bar')
-      let webDesignNav = document.querySelector('#web-design-nav')
-      let visualDesignNav = document.querySelector('#visual-design-nav')
-      let illustrationNav = document.querySelector('#illustration-nav')
+      let nav= document.querySelector('#nav-bar');
+      let webDesignNav = document.querySelector('#web-design-nav');
+      let visualDesignNav = document.querySelector('#visual-design-nav');
+      let illustrationNav = document.querySelector('#illustration-nav');
 
     if(window.scrollY > 2300 && window.scrollY < 7450){
       nav.className= "nav-visual-design";
-      visualDesignNav.className= 'show';
-      webDesignNav.className= 'hidden';
-      illustrationNav.className= 'hidden';       
+      // visualDesignNav.className= 'show';
+      // webDesignNav.className= 'hidden';
+      // illustrationNav.className= 'hidden';       
 
      } else if(window.scrollY > 7450 && window.scrollY < 8300){
       nav.className= "nav-web-design";
-      visualDesignNav.className= 'hidden';
-      webDesignNav.className= 'show';
-      illustrationNav.className= 'hidden'; 
+      // visualDesignNav.className= 'hidden';
+      // webDesignNav.className= 'show';
+      // illustrationNav.className= 'hidden'; 
      } else if(window.scrollY > 8300 && window.scrollY < 9000){
       nav.className= "nav-illustration";
-      visualDesignNav.className= 'hidden';
-      webDesignNav.className= 'hidden';
-      illustrationNav.className= 'show';      
+      // visualDesignNav.className= 'hidden';
+      // webDesignNav.className= 'hidden';
+      // illustrationNav.className= 'show';      
      } else {
       nav.className= "";
-      visualDesignNav.className= 'hidden';
-      webDesignNav.className= 'hidden';
-      illustrationNav.className= 'hidden';       
+      // // visualDesignNav.className= 'hidden';
+      // webDesignNav.className= 'hidden';
+      // illustrationNav.className= 'hidden';       
      }
 
 
       
- console.log("New Section")
+//  console.log("New Section")
   }
 
 
@@ -269,18 +275,6 @@ window.addEventListener('mouseup', function(e){
 
 let games= document.querySelector('#games-button');
 let gamesDropdown = document.querySelector('#games-dropdown');
-
-// CLICK TO REVEAL GAMES OPTIONS
-games.addEventListener('click', openGames)
-
-function openGames(){
- if (true){
-  gamesDropdown.classList.toggle('noShow');
-} else{
-  gamesDropdown.classList.add('noShow');
-}
-
-}
 
 
 
