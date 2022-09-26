@@ -92,6 +92,7 @@ nav {
   position: fixed;
   z-index: 10;
   width: 100%;
+  overflow: none;
 }
 
 .nav-visual-design{
@@ -154,7 +155,7 @@ nav ul li {
 nav ul {
   margin: 0 auto;
   text-align: center;
-  padding: 30px;
+  padding: 30px 0px;
 }
 
 header {
@@ -387,6 +388,9 @@ li.divider {
 
 
 /*--------------------------PORTFOLIO START------------------------------*/
+
+/* ---------------------------------VISUAL DESING SECTIN STARTS  */
+
 .portfolio-start{
   margin-top: 80px;
 }
@@ -622,6 +626,8 @@ text-decoration: none;
     to {opacity: 1}
   }
 
+
+
 #relic-project {
   margin-top: 50px;
 }
@@ -710,12 +716,19 @@ text-decoration: none;
     transform: translate(20px, 0px);
   }
 
+  /*------------------------------- VISUAL DESIGN SECTION END --------------------- */
+
+  /*------------------------------- WEB DESIGN SECTION START---------------------------------------  */
   .web-design{
     margin: 12em 0px;
   }
   .web-design a:hover{
     transition: 0.2s ease-in-out;
     opacity: 50%;
+  }
+
+  .web-design div{
+    margin: 30px 0px;
   }
   
 #web-design-nav,
@@ -737,6 +750,28 @@ text-decoration: none;
     display: block;
     
   }
+
+  .games-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    background-color:;
+    width: 100%;
+    font: var(--darker-purple);
+    transition: 0.2s ease-in-out;
+    padding: 0px 20px;
+    text-align: center;
+  }
+
+  .games-list img{
+    width: 300px;
+    height: auto;
+  }
+
+  .games-list ul li a:hover{
+    
+  }
+/* WEB DESIGN SECTION END  */
 
 
 /*----------------------------------PORTFOLIO END--------------------------------*/
@@ -872,10 +907,6 @@ font-size: 25px;
   transition: 0.2 ease-in-out;
 }
 
-
-
-
-
 /*---------------------------- End STYLES FOR POP-UP MODAL-------------------------------------- */
 
 
@@ -957,7 +988,7 @@ a.email-me:hover {
       
 
 
-/* --------------------MOBILE STYLES------------------       */
+/* -----------------------------------MOBILE STYLES------------------       */
 
 
 @media only screen and (max-width: 640px) {
@@ -968,6 +999,7 @@ a.email-me:hover {
   .intro {
     display: flex;
   }
+  
 
 
 

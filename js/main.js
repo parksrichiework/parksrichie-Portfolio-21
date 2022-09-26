@@ -265,7 +265,27 @@ window.addEventListener('mouseup', function(e){
   }
 })
 
-      
+// THE DROPDOWN MENU FOR GAMES THAT I'VE CODED
+
+let games= document.querySelector('#games-button');
+let gamesDropdown = document.querySelector('#games-dropdown');
+
+// CLICK TO REVEAL GAMES OPTIONS
+games.addEventListener('click', openGames)
+
+function openGames(){
+ if (true){
+  gamesDropdown.classList.toggle('noShow');
+} else{
+  gamesDropdown.classList.add('noShow');
+}
+
+}
+
+
+
+// IF YOU CLICK INTO WINDOW, THE GAMES MENU WILL CLOSE 
+
 
 
 
