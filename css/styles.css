@@ -93,6 +93,7 @@ nav {
   z-index: 10;
   width: 100%;
   overflow: none;
+  box-shadow: 0px 2px 15px var(--darker-purple);
 }
 
 .nav-visual-design{
