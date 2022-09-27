@@ -1121,7 +1121,7 @@ footer h2 {
 }
 
 .accordion-img1{
-  background-image: url(../img/graphics-explained-01.jpg);
+  background-image: url(../img/graphics-01.jpg);
   height: 500px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
@@ -1130,7 +1130,7 @@ footer h2 {
 }
 
 .accordion-img2{
-  background-image: url(../img/graphics-explained-02.jpg);
+  background-image: url(../img/graphics-02.jpg);
   height: 500px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
@@ -1139,7 +1139,7 @@ footer h2 {
 }
 
 .accordion-img3{
-  background-image: url(../img/graphics-explained-03.jpg);
+  background-image: url(../img/graphics-03.jpg);
   height: 500px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
@@ -1150,7 +1150,7 @@ footer h2 {
 .accordion-img1:hover,
 .accordion-img2:hover,
 .accordion-img3:hover{
-flex-grow: 5;
+flex-grow: 3;
  transition: 0.5s ease-in-out;
  opacity: 1;
 cursor: pointer;
