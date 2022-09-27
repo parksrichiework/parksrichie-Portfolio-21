@@ -1040,7 +1040,7 @@ a.email-me:hover {
 }
 
 .accordion-img1{
-  background-image: url(../img/illustration-closed.png);
+  background-image: url(../img/graphics-explained-01.jpg);
   height: 500px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
@@ -1049,7 +1049,7 @@ a.email-me:hover {
 }
 
 .accordion-img2{
-  background-image: url(../img/web-design-closed.png);  
+  background-image: url(../img/graphics-explained-02.jpg);
   height: 500px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
@@ -1058,7 +1058,7 @@ a.email-me:hover {
 }
 
 .accordion-img3{
-  background-image: url(../img/visual-design-closed.png);
+  background-image: url(../img/graphics-explained-03.jpg);
   height: 500px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
