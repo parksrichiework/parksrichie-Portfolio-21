@@ -44,6 +44,10 @@ h1, h2, .skillslist {
   font-weight: bold;
 }
 
+.skillslist-intro{
+  margin-bottom: 30px;
+}
+
 .skillslist-intro, h3 {
   font-family: Inconsolata, sans-serif;
 }
@@ -213,13 +217,79 @@ p {
 }
 
 .button:hover {
-  background: var(--portfolio-purple);
+  background: var(--darker-purple);
   color: white;
+  border: none;
 }
 
 figcaption {
   font-size: 10px;
   margin-top: 10px;
+}
+
+.email-me{
+   margin-top: 20px;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 20pt;
+   background: var(--fiery-rose);
+    background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
+    background: -webkit-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+    background: -o-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+    background: -ms-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+    background: linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+    background-size: 400% 400%;
+    -webkit-animation: errorBg 55s ease infinite;
+    -moz-animation: errorBg 55s ease infinite;
+    animation: errorBg 55s ease infinite;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+
+@-webkit-keyframes errorBg {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@-moz-keyframes errorBg {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@keyframes errorBg {
+    0% {
+        background-position: 93% 0%
+    }
+    50% {
+        background-position: 0% 100%
+    }
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+.email-me:hover{
+  background: white;
+  color: var(--darker-purple);
+  border: solid 1px var(--darker-purple);
+  transition: 0.3s ease-in-out;
 }
 
  /*-----------------------------------------dispenser!!!!--------------------       */
@@ -1036,18 +1106,9 @@ footer h2 {
   text-align: right;
 }
 
-a.email-me {
-  text-decoration: underline;
-  color: var(--darker-purple);
-  transition: 0.3s ease-in-out;
-  margin: 30px 0px;
-}
 
-a.email-me:hover {
-  text-decoration: none;
-  color: var(--languid-lavender);
-  background-color: var(--darker-purple);
-}
+
+
 
 /* NEW GALLERY STYLES  */
 
@@ -1147,6 +1208,10 @@ nav{
 
 nav ul li {
   padding-top: 10px;
+}
+
+.skillslist-intro{
+  margin-top: 120px;
 }
 
 .graphics-modal-content {
