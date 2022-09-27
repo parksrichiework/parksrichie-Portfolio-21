@@ -10,7 +10,7 @@
 
 
 
-       if(window.scrollY >= 900){
+       if(window.scrollY >= 600){
         dispenser.classList.remove('noShow');
        } 
        

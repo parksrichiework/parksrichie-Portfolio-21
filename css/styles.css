@@ -25,11 +25,13 @@ body {
   font-family: Inconsolata, sans-serif;
   font-size: 15px;
   color: var(--darker-purple);
+  
 }
 
 body, ul {
   margin: 0;
   padding: 0;
+  
 }
 
 h1, h2, .skillslist {
@@ -1007,7 +1009,7 @@ a.email-me:hover {
       }
 
 .swiper img{
-        /* height: 750px;       */
+        height: auto;
        
        
       }
@@ -1045,7 +1047,7 @@ nav ul li {
 }
 
 .section-img{
-  width: 500px;
+  width: 250px;
 }
 
 }
