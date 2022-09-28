@@ -1241,6 +1241,9 @@ filter:none;
   body {
     width: 100%;
   }
+  h2{
+    font-size: 20pt;
+  }
 
   .intro {
     display: flex;
@@ -1292,6 +1295,7 @@ nav ul li {
   cursor: pointer;
   padding: 0px;
   margin-top: 15px;
+  margin-bottom: 15px;
   flex-grow: 2;   
   
   -webkit-animation-name: ;
@@ -1299,6 +1303,16 @@ nav ul li {
   -webkit-animation-iteration-count: 1; /* The magic keyword for infinite*/
   -webkit-animation-timing-function: linear;
    transition: 0.8s ease-in-out;
+}
+
+.games-list{
+  padding: 0;
+  justify-content: space-between;
+ 
+}
+
+.games{
+scale: 0.9;
 }
 
 }
