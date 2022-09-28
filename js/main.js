@@ -291,10 +291,11 @@ postcardFront.addEventListener('click', flipCard)
 function flipCard(){
    if(postcardFront.src.match('img/relic-postcard-front-01.jpg')){
     postcardFront.src = 'img/relic-postcard-back.jpg';
-    document.querySelector('#postcard-title').innerHTML= 'Deliverable: Postcard (Back)';
+    document.querySelector('#postcard-title').innerHTML= 'Postcard: Back (click to see front)';
   } else{
     postcardFront.src = 'img/relic-postcard-front-01.jpg';
-    document.querySelector('#postcard-title').innerHTML= 'Deliverable: Postcard (Front)';
+    document.querySelector('#postcard-title').innerHTML= 'Postcard: Front (click to see back)';
+    postcardFront.className= '#relic-postcard-flipped';
   }
     
 }
