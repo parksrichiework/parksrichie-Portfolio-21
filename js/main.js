@@ -277,11 +277,32 @@ window.addEventListener('mouseup', function(e){
 let games= document.querySelector('#games-button');
 let gamesDropdown = document.querySelector('#games-dropdown');
 
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-// IF YOU CLICK INTO WINDOW, THE GAMES MENU WILL CLOSE 
+
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvv CLICK TO FLIP RELIC POSTCARD vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+let postcardFront = document.querySelector('#relic-postcard')
+let postcardBack = document.querySelector('#postcard-back')
+
+postcardFront.addEventListener('click', flipCard)
+
+function flipCard(){
+   if(postcardFront.src.match('img/relic-postcard-front-01.jpg')){
+    postcardFront.src = 'img/relic-postcard-back.jpg';
+    document.querySelector('#postcard-title').innerHTML= 'Deliverable: Postcard (Back)';
+  } else{
+    postcardFront.src = 'img/relic-postcard-front-01.jpg';
+    document.querySelector('#postcard-title').innerHTML= 'Deliverable: Postcard (Front)';
+  }
+    
+}
 
 
+
+
+//  ^^^^^^^^^^^^^^^^^^^^^^^^^^^ END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6
 
 
    
