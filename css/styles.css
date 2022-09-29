@@ -1406,7 +1406,7 @@ overflow: scroll;
   background-repeat: none;
   height: 200px;
   transition: 0.5s ease-in-out;
-  
+  opacity: 0.8;
 }
 .web-design-bg{
   background-image: url(../img/web-design-open.png);
@@ -1415,7 +1415,7 @@ overflow: scroll;
   background-repeat: none;
   height: 200px;
   transition: 0.5s ease-in-out;
-  
+  opacity: 0.8;
 }
 
 .illustration-bg{
@@ -1425,7 +1425,7 @@ overflow: scroll;
   background-repeat: none;
   height: 200px;
   transition: 0.5s ease-in-out;
-  
+  opacity: 0.8; 
 }   
 
 .new-gallery{
