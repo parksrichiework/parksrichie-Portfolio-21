@@ -1139,8 +1139,11 @@ div div.resume{
 }
 
 .accordion-img1{
-  background-image: url(../img/graphics-01.jpg);
-  height: 500px;
+  background-image: url(../img/MANIFOLD-social-media-template-01.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 250px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
   opacity: 0.4;
@@ -1148,8 +1151,11 @@ div div.resume{
 }
 
 .accordion-img2{
-  background-image: url(../img/graphics-02.jpg);
-  height: 500px;
+  background-image: url(../img/MANIFOLD-social-media-template-02.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 250px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
   opacity: 0.4;
@@ -1157,12 +1163,15 @@ div div.resume{
 }
 
 .accordion-img3{
-  background-image: url(../img/graphics-03.jpg);
-  height: 500px;
+  background-image: url(../img/MANIFOLD-social-media-template-03.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 250px;
   flex-grow: 1;
   transition: 0.5s ease-in-out;
   opacity: 0.4;
-  filter:saturate(10%);    
+  filter:saturate(10%);     
 }
 
 .accordion-img1:hover,
