@@ -769,7 +769,11 @@ text-decoration: none;
     height: end;
     background-color: var(--mantis);
     display: flex;
-    
+    align-items: center;
+  }
+
+  .relic-deliverables{
+    align-items: center;
   }
 
   .relic-container h3{
