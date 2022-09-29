@@ -33,15 +33,18 @@
       let webDesignNav = document.querySelector('#web-design-nav');
       let visualDesignNav = document.querySelector('#visual-design-nav');
       let illustrationNav = document.querySelector('#illustration-nav');
+      let bodyBg= document.querySelector('.body-body');
 
     if(window.scrollY > 2300 && window.scrollY < 8000){
       nav.className= "nav-visual-design";
+      
       // visualDesignNav.className= 'show';
       // webDesignNav.className= 'hidden';
       // illustrationNav.className= 'hidden';       
 
      } else if(window.scrollY > 8000 && window.scrollY < 9700){
       nav.className= "nav-web-design";
+      
       // visualDesignNav.className= 'hidden';
       // webDesignNav.className= 'show';
       // illustrationNav.className= 'hidden'; 
@@ -52,6 +55,7 @@
       // illustrationNav.className= 'show';      
      } else {
       nav.className= "";
+      bodyBg.classList.remove('visual-design');
       // // visualDesignNav.className= 'hidden';
       // webDesignNav.className= 'hidden';
       // illustrationNav.className= 'hidden';       
