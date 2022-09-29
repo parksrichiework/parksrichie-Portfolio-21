@@ -992,9 +992,9 @@ text-decoration: none;
   color: var(--darker-purple);
   text-align: center;
   background-color: var(--languid-lavender);
-  border: solid 2px var(--languid-lavender);				
+  border: solid 1px var(--languid-lavender);				
   padding: 10px 20px;
-  margin: 7px 0px 60px;				
+  margin: 7px 0px 0px;				
   border-radius: 30px;				
   transition: 0.2s ease-in-out;				
   position: relative;
@@ -1006,7 +1006,7 @@ text-decoration: none;
   color: var(--languid-lavender);
   text-align: center;
   background-color: var(--darker-purple);
-  border: solid var(--darker-purple);				
+  border: solid 1px var(--languid-lavender);				
   padding: 10px 20px;
   /* margin-top: 30px;				 */
   border-radius: 30px;				
@@ -1035,12 +1035,13 @@ transition: 0.5s ease-in;
   z-index: 9;
   transition: 0.5s ease-in;
   border-radius: 5px;
-  width: 90%;
+  width: fit-content;
 height: 600px;	
 margin-top: -20%;
 overflow: scroll;
 
 }
+
 .formContainer {
   max-width: auto;
   padding: 20px;
@@ -1202,6 +1203,35 @@ filter:none;
 
 }
 
+.email-me-footer{
+  margin: 20px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20pt;
+  background: var(--fiery-rose);
+   background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
+   background: -webkit-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -o-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -ms-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background-size: 400% 400%;
+   -webkit-animation: errorBg 55s ease infinite;
+   -moz-animation: errorBg 55s ease infinite;
+   animation: errorBg 55s ease infinite;
+   height: 100vh;
+   transition: 0.3s ease-in-out;
+   text-decoration: none;
+}
+
+
+.email-me-footer:hover{
+ background: white;
+ color: var(--darker-purple);
+ border: solid 1px var(--darker-purple);
+ transition: 0.3s ease-in-out;
+}
+
 
 
 /*--------------------"Virtual slides" slideshow (swiperjs.com/demos)-----------------*/
@@ -1255,6 +1285,24 @@ nav{
 
 nav ul li {
   padding-top: 10px;
+}
+
+.formPopup {
+  color: var(--blue);
+  display: none;
+  position: fixed;
+  left: 50vw;
+  top: 20vh;
+  transform: translate(-50%, 5%);
+  border: 3px solid var(--blue);
+  z-index: 9;
+  transition: 0.5s ease-in;
+  border-radius: 5px;
+  width: 90%;
+height: 600px;	
+margin-top: -20%;
+overflow: scroll;
+
 }
 
 .skillslist-intro{

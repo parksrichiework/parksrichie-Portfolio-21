@@ -41,6 +41,61 @@
               <li><a href="#contacts" title="link to internal contact information">Contacts</a></li>
               <!-- <li class="empty"></li> -->          
               <li class='games' id="games-button"><a href='#games-dropdown' title="internal link to a HTML games I've coded"> GAMES:D</a></li>
+              <li>
+                <!-- CONSULTATION FORM -->
+         <div class="openBtn">
+          <button type= "button" class="openButton" id="consultation" title="Click to book a consultation">
+          Book a (free) consultation
+          </button> 
+        </div>
+
+        <div class="loginPopup">
+          <div class="formPopup" id="formConsulting">
+            <form  class="formContainer" data-netlify="true" name="Consulting Request">
+              <h2>Consultation Request Form</h2>
+              <input type="text" id="nameConsulting" placeholder="Your Name" name="Name">
+                      
+              <!-- <input type="number" id="phoneConsulting" placeholder="Phone Number" name="Phone"> -->
+
+              <input type="email" id="emailConsulting" placeholder="Your Email" name="Email" required>
+
+              <select name="Service" id="serviceConsulting">
+                <option value="">--What services are you looking for?--</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Web Design/Web Development">Web Design/Web Development</option>
+                <option value="Brainstorm/Idea Development">Brainstorm/Idea Development</option>
+                <option value="Custom Illustration">Custom Illustration</option>
+              </select>
+              <input type="text" id="projectDescription" placeholder="Briefly describe your project" name="Project Description" required>
+
+
+              <input type="date" id="dueDateConsulting" placeholder="When do you need it?" name="Due Date">
+              
+              <h3>When are you available to meet?</h3>
+              <div style="margin-bottom: 20px;">
+              <input type="checkbox" id="checkboxMonday" name="Monday" value="Monday">Monday
+              <input type="checkbox" id="checkboxTuesday" name="Tuesday" value="Tuesday">Tuesday
+              <input type="checkbox" id="checkboxWednesday" name="Wednesday" value="Wednesday">Wednesday<br>
+              <input type="checkbox" id="checkboxThursday" name="Thursday" value="Thursday">Thursday
+              <input type="checkbox" id="checkboxFriday" name="Friday" value="Friday">Friday <br>
+              </div>
+
+              <select name="Meeting Time" id="meetingTime">
+                <option value="">--Please choose a preferred meeting time--</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+              </select>
+
+              
+
+              
+              
+              <button type="submit" class="btn submit-info" id="submitBtnConsulting">Submit</button>
+              <button type="button" class="btn cancel" id="closeBtnConsulting" >Close</button>
+            </form>
+          </div>
+              </li>
              
               <!-- <li><a><img class="hidden" id="web-design-nav" src="img/web-design-open.png"></a></li>
               <li><a><img class="hidden" id="visual-design-nav" src="img/visual-design-open.png"></a></li>
@@ -455,59 +510,7 @@
 
 
         </main>
-         <!-- CONSULTATION FORM -->
-         <div class="openBtn">
-          <button type= "button" class="openButton" id="consultation" title="Click to book a consultation">
-          Book a (free) consultation
-          </button> 
-        </div>
-
-        <div class="loginPopup">
-          <div class="formPopup" id="formConsulting">
-            <form  class="formContainer" data-netlify="true" name="Consulting Request">
-              <h2>Consultation Request Form</h2>
-              <input type="text" id="nameConsulting" placeholder="Your Name" name="Name">
-                      
-              <!-- <input type="number" id="phoneConsulting" placeholder="Phone Number" name="Phone"> -->
-
-              <input type="email" id="emailConsulting" placeholder="Your Email" name="Email" required>
-
-              <select name="Service" id="serviceConsulting">
-                <option value="">--What services are you looking for?--</option>
-                <option value="Graphic Design">Graphic Design</option>
-                <option value="Web Design/Web Development">Web Design/Web Development</option>
-                <option value="Brainstorm/Idea Development">Brainstorm/Idea Development</option>
-                <option value="Custom Illustration">Custom Illustration</option>
-              </select>
-              <input type="text" id="projectDescription" placeholder="Briefly describe your project" name="Project Description" required>
-
-
-              <input type="date" id="dueDateConsulting" placeholder="When do you need it?" name="Due Date">
-              
-              <h3>When are you available to meet?</h3>
-              <div style="margin-bottom: 20px;">
-              <input type="checkbox" id="checkboxMonday" name="Monday" value="Monday">Monday
-              <input type="checkbox" id="checkboxTuesday" name="Tuesday" value="Tuesday">Tuesday
-              <input type="checkbox" id="checkboxWednesday" name="Wednesday" value="Wednesday">Wednesday<br>
-              <input type="checkbox" id="checkboxThursday" name="Thursday" value="Thursday">Thursday
-              <input type="checkbox" id="checkboxFriday" name="Friday" value="Friday">Friday <br>
-              </div>
-
-              <select name="Meeting Time" id="meetingTime">
-                <option value="">--Please choose a preferred meeting time--</option>
-                <option value="Morning">Morning</option>
-                <option value="Afternoon">Afternoon</option>
-                <option value="Evening">Evening</option>
-              </select>
-
-              
-
-              
-              
-              <button type="submit" class="btn submit-info" id="submitBtnConsulting">Submit</button>
-              <button type="button" class="btn cancel" id="closeBtnConsulting" >Close</button>
-            </form>
-          </div>
+         
 
           <!-- <section>
             <div class="new-gallery">
@@ -546,11 +549,14 @@
 
     <!--footer -->
     <footer id="contacts">
-      <!-- <h2>
+      <h2>
         any questions?</br>
-        looking for services?</br>     </h2> -->
+        looking for services?</br>     
+      </h2> 
+
+      <a href="mailto:parksrichiework@gmail.com?subject='Services Inquiry'" target="_blank" class="email-me-footer">parksrichiework@gmail.com</a></br>
        
-        <!-- <a href="mailto:parksrichiework@gmail.com?subject='Freelance Services'" target="_blank" class="email-me">parksrichiework@gmail.com</a>    -->
+        <!-- <a href="mailto:parksrichiework@gmail.com?subject='Freelance Services'" target="_blank" class="email-me">parksrichiework@gmail.com</a>   -->
       </br> 
 
      
