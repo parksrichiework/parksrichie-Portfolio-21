@@ -455,7 +455,7 @@ figcaption {
 
  .visual-design-bg{
   background-image: url(../img/visual-design-closed.png);
-  background-size: fill;
+  background-size: 200px;
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -471,7 +471,7 @@ figcaption {
 }
 .web-design-bg{
   background-image: url(../img/web-design-closed.png);
-  background-size: fill;
+  background-size: 200px;
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -487,7 +487,7 @@ figcaption {
 
 .illustration-bg{
   background-image: url(../img/illustration-closed.png);
-  background-size: fill;
+  background-size: 200px;
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -1452,7 +1452,7 @@ overflow: scroll;
   margin-bottom: 15px;
   flex-grow: 2;   
   
-  -webkit-animation-name: ;
+  
   -webkit-animation-duration: 0;    
   -webkit-animation-iteration-count: 1; /* The magic keyword for infinite*/
   -webkit-animation-timing-function: linear;
