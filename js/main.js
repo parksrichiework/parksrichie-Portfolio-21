@@ -17,14 +17,14 @@
    console.log(scrolled)
     }
 
-    window.addEventListener('scroll', openGraphics)
+    // window.addEventListener('scroll', openGraphics)
 
-    function openGraphics(){
-        // Make "see project details" appear when you scroll
-        if(window.scrollY >= 1900){
-          document.querySelector(".overlay1").className= "overlay";
-         } 
-    }
+    // // function openGraphics(){
+    // //     // Make "see project details" appear when you scroll
+    // //     if(window.scrollY >= 1900){
+    // //       document.querySelector(".overlay1").className= "overlay";
+    // //      } 
+    // // }
 
     window.addEventListener('scroll', changeNav)
 
