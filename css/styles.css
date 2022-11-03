@@ -247,7 +247,7 @@ p {
 }
 
 .button {
-  border: 1px solid var(--portfolio-purple);
+  border: 1px solid var(--darker-purple);
   text-decoration: none;
   color: var(--darker-purple);
   margin-top: 30px;
@@ -1053,14 +1053,20 @@ text-decoration: none;
 
   .games-list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: end;
+    /* align-items: center; */
     /* background-color:; */
     width: 100%;
     font: var(--darker-purple);
     transition: 0.2s ease-in-out;
     padding: 0px 20px;
     text-align: center;
+  }
+
+  .games-list a{
+    font-size: 16pt;
+    font-family:sans-serif;
   }
 
   .games-list img{
@@ -1600,7 +1606,7 @@ overflow: scroll;
 
 .games-list{
   padding: 0;
-  justify-content: space-between;
+  /* justify-content: space-between; */
  
 }
 
