@@ -17,7 +17,8 @@
  --atomic-tangerine: #F49D6E;
  --atomic-tangerine-opacity: #f49d6ea1;
  --black: #252525;
- --black-8e: #2525258e;
+ --black-8e: #25252536;
+
 }
 
 
@@ -269,7 +270,7 @@ figcaption {
 }
 
 .email-me{
-   margin-top: 20px;
+   margin: 20px 0px 30px;
    color: white;
    padding: 10px 20px;
    border-radius: 20pt;
@@ -288,6 +289,8 @@ figcaption {
     transition: 0.3s ease-in-out;
     text-decoration: none;
 }
+
+
 
 
 @-webkit-keyframes errorBg {
@@ -973,7 +976,7 @@ text-decoration: none;
 
   .posters-container::-webkit-scrollbar {
     width: 20px;
-    color: var(--darker-purple);
+    
     
   }
   
@@ -1267,7 +1270,45 @@ font-size: 25px;
 div div.resume{
   margin-top: 80px;
   text-align: center;
+  align-content: center;
 }
+
+
+
+.download-resume-container{
+  display: flex;
+  justify-content: center;
+}
+
+.download-resume{
+  margin: 0 20px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20pt;
+  background: var(--fiery-rose);
+   background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
+   background: -webkit-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -o-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -ms-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background-size: 400% 400%;
+   -webkit-animation: errorBg 55s ease infinite;
+   -moz-animation: errorBg 55s ease infinite;
+   animation: errorBg 55s ease infinite;
+   transition: 0.3s ease-in-out;
+   text-decoration: none;
+}
+
+
+.download-resume:hover{
+ background: white;
+ color: var(--darker-purple);
+ border: solid 1px var(--darker-purple);
+ transition: 0.3s ease-in-out;
+}
+
+
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ resume styles end ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  */
 
