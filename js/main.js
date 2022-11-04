@@ -30,35 +30,27 @@
 
     function changeNav(){
       let nav= document.querySelector('#nav-bar');
-      let webDesignNav = document.querySelector('#web-design-nav');
-      let visualDesignNav = document.querySelector('#visual-design-nav');
-      let illustrationNav = document.querySelector('#illustration-nav');
-      let bodyBg= document.querySelector('.body-body');
+      let consultation = document.querySelector('.openButton')
 
-    if(window.scrollY > 2300 && window.scrollY < 8000){
+
+    if(window.scrollY > 2300 && window.scrollY <= 8100){
       nav.className= "nav-visual-design";
-      
-      // visualDesignNav.className= 'show';
-      // webDesignNav.className= 'hidden';
-      // illustrationNav.className= 'hidden';       
+      consultation.className= 'openButton-scroll'     
+     
 
-     } else if(window.scrollY > 8000 && window.scrollY < 9700){
+     } else if(window.scrollY > 8100 && window.scrollY <= 10200){
       nav.className= "nav-web-design";
-      
-      // visualDesignNav.className= 'hidden';
-      // webDesignNav.className= 'show';
-      // illustrationNav.className= 'hidden'; 
-     } else if(window.scrollY > 9700 && window.scrollY < 10900){
+      consultation.className= 'openButton-scroll'
+    
+     } else if(window.scrollY > 10200 && window.scrollY <= 11650){
       nav.className= "nav-illustration";
-      // visualDesignNav.className= 'hidden';
-      // webDesignNav.className= 'hidden';
-      // illustrationNav.className= 'show';      
+      consultation.className= 'openButton-scroll'
+       
      } else {
       nav.className= "";
-      bodyBg.classList.remove('visual-design');
-      // // visualDesignNav.className= 'hidden';
-      // webDesignNav.className= 'hidden';
-      // illustrationNav.className= 'hidden';       
+      consultation.className= 'openButton' 
+      consultation.classList.remove('openButton-scroll')
+     
      }
 
 
