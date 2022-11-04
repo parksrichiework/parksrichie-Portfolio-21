@@ -198,33 +198,16 @@ nav ul {
 header {
   top: 60px;
   position: relative;
-  margin-bottom: 220px;
-  /* background-image: url('../img/MANIFOLD-poster-divinity.jpg'); */
-  background-color: var(--languid-lavender);
+  margin-bottom: 220px;  
   background:
         linear-gradient(var(--fiery-rose), transparent),
         linear-gradient(to top left, var(--lime-green), transparent),
         linear-gradient(to top right, var(--fiery-rose), transparent);
         background-blend-mode: screen;
-  /* background:
-        linear-gradient(
-          var(--celadon-blue),
-          transparent
-        ),
-        linear-gradient(
-          -45deg,
-          var(--fiery-rose),
-          transparent
-        ),
-        linear-gradient(
-          45deg,
-          var(--atomic-tangerine),
-          transparent
-        );
-      background-blend-mode:color-dodge;     */
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -145px;
+  /* background-position-y: -145px; */
+  /* background-image: url(../img/header-bg-01.jpg); */
   height: 115vh;
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
