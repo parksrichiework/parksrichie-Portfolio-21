@@ -1313,6 +1313,33 @@ font-size: 25px;
     height: 625px;
     }
 
+    /* ILUUSTARTION STYLES START-----------------------------------------------  */
+.illustration-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin: 300px 0px 300px;
+
+}
+
+.illustration-container img{
+  width: 200px;
+  height: 200px;
+}
+
+.illustration-images{
+  
+}
+
+.wide-img img{
+width: 100%;
+}
+
+
+
+    /* ILLUSTARTION STYLES END  ---------------------------------------*/
 
 
 
@@ -1656,6 +1683,18 @@ overflow: scroll;
 
 .games{
 scale: 0.9;
+}
+
+.illustration-container{
+  width: 320px;
+  margin-top: 150px;
+  margin-right: 0;
+  
+}
+
+.illustration-container img{
+  width: 150px;
+  height: 150px;
 }
 
 }
