@@ -2,18 +2,18 @@
 
 // Make skills dispenser appear when you scroll:
     window.addEventListener('scroll', openDispenser)
+    var rightSide = document.getElementById("right-side"); 
 
     function openDispenser(){
         let dispenser= document.querySelector('#dispenserScroll')
        const scrolled = window.scrollY
         const scrollable= document.documentElement.scrollHeight - window.innerHeight
 
-
-
        if(window.scrollY >= 600){
         dispenser.classList.remove('noShow');
-       } 
-       
+        rightSide.className= "right";
+       }      
+
    console.log(scrolled)
     }
 
@@ -45,7 +45,6 @@
      } else if(window.scrollY > 10745 && window.scrollY <= 16850){
       nav.className= "nav-illustration";
       consultation.className= 'openButton-scroll'
-       
      } else {
       nav.className= "";
       consultation.className= 'openButton' 
@@ -53,30 +52,23 @@
      
      }
 
-
-      
 //  console.log("New Section")
   }
 
-
-
-
-
-
     // // Click to open skills dispenser
-      document.querySelector("#dispenserClick").addEventListener('click', dispense)
+      // document.querySelector("#dispenserClick").addEventListener('mouseenter', dispense)
 
-      function dispense(){
-        var rightSide = document.getElementById("right-side");
-        var Image_Id = document.getElementById("dispenserClick")   
+      // function dispense(){
+      //   var rightSide = document.getElementById("right-side");
+      //   var Image_Id = document.getElementById("dispenserClick")   
         
         
-          rightSide.className= "right";
-          if (Image_Id.src.match('img/skills-dispenser-click-me.png')){
-          Image_Id.src = "img/skills-dispenser-open.png";
-      }      
+      //     rightSide.className= "right";
+      //     if (Image_Id.src.match('img/skills-dispenser-click-me.png')){
+      //     Image_Id.src = "img/skills-dispenser-open.png";
+      // }      
 
-      };
+      // };
 
     // click functions: EXPLAIN SKILLS
     //click to reveal visual design
@@ -143,7 +135,7 @@
                   Image_Id.src = "img/web-design-closed.png";
                 }
                 if (Image_Id.src.match("img/web-design-open.png")) {
-                   explain3.innerHTML = "<p>HTML, CSS, Javascript, Figma, Sublime Text, Atom, Visual Studio Code, OOP, Github, Codepen</p>"
+                   explain3.innerHTML = "<p>HTML, CSS, CSS Flex, CSS Grid, Javascript, Figma, Sublime Text, Atom, Visual Studio Code, OOP, Github, Codepen</p>"
 
                 }
               if (Image_Id.src.match("img/web-design-closed.png")) {
