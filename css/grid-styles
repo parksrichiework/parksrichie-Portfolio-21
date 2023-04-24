@@ -1,0 +1,16 @@
+  .brown-paper-bags {
+    margin: 80px 0px;
+    /* border: solid 3px var(--fiery-rose);     */
+    align-items: center;       
+  }
+
+  .brown-paper-bags h2{    
+    justify-self: right;
+    margin-bottom: 50px;
+  }
+
+  .brown-paper-bags a:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 50%;
+    transform: translate(20px, 0px);
+  }
