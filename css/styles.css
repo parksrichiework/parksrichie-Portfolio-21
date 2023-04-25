@@ -1,6 +1,7 @@
 @import "brown-paper-bags-styles.css";
 
 :root{
+  --palatinate-blue: #3F2BDA;
  --portfolio-purple: #6E53A1;
  --darker-purple: #382B50;
  --darker-purple-opacity: hsla(262, 23%, 30%, 0.76);
@@ -74,6 +75,15 @@ h1, h2, .skillslist {
 
 .skillslist-intro, h3 {
   font-family: Inconsolata, sans-serif;
+}
+
+.skillslist-intro-title{
+  color: var(--white);
+  font-size: 20px;
+}
+
+.skillslist-intro-title a{
+  color: var(--white)
 }
 
 img {
@@ -463,6 +473,7 @@ figcaption {
 
 .profile-pic{
   border-radius: 50%;
+  border: 6px solid var(--darker-purple);
 }
 
 .intro div{
@@ -471,6 +482,7 @@ figcaption {
 
 .intro-bio{
   margin-top:0;
+  color: var(--darker-purple);
 }
 
 .intro-bio div{
