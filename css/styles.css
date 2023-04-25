@@ -1,7 +1,7 @@
 @import "brown-paper-bags-styles.css";
 
 :root{
-  --palatinate-blue: #3F2BDA;
+--palatinate-blue: #3F2BDA;
  --portfolio-purple: #6E53A1;
  --darker-purple: #382B50;
  --darker-purple-opacity: hsla(262, 23%, 30%, 0.76);
@@ -33,7 +33,7 @@ body {
   /* font-family: 'Poller One', cursive; */
   font-family: Inconsolata, sans-serif;
   font-size: 15px;
-  color: var(--profile-purple);
+  color: var(--darker-purple);
   background-color: var(--white);
   
 }
@@ -1073,6 +1073,10 @@ text-decoration: none;
   .zion-site-container,
   .games-container{
     margin: 170px 0px;
+  }
+
+  .games-container h2{
+    color: var(--darker-purple);
   }
 
   .web-design-zion-title{
