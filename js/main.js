@@ -33,7 +33,7 @@
       let consultation = document.querySelector('.openButton')
 
 
-    if(window.scrollY > 2300 && window.scrollY <= 8100){
+    if(window.scrollY > 2800 && window.scrollY <= 8100){
       nav.className= "nav-visual-design";
       consultation.className= 'openButton-scroll'     
      
