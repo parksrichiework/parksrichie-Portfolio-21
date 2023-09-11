@@ -79,12 +79,12 @@ h1, h2, .skillslist {
 }
 
 .skillslist-intro-title{
-  color: var(--white);
+  color: var(--darker-purple);
   font-size: 20px;
 }
 
 .skillslist-intro-title a{
-  color: var(--white)
+  color: var(--darker-purple)
 }
 
 img {
@@ -214,7 +214,7 @@ header {
   background:
         linear-gradient(var(--fiery-rose), transparent),
         linear-gradient(to top left, var(--lime-green), transparent),
-        linear-gradient(to top right, var(--fiery-rose), transparent);
+        linear-gradient(to top right, var(--celadon-blue), transparent);
         background-blend-mode: screen;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1394,15 +1394,17 @@ div div.resume{
 
 
 .download-resume-container{
+  margin-top: 500px;
   display: flex;
   justify-content: center;
 }
 
 .download-resume{
+  font-size: large;
   margin: 0 20px;
   color: var(--white);
-  padding: 10px 20px;
-  border-radius: 20pt;
+  padding: 20px 60px;
+  border-radius: 200pt;
   background: var(--fiery-rose);
    background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
    background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
@@ -1532,10 +1534,11 @@ footer h2 {
   margin-bottom: 30px;
 }
 .email-me-footer{
-  margin: 0 20px;
+  font-size: large;
+  margin: 20px 20px;
   color: var(--white);
-  padding: 10px 20px;
-  border-radius: 20pt;
+  padding: 20px 60px;
+  border-radius: 200pt;
   background: var(--fiery-rose);
    background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
    background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
@@ -1727,7 +1730,7 @@ scale: 0.9;
 }
 
 .illustration-container{
-  width: 320px;
+  width: auto;
   margin-top: 150px;
   margin-right: 0;
   
