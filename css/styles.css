@@ -1080,7 +1080,7 @@ text-decoration: none;
     color: var(--darker-purple);
   }
 
-  .web-design-zion-title{
+  .web-design-title{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
