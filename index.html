@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <!-- head start -->
+  <!-- SECTION START: HEAD -->
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,96 +16,72 @@
         <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
         <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-
-
         <!-- NEW SKILLS LIST STYLE 1.8.22 -->
-        <style type="text/css">
-              
-
-
-              
-
+        <style type="text/css">                       
           </style>        
       </head>
-
-  <!-- body starts -->
+  <!-- SECTION END: HEAD -->    
+  <!-- SECTION START: BODY -->
   <body class="body-body">
-    <!-- main content starts -->
+    <!-- SECTION START: MAIN -->
         <main>
-            <!-- nav bar -->
+        <!-- SECTION START: NAV -->
           <nav id="nav-bar">
             <ul>
               <li><a href="#home" title="you know this one">Home</a></li>
-              <li><a href="#work" title="internal link to portfolio">Work</a></li>
-              
+              <li><a href="#work" title="internal link to portfolio">Work</a></li>              
               <li><a href="#experience"title="internal link to resume">Experience</a></li>
               <li><a href="#contacts" title="link to internal contact information">Contact</a></li>
               <li><a href="#about" title="link to internal about section">About</a></li>
               <!-- <li class="empty"></li> -->          
               <li class='games' id="games-button"><a href='#games-dropdown' title="internal link to a HTML games I've coded"> GAMES:D</a></li>
-              <li>
-                <!-- CONSULTATION FORM -->
-         <div class="openBtn">
-          <button type= "button" class="openButton" id="consultation" title="Click to book a consultation">
-          Book a (free) consultation
-          </button> 
-        </div>
-
-        <div class="loginPopup">
-          <div class="formPopup" id="formConsulting">
-            <form  class="formContainer" data-netlify="true" name="Consulting Request">
-              <h2>Consultation Request Form</h2>
-              <input type="text" id="nameConsulting" placeholder="Your Name" name="Name">
-                      
-              <!-- <input type="number" id="phoneConsulting" placeholder="Phone Number" name="Phone"> -->
-
-              <input type="email" id="emailConsulting" placeholder="Your Email" name="Email" required>
-
-              <select name="Service" id="serviceConsulting">
-                <option value="">--What services are you looking for?--</option>
-                <option value="Graphic Design">Graphic Design</option>
-                <option value="Web Design/Web Development">Web Design/Web Development</option>
-                <option value="Brainstorm/Idea Development">Brainstorm/Idea Development</option>
-                <option value="Custom Illustration">Custom Illustration</option>
-              </select>
-              <input type="text" id="projectDescription" placeholder="Briefly describe your project" name="Project Description" required>
-
-
-              <input type="date" id="dueDateConsulting" placeholder="When do you need it?" name="Due Date">
-              
-              <h3>When are you available to meet?</h3>
-              <div style="margin-bottom: 20px;">
-              <input type="checkbox" id="checkboxMonday" name="Monday" value="Monday">Monday
-              <input type="checkbox" id="checkboxTuesday" name="Tuesday" value="Tuesday">Tuesday
-              <input type="checkbox" id="checkboxWednesday" name="Wednesday" value="Wednesday">Wednesday<br>
-              <input type="checkbox" id="checkboxThursday" name="Thursday" value="Thursday">Thursday
-              <input type="checkbox" id="checkboxFriday" name="Friday" value="Friday">Friday <br>
-              </div>
-
-              <select name="Meeting Time" id="meetingTime">
-                <option value="">--Please choose a preferred meeting time--</option>
-                <option value="Morning">Morning</option>
-                <option value="Afternoon">Afternoon</option>
-                <option value="Evening">Evening</option>
-              </select>
-
-              
-
-              
-              
-              <button type="submit" class="btn submit-info" id="submitBtnConsulting">Submit</button>
-              <button type="button" class="btn cancel" id="closeBtnConsulting" >Close</button>
-            </form>
-          </div>
-              </li>
-             
-              <!-- <li><a><img class="hidden" id="web-design-nav" src="img/web-design-open.png"></a></li>
-              <li><a><img class="hidden" id="visual-design-nav" src="img/visual-design-open.png"></a></li>
-              <li><a><img class="hidden" id="illustration-nav" src="img/illustration-open.png"></a></li> -->
-
+              <li>              
+        <!-- SECTION START: CONSULTATION FORM -->
+                <div class="openBtn">
+                  <button type= "button" class="openButton" id="consultation" title="Click to book a consultation">
+                  Book a (free) consultation
+                  </button> 
+                </div>
+                <div class="loginPopup">
+                  <div class="formPopup" id="formConsulting">
+                    <form  class="formContainer" data-netlify="true" name="Consulting Request">
+                      <h2>Consultation Request Form</h2>
+                        <input type="text" id="nameConsulting" placeholder="Your Name" name="Name">
+                        <input type="email" id="emailConsulting" placeholder="Your Email" name="Email" required>
+                        <select name="Service" id="serviceConsulting">
+                          <option value="">--What services are you looking for?--</option>
+                          <option value="Graphic Design">Graphic Design</option>
+                          <option value="Web Design/Web Development">Web Design/Web Development</option>
+                          <option value="Brainstorm/Idea Development">Brainstorm/Idea Development</option>
+                          <option value="Custom Illustration">Custom Illustration</option>
+                        </select>
+                        <input type="text" id="projectDescription" placeholder="Briefly describe your project" name="Project Description" required>
+                        <input type="date" id="dueDateConsulting" placeholder="When do you need it?" name="Due Date">             
+                      <h3>When are you available to meet?</h3>
+                      <div style="margin-bottom: 20px;">
+                        <input type="checkbox" id="checkboxMonday" name="Monday" value="Monday">Monday
+                        <input type="checkbox" id="checkboxTuesday" name="Tuesday" value="Tuesday">Tuesday
+                        <input type="checkbox" id="checkboxWednesday" name="Wednesday" value="Wednesday">Wednesday<br>
+                        <input type="checkbox" id="checkboxThursday" name="Thursday" value="Thursday">Thursday
+                        <input type="checkbox" id="checkboxFriday" name="Friday" value="Friday">Friday <br>
+                      </div>
+                      <select name="Meeting Time" id="meetingTime">
+                        <option value="">--Please choose a preferred meeting time--</option>
+                        <option value="Morning">Morning</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Evening">Evening</option>
+                      </select>             
+                      <button type="submit" class="btn submit-info" id="submitBtnConsulting">Submit</button>
+                      <button type="button" class="btn cancel" id="closeBtnConsulting" >Close</button>
+                    </form>
+                  </div>
+                </div>
+                <!-- SECTION END: CONSULTATION FORM -->
+              </li>            
             </ul>
           </nav>
-          <!-- header starts -->
+          <!-- SECTION END: NAV -->  
+          <!-- SECTION START: HEADER -->
           <header id="home">
             <div class="container">
               <div class="row">
@@ -143,80 +119,54 @@
               </div>
             </div>
           </header>
-
-        <!-- NEW SKILLS LIST -->
+        <!-- SECTION END: HEADER -->  
+        <!-- SECTION START: NEW SKILLS LIST -->
         <section class="container">
-        <section class="row">
-          <div class="dispenser left noShow" id="dispenserScroll">
-            
-            <img class="dispenser-img" src="img/skills-dispenser-click-me.png" alt="dispenser icon image" id="dispenserClick"/> 
-                
-          </div>
-
-          <!-- RIGHT SIDE START -->
-          
-        <div class="all-capsules col-sm"  id="right-side">
+          <section class="row">
+            <div class="dispenser left noShow" id="dispenserScroll">            
+            <img class="dispenser-img" src="img/skills-dispenser-click-me.png" alt="dispenser icon image" id="dispenserClick"/>                 
+            </div>
+            <!-- RIGHT SIDE START -->          
+            <div class="all-capsules col-sm"  id="right-side">
             <!-- visual design -->
             <div> 
               <img class="skills" onmouseover="" src="img/visual-design-closed.png" id="visualDesign" alt="Visual design icon image" />
-              <div  class= "explain" alt="explanation of visual design skills" id="explainVisualDesign"></div>
+              <div class= "explain" alt="explanation of visual design skills" id="explainVisualDesign"></div>
             </div>
-
             <!-- design thinking -->
             <div>
-              <img  class='skills' src="img/design-thinking-closed.png" alt="design thinking icon image" id="designThinking"/>
-              <div  class= "explain" alt="explanation of design thinking" id="explainDesignThinking"></div>
+              <img class='skills' src="img/design-thinking-closed.png" alt="design thinking icon image" id="designThinking"/>
+              <div class= "explain" alt="explanation of design thinking" id="explainDesignThinking"></div>
             </div></br>
-
             <!-- web design -->
             <div class="skill3">
-              <img  class='skills' src="img/web-design-closed.png" alt="web design icon image" id="webDesign"/>
-              <div  class= "explain" alt="explanation of web design skills" id="explainWebDesign"></div>
+              <img class='skills' src="img/web-design-closed.png" alt="web design icon image" id="webDesign"/>
+              <div class= "explain" alt="explanation of web design skills" id="explainWebDesign"></div>
             </div>
-
             <!-- illustration -->
             <div class="skill4"> 
-              <img  class='skills' src="img/illustration-closed.png" alt="illustration icon image" id="illustration"/>
-              <div  class= "explain" 
-             alt="explanation of illustration skills" id="explainIllustration"></div>
+              <img class='skills' src="img/illustration-closed.png" alt="illustration icon image" id="illustration"/>
+              <div class= "explain" alt="explanation of illustration skills" id="explainIllustration">
+              </div>
             </div>
-            </section>
           </section>
-          
-            <!-- project divider between illustration and portfolio spreads -->
-            <!-- <div>
-              <ul>
-                <li class="divider"></li>
-              </ul>
-              </div> -->
-
-
-            </div>
-
-            <!-- work section starts ----------------------------------------- -->
-            <div class="container portfolio-start" id="about">
-              
-           <!-- vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv BIO AND ABOUT ME vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv -->
+        </section>
+        <!-- SECTION END: NEW SKILLS LIST -->
+        <!-- SECTION START: PORTFOLIO  -->
+          <!-- SECTION START: BIO AND ABOUT -->
+            <div class="container portfolio-start" id="about">                        
               <div class="row intro">
                 <div class="col-sm">
-                  <ul class="row">
-                    <!-- <li class="col-sm">
-                      <img src="img/be-kind.png">
-                    </li> -->
+                  <ul class="row">                    
                     <li class="col-sm">
                       <img class="profile-pic" src="img/Profile-Pic-2023_01-White.jpg">
-                    </li>
-                    <!-- <li class="col-sm">
-                      <img src="img/bio-bubble.png">
-                    </li> -->
-                   
+                    </li>                                      
                   </ul>                
-                  </div>
-
+                </div>
                 <div class="col-sm intro-bio">
-                <ul class="row">
-                  <li>
-                    <div class="intro-bio-content">                      
+                  <ul class="row">
+                    <li>
+                      <div class="intro-bio-content">                      
                         <div class="intro-bio-opening"> 
                           I have a deep reverence for documentation and authentic storytelling.<br>
                         </div>                                     
@@ -225,47 +175,31 @@
                           Moving from place to place has cultivated my joy for archiving peoples' unique experiences into memorable narratives.
                           From roaring laughter to fragile grief, our experiences shape our stories and our stories shape us.
                         </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="intro-bio-quirks">
-                    
-                      <b>Tea or coffee:</b> Yes (And a cup of water, please)<br>
-                      <b>Console or PC:</b> Console<br>
-                      <b>Just read:</b> "Parable of the Sower" by Octavia E. Butler <br>
-                      <b>Currently reading:</b> "Bleach: Thousand Year Blood War"<br>
-                      <b>Currently watching:</b> "My Hero Academia"<br>
-                      <b>Currently playing:</b> Genshin Impact, Pokémon Unite, Smite <br> 
-                      <b>Prized posessions:</b> Naruto figure, PS4, my cookbook, sketchbook collection, Papermate ink pens
-                    
-                    </div>
-                  </li>
-                </ul>
-                </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="intro-bio-quirks">                    
+                        <b>Tea or coffee:</b> Yes (And a cup of water, please)<br>
+                        <b>Console or PC:</b> Console<br>
+                        <b>Just read:</b> "Parable of the Sower" by Octavia E. Butler <br>
+                        <b>Currently reading:</b> "Bleach: Thousand Year Blood War"<br>
+                        <b>Currently watching:</b> "My Hero Academia"<br>
+                        <b>Currently playing:</b> Genshin Impact, Pokémon Unite, Smite <br> 
+                        <b>Prized posessions:</b> Naruto figure, PS4, my cookbook, sketchbook collection, Papermate ink pens
+                      </div>
+                    </li>
+                  </ul>
               </div>
-                <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ BIO AND ABOUT ME END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-
-                
-                <!-- vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv portfolio pages vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv-->
-              <div class="col-sm" id="work">
+            </div>
+          <!-- SECTION END: BIO AND ABOUT -->                
+          <!-- SECTION START: VISUAL DESIGN-->
+            <div class="col-sm" id="work">
                   <div class="">  
                     <img class='section-img' src="img/visual-design-open.png"/>  
                     </div> 
                   <div class="visual-design-bg" id="visual-design">
-                  </div>
-                                
-                 
-                  
-                 
-                <!-- <img src="img/portfolio-pages/01.jpg" alt="Portfolio Page 1" class="portfolio"/> -->
-                <!-- <img src="img/portfolio-pages/02.jpg" alt="Portfolio Page 2"/> -->
-                
-                 
-                      <!-- GRAPHICS 02 -->
-                  <!-- <img src="img/portfolio-pages/04.jpg" alt="Portfolio Page 4"/> -->
-
-                      <!-- RELIC -->
+                  </div>                                      
+            <!-- SECTION START: RELIC -->
                       <div id="relic-project">
                         <h2>  Client: <a target="_blank" href="https://artsandpubliclife.org/relic"> University of Chicago: Arts + Public Life </a> </br>
                           Project: Digital Promotion for "Relic" Exhibit</br>                         
@@ -304,11 +238,10 @@
                             <img id="relic-postcard" alt="image of the front of the relic postcard" title="click to flip the postcard" src="img/relic-postcard-front-01.jpg">                                                       
                           </div>
                         </div>               
-                       </div>
-                       
-                      
-                  <!-- ///////////////// MANIFOLD /////////////// -->
-                    <!-- POSTERS -->
+                       </div>                      
+              <!-- SECTION END: RELIC -->        
+              <!-- SECTION START: MANIFOLD -->
+                <!-- SECTION START: POSTERS -->
                   <div class="manifold-project" id="manifold">
                     <h2>Client: <a target="_blank" href="https://manifolddocuseries.com/">MANIFOLD Productions LLC</a> </br>
                        Project: Film Posters</br>                      
@@ -319,19 +252,17 @@
                       Original Post: <a target="_blank" href="https://www.instagram.com/p/CinjJi6pORz/?img_index=1">Instagram</a>
                     </h3>
                   </div> 
-
-                   <!-- REGULAR GALLERY -->
+                  <!-- REGULAR GALLERY -->
                    <div class="manifold-posters">
                       <div class="posters-container">                  
                           <img src="img/MANIFOLD-poster-main.jpg">                                                               
                           <img src="img/MANIFOLD-poster-family-values.jpg">
                           <img src="img/MANIFOLD-poster-TIWF.jpg">                         
-                          <img src="img/MANIFOLD-poster-divinity.jpg">
-                                                
+                          <img src="img/MANIFOLD-poster-divinity.jpg">                                           
                       </div>
-                   </div>                  
-                  
-                   <!-- SOCIAL MEDIA TEMPLATES  -->
+                   </div>        
+                <!-- SECTION END: POSTERS -->
+                <!-- SECTION START: SOCIAL MEDIA TEMPLATES -->
                    <div class="container manifold-social" > 
                       <div class="manifold-project">
                         <h2> Client: <a target="_blank" href="https://manifolddocuseries.com/">MANIFOLD Productions LLC</a>  </br>
@@ -342,9 +273,7 @@
                         <h3>
                           Original Post: <a target="_blank" href="https://www.instagram.com/p/CiTHCcFvrzl/?utm_source=ig_web_copy_link">Instagram</a>
                         </h3>
-                      </div> 
-
-                        
+                      </div>                         
                       <div class="row">
                         <div class="col-sm">                            
                           <a target="_blank" href="https://www.instagram.com/p/CiTHCcFvrzl/?utm_source=ig_web_copy_link"><img alt="image of social media template" src="img/MANIFOLD-social-media-template-01.png">
@@ -359,12 +288,9 @@
                       </div>                            
                     </div>            
                 </div>
-
-
-              <!-- MANIFOLD END  -->
-<!-- ----------------------------------------------------------  -->
-              <!-- BROWN PAPERBAGS START  -->
-              
+                <!-- SECTION END: SOCIAL MEDIA TEMPLATES -->
+              <!-- SECTION END: MANIFOLD -->
+              <!-- SECTION START: BROWN PAPER BAGS -->              
               <div class="container brown-paper-bags" > 
                 <div class="brown-paper-bags-project">
                   <h2> Client: <a target="_blank" href="https://www.instagram.com/brown_paper_bags_/">Brown Paper Bags & the Eternal</a>  </br>
@@ -375,8 +301,7 @@
                   <h3>
                     Original Post: <a target="_blank" href="https://www.instagram.com/p/CpX3uY-LBl4/">Instagram</a>
                   </h3>
-                </div> 
-                  
+                </div>                   
                 <div class="row">
                   <div class="col-sm">                            
                     <a target="_blank" href="https://www.instagram.com/p/CpX3uY-LBl4/"><img alt="image of social media template" src="img/Brown-paperbags.png">
@@ -384,10 +309,8 @@
                   </div>                                                                         
                 </div>                            
               </div> 
-
-              <!-- BROWN PAPERBAGS END -->
-              <!-- ------------------------------------------------------------ -->
-              <!--Enneagram Social Media START-->              
+              <!-- SECTION END: BROWN PAPER BAGS -->
+              <!-- SECTION START: Enneagram Social Media -->            
               <div class="container enneagram-social" > 
                 <div class="enneagram-project">
                   <h2> Client: <a target="_blank" href="https://www.instagram.com/queerchristians/">Queer Christians</a>  </br>
@@ -397,9 +320,8 @@
                   </h2>
                   <!-- <h3>
                     Original Post: <a target="_blank" href="https://www.instagram.com/queerchristians/">Instagram</a>
-                  </h3>                   -->
-                </div>                 
-
+                  </h3> -->
+                </div>               
                 <div class="row enneagram-social-container">
                   <div class="col-sm">                            
                     <a target="_blank" href="https://www.instagram.com/queerchristians/"><img alt="illustration of Enneagram Type one: The Idealist" src="img/Enneagram-Custom-Illustrations_FINAL_Idealist.jpg">
@@ -433,30 +355,22 @@
                     <img alt="illustration of All Enneagram types" src="img/ALL_Enneagram-Custom-Illustrations_FINAL.jpg">
                   </div>                                                                           
                 </div>                                           
-              </div>            
-          
-              <!--Enneagram Social Media END-->
-
-
-               <!-- -----------------------------------------------------  -->
-              <!-- vvvvvvvvvvvvvvvvvvvvvvvvvvvvv flyers section vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv  -->
+              </div>        
+            <!-- SECTION END: Enneagram Social Media -->
+            <!-- SECTION START: FLYERS -->
                  <!-- Trigger/Open The Modal -->
                     <!-- <button id="myBtn"> -->
                       <div class="portfolio-page contain">
                         <img class=" image" id="graphics-portfolio" src="img/portfolio-pages/03.jpg" alt="Portfolio Page 3"  title="click for more details"/>
                         <div class="overlay1" id="myBtn">
                           <div class="" id="seeDetails">
-                            <button class="open-button">
-                              
-                                View Flyers
-                              
+                            <button class="open-button">                              
+                                View Flyers                              
                             </button>
                           </div>
                         </div>
-                        </div>
-  
-                     <!--  </button> -->
-  
+                        </div>  
+                     <!--  </button> -->  
                       <!-- The Modal -->
                       <div id="myModal" class="graphics-modal">
   
@@ -539,177 +453,136 @@
                             <span class="dot" onclick="currentSlide(8)"></span>
                             <span class="dot" onclick="currentSlide(9)"></span>
                           </div>
-                          </div>
-  
-                        </div>
-                        <!-- ------------------ FLYERS SECTION END ------------------- -->
-
-                      <!-- BRANDING 01 -->
+                        </div>  
+                      </div>
+            <!-- SECTION END: FLYERS  -->
+            <!-- SECTION START: BRANDING -->
+                  <!-- BRANDING 01 -->
                   <img class="portfolio-page" src="img/portfolio-pages/05.jpg" alt="Portfolio Page 5"/>
-
-                      <!-- bRANDING 02 -->
+                  <!-- bRANDING 02 -->
                   <img class="portfolio-page" src="img/portfolio-pages/06.jpg" alt="Portfolio Page 6"/>
-
-                      <!-- BRANDING 03 -->
-                  <!-- <img src="img/portfolio-pages/07.jpg" alt="Portfolio Page 7"/> -->
-
-                  <!-- ^^^^^^^^^^^^^^^^^^ visual design end ^^^^^^^^^^^^^^^^^^^^^  -->
-
-                  <!-- ----------------------WEB DESIGN----------------------------------- -->
-                <div class="web-design" id="web-design">
-                  <div>
-                    <img class="section-img" src="img/web-design-open.png"/>
-                    <div class="web-design-bg">
-                    </div>
-
-                    
-                    
-
-                    <div class="zion-site-container">
-                      <img src="img/zion-website.png">    
-                      <div class="web-design-zion-title">  
-                        <h3> 
-                          Blog & Booking Website
-                        </h3>
-                        <h3>  
+            <!-- SECTION END: BRANDING -->
+          <!-- SECTION END: VISUAL DESIGN  -->      
+          <!-- SECTION START: WEB DESIGN/DEVELOPMENT -->
+            <!-- SECTION START: WEBPAGES -->
+              <div class="web-design" id="web-design">
+                <div>
+                  <img class="section-img" src="img/web-design-open.png"/>
+                  <div class="web-design-bg">
+                  </div>                                      
+                  <div class="zion-site-container">
+                    <img src="img/zion-website.png">    
+                    <div class="web-design-zion-title">  
+                      <h3> 
+                        Blog & Booking Website
+                      </h3>
+                      <h3>  
                         Made in Tumblr
-                        </h3>
-                        <h3>  
-                          HTML + CSS
-                          </h3>   
-                        <h3>  
+                      </h3>
+                      <h3>  
+                        HTML + CSS
+                      </h3>   
+                      <h3>  
                         <a target="_blank" href="https://semajzion.com/">Visit Site</a>
-                        </h3>
-                        
-                      </div>
-                      
-                      
-
-                    </div>
-                   
-                 
-
-                  <div class="games-container" id="games-dropdown">
-                  <h2> Games (click to play)</h2>
-                  <div class="divider"></div>
-                  <div class="games-list" >
-                    
-                      <div class='games'>
-                        
-                        <a href="https://parksrichiework.github.io/Shape-Sorting-Game/" target="'_blank"><img src="img/shape-sorter-thumbnail.png"></br>
-                          <h3>
-                            Shape Sorter Game
-                          </h3>
-                        </a>
-                        <h4> (HTML + CSS + JAVASCRIPT)</h4>
-                      </div>
-                      <!-- <div class="games">
-                        <a href="https://parksrichiework.github.io/js-rocket/rocket.html" target="_blank"><img id="rocket" src="img/rocket-launch-thumbnail.png"></br> Rocket Launcher</a>
-                      </div> -->
-                      <div class="games">
-                        
-                        <a href="https://parksrichiework.github.io/whack-a-mole/" target="_blank"><img id="whack-a-mole" src="img/whack-a-mole-thumbnail.PNG"></br>
-                          <h3>
-                            Whack-a-mole
-                          </h3>
-                        </a>
-                        <h4> (HTML + CSS + JAVASCRIPT)</h4>
-                      </div>
-                      <div class="games">
-                        
-                        <a href="https://parksrichiework-memory-game.netlify.app/" target="_blank"><img id="memory-game" src="img/memory-game-thumbnail-01.PNG"></br>
-                          <h3>
-                             Memory Game
-                          </h3>   
-                        </a>
-                        <h4> (HTML + CSS + JAVASCRIPT)</h4>
-                      </div>
-
-                      <div class="games">
-                        
-                        <a href="https://parksrichiework.github.io/frogger-game/" target="_blank"><img id="frogger-game" src="img/frogger-game-thumbnail.PNG"></br>
-                          <h3>
-                             "Frogger" Game
-                          </h3>   
-                        </a>
-                        <h4> (HTML + CSS + JAVASCRIPT)</h4>
-                      </div>
-                      
+                      </h3>                        
+                    </div>                   
                   </div>
-
+                </div>
+              </div>    
+            <!-- SECTION END: WEB PAGES-->
+            <!-- SECTION START: WEB GAMES -->          
+              <div class="games-container" id="games-dropdown">
+                <h2> Games (click to play)                    
+                </h2>
+                <div class="divider">                    
+                </div>                  
+                <div class="games-list" >                    
+                  <div class='games'>                        
+                    <a href="https://parksrichiework.github.io/Shape-Sorting-Game/" target="'_blank"><img src="img/shape-sorter-thumbnail.png"></br>
+                      <h3>
+                        Shape Sorter Game
+                      </h3>
+                    </a>
+                    <h4> (HTML + CSS + JAVASCRIPT)</h4>
                   </div>
+                  <!-- <div class="games">
+                    <a href="https://parksrichiework.github.io/js-rocket/rocket.html" target="_blank"><img id="rocket" src="img/rocket-launch-thumbnail.png"></br> Rocket Launcher</a>
+                  </div> -->
+                  <div class="games">                        
+                    <a href="https://parksrichiework.github.io/whack-a-mole/" target="_blank"><img id="whack-a-mole" src="img/whack-a-mole-thumbnail.PNG"></br>
+                      <h3>
+                        Whack-a-mole
+                      </h3>
+                    </a>
+                      <h4> 
+                        (HTML + CSS + JAVASCRIPT)
+                      </h4>
                   </div>
-
-                  
-
-                      <!-- //////////////////////// ILLUSTRATION /////////////////////////-->
-                      <img class='section-img' id="illustration-section" src="img/illustration-open.png"/>
-                      <div class="illustration-bg">
-
-                        
-                      
-                      </div>
-                  <img src="img/portfolio-pages/08.jpg" alt="Portfolio Page 8" id="illustrationPage"/>
-
-                  <div class="illustration-container">
-                    <div class="illustartion-images">
-                      <img src="img/illustration/bounsweet.jpg"/>
-                      <img src="img/illustration/charmander-01.jpg"/>
-                      <img src="img/illustration/stufful.jpg"/>
-                      <img src="img/illustration/bulbasaur-01.jpg"/>
-                      <img src="img/illustration/squirtle-01.jpg"/>
-                      <img src="img/illustration/pikachu-01.jpg"/>
-                      <img src="img/illustration/chespin.jpg"/>
-                      <img src="img/illustration/chikorita.jpg"/>
-                      <img src="img/illustration/cleffa.jpg"/>
-                      <img src="img/illustration/cyndaquil.jpg"/>
-                      <img src="img/illustration/ditto.jpg"/>
-                      <img src="img/illustration/dragonite.jpg"/>
-                      <img src="img/illustration/elekid.jpg"/>
-                      <img src="img/illustration/golduck.jpg"/>
-                      <img src="img/illustration/magby.jpg"/>
-                      <img src="img/illustration/magnemite.jpg"/>
-                      <img src="img/illustration/meowth.jpg"/>
-                      <img src="img/illustration/munchlax.jpg"/>                    
-                      <img src="img/illustration/sandygast.jpg"/>
-                      <img src="img/illustration/pichu.jpg"/>
-                                           
-
-                    </div>
-
-                    
+                  <div class="games">                        
+                    <a href="https://parksrichiework-memory-game.netlify.app/" target="_blank"><img id="memory-game" src="img/memory-game-thumbnail-01.PNG"></br>
+                      <h3>
+                        Memory Game
+                      </h3>   
+                    </a>
+                      <h4> 
+                        (HTML + CSS + JAVASCRIPT)
+                      </h4>
                   </div>
-                  <div class="wide-img">
-                      
-                    <img src="img/illustration/Doodle 03.jpg" alt="">
-                    <img src="img/illustration/Doodle 05.jpg" alt="">
-                    <img src="img/illustration/Doodle 07.jpg" alt="">
-                    <img src="img/illustration/Doodle 10 B.jpg" alt="">
-                    <img src="img/illustration/Doodle-Bear_Icons-121417.png" alt="">
-                    <img src="img/illustration/Disgustimals-Bodies-Color.jpg" alt="">
-                  </div>
-                  <!-- <section>
-                    <div class="new-gallery">
-                      <div class="accordion-img1">               
-                      </div>
-                      <div class="accordion-img2">               
-                      </div>
-                      <div class="accordion-img3">               
-                      </div>
-                      <div class="accordion-img1">               
-                      </div>
-                      <div class="accordion-img2">               
-                      </div>
-                      <div class="accordion-img3">               
-                      </div>            
-                     </div>
-                   </section> -->
-            </div>   
- 
-
-              
-
-          <!-- resume -->
+                  <div class="games">                        
+                    <a href="https://parksrichiework.github.io/frogger-game/" target="_blank"><img id="frogger-game" src="img/frogger-game-thumbnail.PNG"></br>
+                      <h3>
+                       "Frogger" Game
+                      </h3>   
+                    </a>
+                    <h4>
+                      (HTML + CSS + JAVASCRIPT)
+                    </h4>
+                  </div>                      
+                </div>                  
+              </div>
+            <!-- SECTION END: WEB GAMES -->                   
+          <!-- SECTION END: WEB DESIGN AND DEVELOPMENT -->              
+          <!-- SECTION START: ILLUSTARTION-->
+            <div>    
+              <img class='section-img' id="illustration-section" src="img/illustration-open.png"/>
+                <div class="illustration-bg">         
+                </div>
+              <img src="img/portfolio-pages/08.jpg" alt="Portfolio Page 8" id="illustrationPage"/>
+                <div class="illustration-container">
+                  <div class="illustartion-images">
+                    <img src="img/illustration/bounsweet.jpg"/>
+                    <img src="img/illustration/charmander-01.jpg"/>
+                    <img src="img/illustration/stufful.jpg"/>
+                    <img src="img/illustration/bulbasaur-01.jpg"/>
+                    <img src="img/illustration/squirtle-01.jpg"/>
+                    <img src="img/illustration/pikachu-01.jpg"/>
+                    <img src="img/illustration/chespin.jpg"/>
+                    <img src="img/illustration/chikorita.jpg"/>
+                    <img src="img/illustration/cleffa.jpg"/>
+                    <img src="img/illustration/cyndaquil.jpg"/>
+                    <img src="img/illustration/ditto.jpg"/>
+                    <img src="img/illustration/dragonite.jpg"/>
+                    <img src="img/illustration/elekid.jpg"/>
+                    <img src="img/illustration/golduck.jpg"/>
+                    <img src="img/illustration/magby.jpg"/>
+                    <img src="img/illustration/magnemite.jpg"/>
+                    <img src="img/illustration/meowth.jpg"/>
+                    <img src="img/illustration/munchlax.jpg"/>                    
+                    <img src="img/illustration/sandygast.jpg"/>
+                    <img src="img/illustration/pichu.jpg"/>                                          
+                  </div>                   
+                </div>
+                <div class="wide-img">                      
+                  <img src="img/illustration/Doodle 03.jpg" alt="">
+                  <img src="img/illustration/Doodle 05.jpg" alt="">
+                  <img src="img/illustration/Doodle 07.jpg" alt="">
+                  <img src="img/illustration/Doodle 10 B.jpg" alt="">
+                  <img src="img/illustration/Doodle-Bear_Icons-121417.png" alt="">
+                  <img src="img/illustration/Disgustimals-Bodies-Color.jpg" alt="">
+                </div>                  
+            </div>
+          <!-- SECTION END: illustartion--- -->              
+          <!-- SECTION START: resume -->
             <div class="container" id="experience">
               <!-- <div class="row">
                 <div class="col-sm resume">
@@ -720,53 +593,26 @@
                 <a target="_blank" href="img/resume-download.jpg" download="Richie Parks Resume" class="download-resume">
                   Download Resume/CV
                 </a>
-              </div>  
-              
+              </div>              
             </div>
-
-
-
-        </main>
-         
-
-         
-        </div>
-        <!-- JAVASCRIPT -->
-        <script src="js/main.js"></script>
-         
-       <!-- // NEW GALLERY ("virtual slides" - swiperjs.com/demos) ------------------------------------------------------------------------ -->
-           <!-- Swiper JS -->
-            <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-            <script>
-            var swiper = new Swiper(".mySwiper", {
-              effect: "cards",
-              grabCursor: true,
-            });
-            </script> -->
-
-
-
+          <!-- SECTION END: RESUME -->
+        </main>   
+       </div>
+      <!-- SECTION START: JAVASCRIPT -->
+        <script src="js/main.js"></script>        
+       <!-- SECTION END: JAVASCRIPT -->
   </body>
-
-    <!--footer -->
+  <!-- SECTION END: BODY -->
+  <!--SECTION START: FOOTER -->
     <footer id="contacts">
       <h2>
         any questions?</br>
         looking for services?</br>     
       </h2> 
-
       <a href="mailto:parksrichiework@gmail.com?subject='Services Inquiry'" target="_blank" class="email-me-footer">parksrichiework@gmail.com</a></br>
-      <div style="margin-top:50px;">
-   
-
+      <div style="margin-top:50px;">  
         <!-- <a href="mailto:parksrichiework@gmail.com?subject='Freelance Services'" target="_blank" class="email-me">parksrichiework@gmail.com</a>   -->
-      </br> 
-
-     
-
-       
-
+      </br>          
       <ul style="display: inline; position: relative;">
         <!-- Github -->
               <li><a href="https://github.com/parksrichiework" target="_blank" title="link to github profile"><img src="img/github-icon-dark-purple.png"/></a></li>
@@ -777,7 +623,7 @@
               <!-- Instagram -->
               <li><a href="https://www.instagram.com/richienough/" target="_blank" title="link to Instagram profile"><img src="img/instagram-icon-dark-purple.png"/></a></li>
             </ul>
-
        <p class="services-about" style="padding-top: 30px; padding-bottom: 20px;"> <img src="img/nose-ring.png" style="width:15px; height: 15px;"> © 2023 parksrichiework</p>
     </footer>
+  <!-- SECTION END: FOOTER -->
 </html>
