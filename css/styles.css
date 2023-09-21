@@ -1,6 +1,7 @@
 @import "brown-paper-bags-styles.css";
 @import "enneagram-styles.css";
 @import "reservoir-styles.css";
+@import "relic-styles.css";
 
 :root{
 --palatinate-blue: #3F2BDA;
@@ -623,7 +624,16 @@ li.divider {
 
 /*--------------------------PORTFOLIO START------------------------------*/
 
-/* ---------------------------------VISUAL DESING SECTIN STARTS  */
+/* ---------------------------------VISUAL DESING SECTION STARTS  */
+
+.work-section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-section {
+  margin-top: 150px;
+}
 
 .portfolio-start{
   margin-top: 80px;
@@ -879,101 +889,7 @@ text-decoration: none;
 /* ------- END STYLES FOR GRAPHICS MODAL --------------- */
 
  /* vvvvvvvvvvvvvvvvvvv RELIC START vvvvvvvvvvvvvvvvvvvvvvvvvvv  */
-#relic-project {
-  margin-top: 50px;
-}
 
-#relic-project a
-#relic{
-  /* text-decoration: ; */
-  color: var(--darker-purple)  
-}
-
-#relic-project a:hover,
-#relic-container a:hover{
-  transition: 0.2s ease-in-out;
-  opacity: 35%;
-  transform: translate();
-}
-
-  .relic-container{
-    width: auto;
-    height: end;
-    background-color: var(--mantis);
-    display: flex;
-    align-items: center;
-  }
-
-  .relic-deliverables{
-    align-items: center;
-  }
-
-  .relic-container h3{
-    text-align: center;
-    margin-bottom: 0;
-  }
-
-#relic-postcard{
-  transition: 0.3s ease-in-out;
-}
-
-  #relic-postcard:hover {
-    box-shadow: 0px 2px 5px var(--darker-purple);
-    cursor: pointer;
-    padding: 0px;
-    margin-top: 15px;
-    flex-grow: 2;   
-    
-    /* -webkit-animation-name: postcard;
-    -webkit-animation-duration: 2000ms;    
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-     transition: 0.8s ease-in-out; */
-  }
-
-     
-
-/* @keyframes postcard {
-0% { -webkit-transform: rotateY(180deg); }
-100%{ -webkit-transform: rotateY(-180deg);}
-
-         }    */
-         
-  #relic-postcard-flipped{
-
-  }
-  #relic-postcard-flipped:hover{
-
-  }       
-
-
-  #relic-project h2{
-    color: var(--mantis);
-  }
-
-  #relic-project div h3{
-    color: none;
-  }
-
-.relic-container{
-  margin: 40px 0px;
-}
-
-  .relic-container img {
-    width:auto;
-    height: auto;
-    padding: 15px;
-    
-  }
-
-.relic-container div{
-  width: end;
-}
-
-  .relic-container a:hover {
-    transition: 0.2s ease-in-out;
-    opacity: 50%;
-  }
 
   /* ^^^^^^^^^^^^^^^^^^^^^^^^^^ RELIC END ^^^^^^^^^^^^^^^^^^^^^^^^^^  */
 
