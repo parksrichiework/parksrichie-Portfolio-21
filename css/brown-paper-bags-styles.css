@@ -18,3 +18,15 @@
     opacity: 50%;
     transform: translate(20px, 0px);
   }
+
+  .brown-paper-bags img{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .bpb-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
