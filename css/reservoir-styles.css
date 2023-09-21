@@ -44,7 +44,7 @@
 
   @media only screen and (max-width: 600px) {
     .reservoir-social-container{      
-      grid-template-columns: 1fr 1fr;     
+      grid-template-columns: 1fr;     
       column-gap: 5px;
       row-gap: 5px;      
     }
