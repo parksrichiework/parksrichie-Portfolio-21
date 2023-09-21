@@ -1,0 +1,7 @@
+.reservoir-container{
+    display: grid;
+    grid-template-columns: 1e;
+    gap: 10px;
+    margin-top: 180px;
+    
+}
