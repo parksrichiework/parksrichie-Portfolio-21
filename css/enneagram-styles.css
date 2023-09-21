@@ -42,6 +42,7 @@
 
   @media only screen and (max-width: 600px) {
     .enneagram-social-container{      
-      grid-template-columns: 1fr;      
+      grid-template-columns: 1fr;
+      gap: 10px;      
     }
   }
