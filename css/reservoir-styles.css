@@ -49,20 +49,19 @@
       row-gap: 5px;      
     }
 
-    .reservoir-social-container div{
+    /* .reservoir-social-container div{
         padding:0;
-    }
+    } */
 
-    .reservoir-branding-container{
+    /* .reservoir-branding-container{
       width: 100vw;     
       align-items: start;
       margin: 0;
     }
 
     .reservoir-branding-container img{
-      width: 100vw;
-      margin-left: 0;
+      width: 90vw;      
       margin-left: -30px;
-    }
+    } */
     
   }

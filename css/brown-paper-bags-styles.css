@@ -39,7 +39,7 @@
       padding: 0;
     }
 
-    .bpb-img-container{
+    /* .bpb-img-container{
       display: flex;
       width: 100vw;
       align-items: start;
@@ -48,5 +48,5 @@
 
     .bpb-img-container img{
       margin: -45px;
-    }
+    } */
   }
