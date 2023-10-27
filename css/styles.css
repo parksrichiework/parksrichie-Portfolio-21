@@ -138,7 +138,7 @@ nav {
   width: 100%;
   height: fit-content;
   overflow: none;
-  box-shadow: 0px 2px 10px var(--darker-purple);
+  /* box-shadow: 0px 2px 10px var(--darker-purple); */
 }
 
 .nav-visual-design{
