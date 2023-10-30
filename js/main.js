@@ -44,31 +44,30 @@
     
      } else if(window.scrollY > 21300 && window.scrollY <= 27000){
       nav.className= "nav-illustration";
-      consultation.className= 'openButton-scroll'
+      consultation.className= 'openButton-scroll';
      } else {
       nav.className= "";
       consultation.className= 'openButton' 
       consultation.classList.remove('openButton-scroll')
      
      }
+    }
 
-//  console.log("New Section")
-  }
+    //  START: Click "work" in navbar and reveal dropdown menu
+     let workNav = document.querySelector('#work-nav');
+     let workDropMenu = document.querySelector('.work-drop-menu')
+    workNav.addEventListener('click', openWorkDropMenu);
+    
+     function openWorkDropMenu(e){    
+      if(e.target){
+        workDropMenu.classList.toggle('show');
+        workNav.innerHTML='<a title="internal link to portfolio">Work <b>&#9661;</b></a>'
+      console.log('show the menu');
+       }       
+      }
+              
+    //  END: click "work" in navbar and reveal dropdown menu
 
-    // // Click to open skills dispenser
-      // document.querySelector("#dispenserClick").addEventListener('mouseenter', dispense)
-
-      // function dispense(){
-      //   var rightSide = document.getElementById("right-side");
-      //   var Image_Id = document.getElementById("dispenserClick")   
-        
-        
-      //     rightSide.className= "right";
-      //     if (Image_Id.src.match('img/skills-dispenser-click-me.png')){
-      //     Image_Id.src = "img/skills-dispenser-open.png";
-      // }      
-
-      // };
 
     // click functions: EXPLAIN SKILLS
     //click to reveal visual design
@@ -287,6 +286,7 @@ function flipCard(){
   }
     
 }
+
 
 
 

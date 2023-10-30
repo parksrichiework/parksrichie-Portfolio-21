@@ -28,8 +28,17 @@
           <!-- SECTION START: NAV -->
           <nav id="nav-bar">
             <ul>
-              <li><a href="#home" title="internal link to home page">Home</a></li>
-              <li><a href="#work" title="internal link to portfolio">Work</a></li>              
+              <li>
+                <a href="#home" title="internal link to home page">Home</a>
+              </li>
+              <li id="work-nav">
+                <a title="internal link to portfolio">Work <b>&#9660;</b></a>
+              </li>
+              <div class="work-drop-menu">
+                <a href="#visual-design">visual design</a>
+                <a href="#web-design">web design</a>
+                <a href="#illustration-section">illustration</a>                
+              </div>             
               <li><a href="#experience"title="internal link to resume">Experience</a></li>
               <li><a href="#contacts" title="link to internal contact information">Contact</a></li>
               <li><a href="#about" title="link to internal about section">About</a></li>
@@ -626,8 +635,8 @@
             <!-- SECTION END: WEB GAMES -->                   
           <!-- SECTION END: WEB DESIGN/DEVELOPMENT -->              
           <!-- SECTION START: ILLUSTARTION-->
-            <div>    
-              <img class='section-img' id="illustration-section" src="img/illustration-open.png"/>
+            <div id="illustration-section">    
+              <img class='section-img'  src="img/illustration-open.png"/>
                 <div class="illustration-bg">         
                 </div>
               <img src="img/portfolio-pages/08.jpg" alt="Portfolio Page 8" id="illustrationPage"/>

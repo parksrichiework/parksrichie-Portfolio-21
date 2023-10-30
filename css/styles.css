@@ -180,12 +180,19 @@ li.empty {
 nav li a {
   text-decoration: none;
   color: var(--languid-lavender);
-  transition: 0.3 ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 10px;
+  border-radius:20px;
 }
 
 nav li a:hover {
-  text-decoration: underline;
-  color: var(--white);
+  /* text-decoration: underline; */
+  color: var(--darker-purple);
+  background-color: var(--languid-lavender);
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 nav ul li {
@@ -202,6 +209,39 @@ nav ul {
   margin: 0 auto;
   text-align: center;
   padding: 15px 0px;
+}
+
+
+
+.work-drop-menu{
+  min-width: 160px;
+  height:fit-content;
+  background-color: var(--black);
+  color: var(--languid-lavender);
+  display:none;
+  position: absolute;
+  overflow: hidden;
+  /* margin: 0; */
+  z-index: 2;  
+}
+
+.work-drop-menu a{
+  text-decoration: none;
+  color: var(--languid-lavender);
+  transition: 0.1s ease-in-out;
+  padding: 10px;  
+  display:block;
+  text-align: left;
+}
+
+.work-drop-menu a:hover{
+  background-color:var(--languid-lavender);
+  color: var(--black);
+}
+
+.show{
+  display: flex;
+  flex-direction: column;
 }
 
 .consultation{
