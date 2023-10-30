@@ -61,7 +61,7 @@
      function openWorkDropMenu(e){    
       if(e.target){
         workDropMenu.classList.toggle('show');
-        workNav.innerHTML='<a title="internal link to portfolio">Work <b>&#9652;</b></a>'
+        workNav.innerHTML='<a title="internal link to portfolio">Work <b>&#9650;</b></a>'
       console.log('show the menu');
        }       
       }
