@@ -55,7 +55,7 @@ nav {
   nav li a:hover {
     /* text-decoration: underline; */
     color: var(--darker-purple);
-    background-color: var(--languid-lavender);
+    background-color: var(--white);
     padding: 10px;
     border-radius: 20px;
     transition: 0.3s ease-in-out;
@@ -102,7 +102,7 @@ nav {
   }
   
   .work-drop-menu a:hover{
-    background-color:var(--languid-lavender);
+    background-color:var(--white);
     color: var(--black);
   }
   

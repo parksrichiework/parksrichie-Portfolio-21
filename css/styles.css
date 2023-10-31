@@ -92,6 +92,11 @@ h1, h2, .skillslist {
   color: var(--darker-purple)
 }
 
+.skillslist-intro a:hover{
+  color: var(--white);
+  transition: 0.1s ease-in-out;  
+}
+
 img {
   max-width: 100%;
 }
@@ -222,7 +227,7 @@ figcaption {
     -moz-animation: errorBg 55s ease infinite;
     animation: errorBg 55s ease infinite;
     height: 100vh;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
     text-decoration: none;
 }
 
@@ -1076,11 +1081,19 @@ text-decoration: none;
 }
 
 
-.openButton:hover {
-  color: var(--languid-lavender);
+
+.openButton-scroll:hover {
+  color: var(--white);
   text-align: center;
-  background-color: var(--darker-purple);
-  border: solid 1px var(--languid-lavender);				
+  /* background: var(--fiery-rose); */
+   background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
+   background: -webkit-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -o-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: -ms-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background: linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+   background-size: 400% 400%;
+  border: none;				
   padding: 10px 20px;
   /* margin-top: 30px;				 */
   border-radius: 30px;				
