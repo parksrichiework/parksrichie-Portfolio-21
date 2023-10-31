@@ -86,3 +86,10 @@
     .relic-project div h3{
       color: none;
     }
+
+      /* MOBILE STYLES  */
+  @media only screen and (max-width: 600px) {
+    .relic-container img {
+      margin: 15px 0px;     
+    }
+  }

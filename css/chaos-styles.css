@@ -1,4 +1,4 @@
-.relic-project {
+.chaos-project {
     
 }
 
@@ -25,14 +25,12 @@
 
   .chaos-deliverables{
     align-items: center;
-  } 
-  
+  }   
   
   .chaos-container img {
       width:auto;
       height: auto;
-      margin: 15px;
-      
+      margin: 15px;      
     }
   
   .chaos-container div{
@@ -86,4 +84,11 @@
 
   .chaos-project div h3{
     color: none;
+  }
+
+  /* MOBILE STYLES  */
+  @media only screen and (max-width: 600px) {
+    .chaos-container img {
+      margin: 15px 0px;     
+    }
   }
