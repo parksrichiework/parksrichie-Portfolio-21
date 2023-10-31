@@ -1,0 +1,112 @@
+nav {
+    background-color: var(--darker-purple);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: fit-content;
+    overflow: none;
+    /* box-shadow: 0px 2px 10px var(--darker-purple); */
+  }
+  
+  .nav-visual-design{
+    background-color: var(--atomic-tangerine);
+    color: var(--darker-purple);
+    transition: 0.2s ease-in-out;
+  }
+  
+  .nav-visual-design li a{
+    color: var(--white);
+  }
+  
+  .nav-web-design{
+  background-color: var(--celadon-blue);
+  transition: 0.2s ease-in-out;
+  }
+  
+  .nav-web-design li a{
+    color: var(--white);
+  }
+  
+  .nav-illustration{
+    background-color: var(--fiery-rose);
+    transition: 0.2s ease-in-out;
+  }
+  
+  .nav-illustration li a{
+    color: var(--white);
+  }
+  
+  li.empty {
+    width: 50px;
+    border-top: 0.5px solid var(--languid-lavender);
+    top: -5px;
+    position: relative;
+  }
+  
+  
+  nav li a {
+    text-decoration: none;
+    color: var(--languid-lavender);
+    transition: 0.3s ease-in-out;
+    padding: 10px;
+    border-radius:20px;
+  }
+  
+  nav li a:hover {
+    /* text-decoration: underline; */
+    color: var(--darker-purple);
+    background-color: var(--languid-lavender);
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    /*refers to 0 top/bottm and 15px left/right */
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+  
+  nav ul {
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0px;
+  }
+    
+  
+  .work-drop-menu{
+    min-width: 160px;
+    height:fit-content;
+    background-color: var(--black);
+    color: var(--languid-lavender);
+    display:none;
+    position: fixed;
+    margin: 0vw 50vw;
+    overflow: hidden;
+    /* margin: 0; */
+    z-index: 2;  
+  }
+  
+  .work-drop-menu a{
+    text-decoration: none;
+    color: var(--languid-lavender);
+    transition: 0.1s ease-in-out;
+    padding: 10px;  
+    display:block;
+    text-align: left;
+  }
+  
+  .work-drop-menu a:hover{
+    background-color:var(--languid-lavender);
+    color: var(--black);
+  }
+  
+  .show{
+    display: flex;
+    flex-direction: column;
+  }

@@ -33,16 +33,16 @@
       let consultation = document.querySelector('.openButton')
 
 
-    if(window.scrollY > 2800 && window.scrollY <= 17300){
+    if(window.scrollY > 2800 && window.scrollY <= 16800){
       nav.className= "nav-visual-design";
-      consultation.className= 'openButton-scroll'     
+      consultation.className= 'openButton-scroll';     
      
 
-     } else if(window.scrollY > 17300 && window.scrollY <= 21300){
+     } else if(window.scrollY > 16800 && window.scrollY <= 20950){
       nav.className= "nav-web-design";
       consultation.className= 'openButton-scroll'
     
-     } else if(window.scrollY > 21300 && window.scrollY <= 27000){
+     } else if(window.scrollY > 20950 && window.scrollY <= 27000){
       nav.className= "nav-illustration";
       consultation.className= 'openButton-scroll';
      } else {
@@ -57,13 +57,23 @@
      let workNav = document.querySelector('#work-nav');
      let workDropMenu = document.querySelector('.work-drop-menu')
     workNav.addEventListener('click', openWorkDropMenu);
+    window.addEventListener('mouseup', closeWorkDropMenu);
     
      function openWorkDropMenu(e){    
       if(e.target){
         workDropMenu.classList.toggle('show');
+        workNav.classList.toggle('open');
         workNav.innerHTML='<a title="internal link to portfolio">Work <b>&#9650;</b></a>'
       console.log('show the menu');
        }       
+      }
+
+      function closeWorkDropMenu(){     
+      if(workDropMenu.classList.contains('show') && workNav.classList.contains('open')){        
+        workDropMenu.classList.remove('show');
+        workNav.classList.toggle('open');
+        console.log('this aint it');
+        }
       }
               
     //  END: click "work" in navbar and reveal dropdown menu
