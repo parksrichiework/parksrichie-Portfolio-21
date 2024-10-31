@@ -1,67 +1,62 @@
 .black-alphabet-project h2{
-    color: var(--atomic-tangerine)
-  }
+  color: var(--celadon-blue)
+}
 
-  .black-alphabet-project a{
-    color: var(--darker-purple);
-    height: fit-content;
-  }
+.black-alphabet {
+  /* margin: 80px 0px; */
+  /* border: solid 3px var(--fiery-rose);     */
+  align-items: top;
+  display: grid;
+  grid-template-columns: 1fr 1fr;       
+}
 
-  .black-alphabet-project a:hover{
-    transition: 0.2s ease-in-out;
-    opacity: 35%;
-    transform: translate(20px, 0px);
-  }
+.black-alphabet h2{    
+  justify-self: right;
+  margin-bottom: 50px;
+}
 
-.black-alphabet-social {
-    /* margin-top: 80px;
-    margin-bottom: 100px; */
-    margin: 0px 80px 0px 100px;
-    /* border: solid 3px var(--fiery-rose);     */
-    align-items: top;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-right: 0px;
-    padding-left: 0px;       
-  }
+.black-alphabet a:hover{
+  transition: 0.2s ease-in-out;
+  opacity: 50%;
+  transform: translate(20px, 0px);
+}
 
-  .black-alphabet-social h2{    
-    justify-self: right;
-    margin-bottom: 50px;
-  }
+.black-alphabet img{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
 
-  .black-alphabet-social a:hover{
-    transition: 0.2s ease-in-out;
-    opacity: 50%;
-    transform: translate(20px, 0px);
-  }
-
-  .black-alphabet-social-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    row-gap: 30px;       
-  }
-
-  /* .black-alphabet-social-container img{
-    align-items: center;  
-  } */
+.black-alphabet-img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
   /* -------------------------------------------- */
-  /* MOBILE STYLES */
+/* MOBILE STYLES */
 
-  @media only screen and (max-width: 600px) {
-    .black-alphabet-social {
-      margin: 80px 0px;
-      /* border: solid 3px var(--fiery-rose);     */
-      align-items: center;      
-      grid-template-columns: 1fr;       
-    }
-    
-    .black-alphabet-social-container{      
-      grid-template-columns: 1fr;
-      gap: 10px;      
-    }
-
-    
+@media only screen and (max-width: 600px) {
+  .black-alphabet-img-container{
+    padding: 0;
   }
+
+  .black-alphabet {
+    /* margin: 80px 0px; */
+    /* border: solid 3px var(--fiery-rose);     */
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;       
+  }
+
+  /* .black-alphabet-img-container{
+    display: flex;
+    width: 100vw;
+    align-items: start;
+    margin: 0;
+  }
+
+  .black-alphabet-img-container img{
+    margin: -45px;
+  } */
+}
