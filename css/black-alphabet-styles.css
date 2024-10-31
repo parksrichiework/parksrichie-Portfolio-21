@@ -1,19 +1,19 @@
-.enneagram-project h2{
+.black-alphabet-project h2{
     color: var(--atomic-tangerine)
   }
 
-  .enneagram-project a{
+  .black-alphabet-project a{
     color: var(--darker-purple);
     height: fit-content;
   }
 
-  .enneagram-project a:hover{
+  .black-alphabet-project a:hover{
     transition: 0.2s ease-in-out;
     opacity: 35%;
     transform: translate(20px, 0px);
   }
 
-.enneagram-social {
+.black-alphabet-social {
     /* margin-top: 80px;
     margin-bottom: 100px; */
     margin: 0px 80px 0px 100px;
@@ -25,25 +25,25 @@
     padding-left: 0px;       
   }
 
-  .enneagram-social h2{    
+  .black-alphabet-social h2{    
     justify-self: right;
     margin-bottom: 50px;
   }
 
-  .enneagram-social a:hover{
+  .black-alphabet-social a:hover{
     transition: 0.2s ease-in-out;
     opacity: 50%;
     transform: translate(20px, 0px);
   }
 
-  .enneagram-social-container{
+  .black-alphabet-social-container{
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 1fr 1fr; */
     row-gap: 30px;       
   }
 
-  /* .enneagram-social-container img{
+  /* .black-alphabet-social-container img{
     align-items: center;  
   } */
 
@@ -51,14 +51,14 @@
   /* MOBILE STYLES */
 
   @media only screen and (max-width: 600px) {
-    .enneagram-social {
+    .black-alphabet-social {
       margin: 80px 0px;
       /* border: solid 3px var(--fiery-rose);     */
       align-items: center;      
       grid-template-columns: 1fr;       
     }
     
-    .enneagram-social-container{      
+    .black-alphabet-social-container{      
       grid-template-columns: 1fr;
       gap: 10px;      
     }
