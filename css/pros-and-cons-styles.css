@@ -1,8 +1,8 @@
-  .brown-paper-bags-project h2{
+.pros-and-cons-project h2{
     color: var(--celadon-blue)
   }
   
-  .brown-paper-bags {
+  .pros-and-cons {
     /* margin: 80px 0px; */
     /* border: solid 3px var(--fiery-rose);     */
     align-items: top;
@@ -10,42 +10,41 @@
     grid-template-columns: 1fr 1fr;       
   }
 
-  .brown-paper-bags h2{    
+  .pros-and-cons h2{    
     justify-self: right;
     margin-bottom: 50px;
   }
 
-  .brown-paper-bags a:hover{
+  .pros-and-cons a:hover{
     transition: 0.2s ease-in-out;
     opacity: 50%;
-    transform: translate(20px, 0px);
+    transform: translate(10px, 0px);
   }
 
-  .brown-paper-bags img{
+  .pros-and-cons img{
     /* display: flex;
     align-items: center;
     justify-content: center; */
   }
 
-  .bpb-img-container{
+  .pros-and-cons-img-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
   }
 
     /* -------------------------------------------- */
   /* MOBILE STYLES */
 
   @media only screen and (max-width: 600px) {
-    .bpb-img-container{
+    .pro-and-cons-img-container{
       padding: 0;
     }
 
-    .brown-paper-bags {
+    .pros-and-cons {
       /* margin: 80px 0px; */
       /* border: solid 3px var(--fiery-rose);     */
-      align-items: center;
-      display: grid;
+      align-items: center;     
       grid-template-columns: 1fr;       
     }
 

@@ -4,7 +4,9 @@
 @import "relic-styles.css";
 @import "chaos-styles.css";
 @import "nav-styles.css";
-
+@import "pros-and-cons-styles.css";
+@import "black-alphabet-styles.css";
+@import "vibe-website-styles.css";
 
 :root{
 --palatinate-blue: #3F2BDA;
@@ -41,7 +43,7 @@ body {
   font-size: 15px;
   color: var(--darker-purple);
   background-color: var(--white);
-  
+  margin: 0;
 }
 
 .body-body-visual-design{
@@ -569,6 +571,7 @@ li.divider {
 
 .portfolio-start{
   margin-top: 80px;
+  max-width: 70vw;
 }
 
 /*.portfolio-pgs-graphics{

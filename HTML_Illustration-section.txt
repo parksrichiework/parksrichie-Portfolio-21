@@ -1,0 +1,40 @@
+illustration section:
+
+<!-- SECTION START: ILLUSTARTION-->
+            <div id="illustration-section">    
+              <img class='section-img'  src="img/illustration-open.png"/>
+                <div class="illustration-bg">         
+                </div>
+              <img src="img/portfolio-pages/08.jpg" alt="Portfolio Page 8" id="illustrationPage"/>
+                <div class="illustration-container">                  
+                    <img src="img/illustration/bounsweet.jpg"/>
+                    <img src="img/illustration/charmander-01.jpg"/>
+                    <img src="img/illustration/stufful.jpg"/>
+                    <img src="img/illustration/bulbasaur-01.jpg"/>
+                    <img src="img/illustration/squirtle-01.jpg"/>
+                    <img src="img/illustration/pikachu-01.jpg"/>
+                    <img src="img/illustration/chespin.jpg"/>
+                    <img src="img/illustration/chikorita.jpg"/>
+                    <img src="img/illustration/cleffa.jpg"/>
+                    <img src="img/illustration/cyndaquil.jpg"/>
+                    <img src="img/illustration/ditto.jpg"/>
+                    <img src="img/illustration/dragonite.jpg"/>
+                    <img src="img/illustration/elekid.jpg"/>
+                    <img src="img/illustration/golduck.jpg"/>
+                    <img src="img/illustration/magby.jpg"/>
+                    <img src="img/illustration/magnemite.jpg"/>
+                    <img src="img/illustration/meowth.jpg"/>
+                    <img src="img/illustration/munchlax.jpg"/>                    
+                    <img src="img/illustration/sandygast.jpg"/>
+                    <img src="img/illustration/pichu.jpg"/>                                                                            
+                </div>
+                <div class="wide-img">                      
+                  <img src="img/illustration/Doodle 03.jpg" alt="">
+                  <img src="img/illustration/Doodle 05.jpg" alt="">
+                  <img src="img/illustration/Doodle 07.jpg" alt="">
+                  <img src="img/illustration/Doodle 10 B.jpg" alt="">
+                  <img src="img/illustration/Doodle-Bear_Icons-121417.png" alt="">
+                  <img src="img/illustration/Disgustimals-Bodies-Color.jpg" alt="">
+                </div>                  
+            </div>
+          <!-- SECTION END: illustartion--- -->   
