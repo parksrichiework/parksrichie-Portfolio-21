@@ -38,11 +38,11 @@
       consultation.className= 'openButton-scroll';     
      
 
-     } else if(window.scrollY > 11000 && window.scrollY <= 16000){
+     } else if(window.scrollY > 11000 && window.scrollY <= 16400){
       nav.className= "nav-web-design";
       consultation.className= 'openButton-scroll'
     
-     } else if(window.scrollY > 16000 && window.scrollY <= 20400){
+     } else if(window.scrollY > 16400 && window.scrollY <= 21000){
       nav.className= "nav-illustration";
       consultation.className= 'openButton-scroll';
      } else {
