@@ -18,7 +18,7 @@
 .black-alphabet a:hover{
   transition: 0.2s ease-in-out;
   opacity: 50%;
-  transform: translate(20px, 0px);
+  /* transform: translate(20px, 0px); */
 }
 
 .black-alphabet img{

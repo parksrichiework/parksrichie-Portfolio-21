@@ -33,16 +33,16 @@
       let consultation = document.querySelector('.openButton')
 
 
-    if(window.scrollY > 2800 && window.scrollY <= 14181){
+    if(window.scrollY > 2800 && window.scrollY <= 11000){
       nav.className= "nav-visual-design";
       consultation.className= 'openButton-scroll';     
      
 
-     } else if(window.scrollY > 14181 && window.scrollY <= 18900){
+     } else if(window.scrollY > 11000 && window.scrollY <= 16000){
       nav.className= "nav-web-design";
       consultation.className= 'openButton-scroll'
     
-     } else if(window.scrollY > 18900 && window.scrollY <= 25000){
+     } else if(window.scrollY > 16000 && window.scrollY <= 20400){
       nav.className= "nav-illustration";
       consultation.className= 'openButton-scroll';
      } else {
