@@ -1,4 +1,13 @@
-    
+//Make "email me" button say "parksrichiework@gmail.com when you hover"
+var emailMeButton = document.querySelector('.email-me');
+emailMeButton.addEventListener('mouseover', changeEmailButton)
+
+
+function changeEmailButton(){
+  emailMeButton.innerHTML = 'parksrichiework@gmail.com';
+  console.log('email button changed');
+}
+
 
 // Make skills dispenser appear when you scroll:
     window.addEventListener('scroll', openDispenser)
@@ -14,7 +23,7 @@
         rightSide.className= "right";
        }      
 
-   console.log(scrolled)
+   console.log(scrolled);
     }
 
     // window.addEventListener('scroll', openGraphics)
