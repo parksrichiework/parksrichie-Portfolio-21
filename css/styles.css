@@ -8,6 +8,7 @@
 @import "black-alphabet-styles.css";
 @import "vibe-website-styles.css";
 @import "manifold-styles.css";
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Nabla&family=Sigmar&display=swap');
 
 :root{
 --palatinate-blue: #3F2BDA;
@@ -31,6 +32,12 @@
  --black-8e: #25252536;
  --no-opacity: #ffffff00;
  --white: #fff;
+ --persian-indigo: #391463;
+ --aero-blue: #42BFDD;
+ --pistachio: #A5CC6B;
+ --coyote: #806D40;
+ --dark-moss-green: #474B24;
+ 
  
 }
 
@@ -43,17 +50,17 @@ body {
   /* font-family: 'Poller One', cursive; */
   font-family: Inconsolata, sans-serif;
   font-size: 15px;
-  color: var(--darker-purple);
+  color: var(--persian-indigo);
   background-color: var(--white);
   margin: 0;
 }
 
 .body-body-visual-design{
-  background-color: var(--atomic-tangerine-opacity);
+  background-color: var(--orange-crayola-opacity);
 }
 
 .body-body-web-design{
-  background-color: var(--atomic-tangerine);
+  background-color: var(--orange-crayola);
 }
 
 body, ul {
@@ -63,7 +70,8 @@ body, ul {
 }
 
 .welcome-message{
-  color: var(--white);
+  font-family: 'Nabla', sans-serif;
+  color: var(--lime-green);
    /* filter: blur(4px);
   -webkit-filter: blur(4px); */
 
@@ -88,17 +96,21 @@ h1, h2, .skillslist {
 }
 
 .skillslist-intro-title{
-  color: var(--darker-purple);
+  color: var(--white);
   font-size: 20px;
 }
 
 .skillslist-intro-title a{
-  color: var(--darker-purple)
+  color: var(--white);
 }
 
 .skillslist-intro a:hover{
   color: var(--white);
   transition: 0.1s ease-in-out;  
+}
+
+.skillslist-intro li{
+  color: var(--white);
 }
 
 img {
@@ -144,16 +156,15 @@ margin: 300px 0px;
 
 }
 
-
+/* START HEADER SECTION */
 header {
   top: 60px;
   position: relative;
   margin-bottom: 220px;  
   background:
-        linear-gradient(var(--fiery-rose), transparent),
-        linear-gradient(to top left, var(--lime-green), transparent),
-        linear-gradient(to top right, var(--celadon-blue), transparent);
-        background-blend-mode: screen;
+        /* var(--persian-indigo) */
+        linear-gradient(var(--persian-indigo), var(--portfolio-purple));        
+        background-blend-mode: soft-light;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position-y: -145px; */
@@ -192,9 +203,9 @@ p {
 }
 
 .button {
-  border: 1px solid var(--darker-purple);
+  border: 1px solid var(--persian-indigo);
   text-decoration: none;
-  color: var(--darker-purple);
+  color: var(--persian-indigo);
   margin-top: 30px;
   display: inline-block;
   border-radius: 20px;
@@ -204,7 +215,7 @@ p {
 }
 
 .button:hover {
-  background: var(--darker-purple);
+  background: var(--persian-indigo);
   color: var(--white);
   border: none;
 }
@@ -216,16 +227,16 @@ figcaption {
 
 .email-me{
    margin: 20px 0px 30px;
-   color: var(--white);
+   color: var(--persian-indigo);
    padding: 10px 20px;
    border-radius: 20pt;
    background: var(--fiery-rose);
-    background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
-    background: -webkit-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
-    background: -o-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
-    background: -ms-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
-    background: linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+    background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--lime-green) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--lime-green)));
+    background: -webkit-linear-gradient(45deg, var(--fiery-rose) 0%, var(--lime-green) 100%);
+    background: -o-linear-gradient(45deg, var(--fiery-rose) 0%, var(--lime-green) 100%);
+    background: -ms-linear-gradient(45deg, var(--fiery-rose) 0%, var(--lime-green) 100%);
+    background: linear-gradient(45deg, var(--fiery-rose) 0%, var(--lime-green) 100%);
     background-size: 400% 400%;
     -webkit-animation: errorBg 55s ease infinite;
     -moz-animation: errorBg 55s ease infinite;
@@ -273,10 +284,12 @@ figcaption {
 
 .email-me:hover{
   background: var(--white);
-  color: var(--darker-purple);
-  border: solid 1px var(--darker-purple);
+  color: var(--persian-indigo);
+  border: solid 1px var(--persian-indigo);
   transition: 0.3s ease-in-out;
 }
+
+/* END HEADER SECTION */
 
  /*-----------------------------------------dispenser!!!!--------------------       */
 .noShow{
@@ -412,7 +425,7 @@ figcaption {
 
 .profile-pic{
   border-radius: 50%;
-  border: 6px solid var(--darker-purple);
+  border: 6px solid var(--persian-indigo);
 }
 
 .intro div{
@@ -421,7 +434,7 @@ figcaption {
 
 .intro-bio{
   margin-top:0;
-  color: var(--darker-purple);
+  color: var(--persian-indigo);
 }
 
 .intro-bio div{
@@ -610,12 +623,12 @@ transition: 100ms ease-in-out;
     height: 100%;
     width: 100%;
     transition: .5s ease;
-    background-color: var(--darker-purple-opacity);
+    background-color: var(--persian-indigo-opacity);
   }
 
   .open-button{
     background-color: var(--lighter-purple);
-    color: var(--darker-purple);
+    color: var(--persian-indigo);
     width: fit-content;
     height: auto;
     padding: 10px 30px;
@@ -623,11 +636,11 @@ transition: 100ms ease-in-out;
     font-size: 20pt;
     border: none;
     border-radius: 20pt;
-    box-shadow: 0px 5px 10px var(--darker-purple);
+    box-shadow: 0px 5px 10px var(--persian-indigo);
     transition: 0.2s ease-in-out;
   }
   .open-button:hover{
-    background-color: var(--darker-purple);
+    background-color: var(--persian-indigo);
     color: var(--lighter-purple);
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -661,7 +674,7 @@ transition: 100ms ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--darker-purple-opacity)
+    background-color: var(--persian-indigo-opacity)
   }
     
   .text {
@@ -676,7 +689,7 @@ transition: 100ms ease-in-out;
     text-align: center;
     width: 100%;      
     transition: .5s ease;
-    background-color: var(--darker-purple);
+    background-color: var(--persian-indigo);
   }
 
 
@@ -703,7 +716,7 @@ text-decoration: none;
 /*--------------------------------------------------------------Styles for  graphics popup modal*/
   /* Modal Content */
   .graphics-modal-content {
-    background-color: var(--darker-purple);
+    background-color: var(--persian-indigo);
     margin: auto;
     padding: 20px;
     border: none;
@@ -765,7 +778,7 @@ text-decoration: none;
 
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: var(--darker-purple-opacity);
+    background-color: var(--persian-indigo-opacity);
   }
 
   /* Caption text */
@@ -802,7 +815,7 @@ text-decoration: none;
   }
 
   .active, .dot:hover {
-    background-color: var(--darker-purple);
+    background-color: var(--persian-indigo);
   }
 
   /* Fading animation */
@@ -858,7 +871,7 @@ text-decoration: none;
   }
 
   .games-container h2{
-    color: var(--darker-purple);
+    color: var(--persian-indigo);
   }
 
   .web-design-title{
@@ -871,7 +884,7 @@ text-decoration: none;
   }
 
   .divider{  
-    border: solid 1px var(--darker-purple);
+    border: solid 1px var(--persian-indigo);
     margin-bottom: 60px;
   }
 
@@ -907,7 +920,7 @@ text-decoration: none;
     /* align-items: center; */
     /* background-color:; */
     width: 100%;
-    font: var(--darker-purple);
+    font: var(--persian-indigo);
     transition: 0.2s ease-in-out;
     padding: 0px 20px;
     text-align: center;
@@ -1058,7 +1071,7 @@ transition: 0.5s ease-in;
 height: 600px;	
 margin-top: -20%;
 overflow: scroll;
-box-shadow: 0px 2px 10px var(--darker-purple);
+box-shadow: 0px 2px 10px var(--persian-indigo);
 }
 
 .formContainer {
@@ -1108,7 +1121,7 @@ content: "";
 .formContainer .btn {
   padding: 12px 20px;
   border: none;
-  background-color: var(--darker-purple);
+  background-color: var(--persian-indigo);
   color: var(--white);
   cursor: pointer;
   width: 100%;
@@ -1212,8 +1225,8 @@ div div.resume{
 
 .download-resume:hover{
  background: var(--white);
- color: var(--darker-purple);
- border: solid 1px var(--darker-purple);
+ color: var(--persian-indigo);
+ border: solid 1px var(--persian-indigo);
  transition: 0.3s ease-in-out;
 }
 
@@ -1311,6 +1324,7 @@ footer h2 {
   font-size: 22px;
   margin-bottom: 25px;
   width: 100%;
+  color:var(--persian-indigo);
 }
 
 .right-alignment {
@@ -1347,8 +1361,8 @@ footer h2 {
 
 .email-me-footer:hover{
  background: var(--white);
- color: var(--darker-purple);
- border: solid 1px var(--darker-purple);
+ color: var(--persian-indigo);
+ border: solid 1px var(--persian-indigo);
  transition: 0.3s ease-in-out;
 }
 
@@ -1434,7 +1448,7 @@ overflow: scroll;
 }
 
 .graphics-modal-content {
-  background-color: var(--darker-purple);
+  background-color: var(--persian-indigo);
   margin: 20px 20px;
   padding: 20px;
   border: none;
@@ -1496,7 +1510,7 @@ overflow: scroll;
 }
 
 #relic-postcard:hover {
-  box-shadow: 0px 2px 5px var(--darker-purple);
+  box-shadow: 0px 2px 5px var(--persian-indigo);
   cursor: pointer;
   padding: 0px;
   margin-top: 15px;
