@@ -101,7 +101,7 @@ h1, h2, .skillslist {
 }
 
 .skillslist-intro-title a{
-  color: var(--white);
+  color: var(--orange-crayola);
 }
 
 .skillslist-intro a:hover{
@@ -111,6 +111,24 @@ h1, h2, .skillslist {
 
 .skillslist-intro li{
   color: var(--white);
+}
+
+.skillslist-resume-button {
+  border: 1px solid var(--white);
+  text-decoration: none;
+  color: var(--white);
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 30px;
+  transition: background 0.5s ease-in-out;
+  color: background 0.5s ease-in-out;
+}
+
+.skillslist-resume-button:hover {
+  background: var(--persian-indigo);
+  color: var(--white);
+  border: none;
 }
 
 img {
@@ -288,6 +306,8 @@ figcaption {
   border: solid 1px var(--persian-indigo);
   transition: 0.3s ease-in-out;
 }
+
+
 
 /* END HEADER SECTION */
 
