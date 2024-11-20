@@ -1,16 +1,16 @@
 nav {
-    background-color: var(--darker-purple);
+    background-color: var(--persian-indigo);    
     position: fixed;
     z-index: 10;
     width: 100%;
     height: fit-content;
     overflow: none;
-    /* box-shadow: 0px 2px 10px var(--darker-purple); */
+    /* box-shadow: 0px 2px 10px var(--persian-indigo); */
   }
   
   .nav-visual-design{
-    background-color: var(--atomic-tangerine);
-    color: var(--darker-purple);
+    background-color: var(--orange-crayola);
+    color: var(--persian-indigo);
     transition: 0.2s ease-in-out;
   }
   
@@ -54,7 +54,7 @@ nav {
   
   nav li a:hover {
     /* text-decoration: underline; */
-    color: var(--darker-purple);
+    color: var(--persian-indigo);
     background-color: var(--white);
     padding: 10px;
     border-radius: 20px;
