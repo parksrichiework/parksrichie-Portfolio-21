@@ -313,5 +313,47 @@ function flipCard(){
 //  ^^^^^^^^^^^^^^^^^^^^^^^^^^^ END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6
 
 
-   
+// scroll to reveal "SCROLL TO TOP" button 
+
+let scrollToTopBtn = document.querySelector('.scroll-to-top')
+
+window.addEventListener('scroll', scrollToTop)
+
+function scrollToTop(){
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    scrollToTopBtn.style.display = "flex";
+    console.log('scroll to top shown')
+  } else {
+    scrollToTopBtn.style.display = "none";
+    console.log('scroll to top hidden')
+  }
+}
+
+// CLICK BUTTON AND SCROLL TO TOP OF WINDOW 
+scrollToTopBtn.addEventListener("click", scrollUpToTop);
+
+function scrollUpToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+//  ^^^^^^^^^^^^^^^^^^^^^^^^^^^ END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6
+
+// window.addEventListener('scroll', openDispenser)
+//     var rightSide = document.getElementById("right-side"); 
+
+//     function openDispenser(){
+//         let dispenser= document.querySelector('#dispenserScroll')
+//        const scrolled = window.scrollY
+//         const scrollable= document.documentElement.scrollHeight - window.innerHeight
+
+//        if(window.scrollY >= 600){
+//         dispenser.classList.remove('noShow');
+//         rightSide.className= "right";
+//        }      
+
+//    console.log(scrolled);
+//     }
           
