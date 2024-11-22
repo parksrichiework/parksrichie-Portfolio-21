@@ -1,0 +1,79 @@
+ /* FOOTER STYLES vvvvvvvvvvvvvvvvvvvvvvvvvv  */
+
+
+
+ footer {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  footer ul{
+    padding-top: -15px;
+  }
+  footer ul li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+  
+  footer ul li img{
+    width: 20px;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  footer h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    width: 100%;
+    color:var(--persian-indigo);
+  }
+  
+  .right-alignment {
+    text-align: right;
+  }
+  
+  
+  
+  .footer a{
+    margin-bottom: 30px;
+  }
+  .email-me-footer{
+    font-size: large;
+    margin: 20px 20px;
+    color: var(--white);
+    padding: 20px 60px;
+    border-radius: 200pt;
+    background: var(--fiery-rose);
+     background: -moz-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+     background: -webkit-gradient(left bottom, right top, color-stop(0%, var(--fiery-rose)), color-stop(100%, var(--celadon-blue)));
+     background: -webkit-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+     background: -o-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+     background: -ms-linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+     background: linear-gradient(45deg, var(--fiery-rose) 0%, var(--celadon-blue) 100%);
+     background-size: 400% 400%;
+     -webkit-animation: errorBg 55s ease infinite;
+     -moz-animation: errorBg 55s ease infinite;
+     animation: errorBg 55s ease infinite;
+     height: 100vh;
+     transition: 0.3s ease-in-out;
+     text-decoration: none;
+  }
+  
+  
+  .email-me-footer:hover{
+   background: var(--white);
+   color: var(--persian-indigo);
+   border: solid 1px var(--persian-indigo);
+   transition: 0.3s ease-in-out;
+  }
+
+  .scroll-to-top {
+    color: var(--white);
+    background-color: var(--persian-indigo);
+    width: fit-content;
+    z-index: 10;
+    margin: right;
+    position: fixed;
+  }
