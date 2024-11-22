@@ -319,16 +319,20 @@ let scrollToTopBtn = document.querySelector('.scroll-to-top')
 
 window.addEventListener('scroll', scrollToTop)
 
-function scrollToTop(){
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-    scrollToTopBtn.style.display = "flex";
-    console.log('scroll to top shown')
-  } else {
-    scrollToTopBtn.style.display = "none";
-    console.log('scroll to top hidden')
-  }
-}
+// function scrollToTop() {
+//   var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+//   var GOLDEN_RATIO = 0.5;
 
+//   if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
+//     //show button
+//     if(!scrollToTopBtn.classList.contains("show"))
+//     scrollToTopBtn.classList.add("show")
+//   } else {
+//     //hide button
+//     if(scrollToTopBtn.classList.contains("show"))
+//     scrollToTopBtn.classList.remove("show")
+//   }
+// }
 // CLICK BUTTON AND SCROLL TO TOP OF WINDOW 
 scrollToTopBtn.addEventListener("click", scrollUpToTop);
 
@@ -337,23 +341,7 @@ function scrollUpToTop() {
     top: 0,
     behavior: "smooth"
   });
+  console.log('scrolled to top')
 }
 
-//  ^^^^^^^^^^^^^^^^^^^^^^^^^^^ END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6
-
-// window.addEventListener('scroll', openDispenser)
-//     var rightSide = document.getElementById("right-side"); 
-
-//     function openDispenser(){
-//         let dispenser= document.querySelector('#dispenserScroll')
-//        const scrolled = window.scrollY
-//         const scrollable= document.documentElement.scrollHeight - window.innerHeight
-
-//        if(window.scrollY >= 600){
-//         dispenser.classList.remove('noShow');
-//         rightSide.className= "right";
-//        }      
-
-//    console.log(scrolled);
-//     }
-          
+//  ^^^^^^^^^^^^^^^^^^^^^^^^^^^ END ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^         
