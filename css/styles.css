@@ -1013,13 +1013,14 @@ text-decoration: none;
 .openBtn {
   display: flex;
   justify-content: center;
-  align-items: center;     
+  align-items: center;
+  font-family: Inconsolata, sans-serif;     
 }
 .openButton {
   color: var(--languid-lavender);
   text-align: center;
-  background-color: var(--no-opacity);
-  border: solid 1px var(--languid-lavender);				
+  background-color: var(--portfolio-purple);
+  border: solid 1px var(--no-opacity);				
   padding: 10px 16px;
   /* margin: 7px 0px 0px;				 */
   border-radius: 30px;				
@@ -1027,7 +1028,13 @@ text-decoration: none;
   position: relative;
   cursor: pointer;
   text-align: center;
-  
+  font-family: Inconsolata, sans-serif;
+}
+
+.openButton:hover {  
+  background-color: var(--white);
+  transition: 0.2s ease-in-out;
+  color: var(--persian-indigo);
 }
 
 .openButton-scroll {
