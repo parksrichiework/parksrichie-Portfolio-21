@@ -82,11 +82,11 @@ nav {
   .work-drop-menu{
     min-width: 160px;
     height:fit-content;
-    background-color: var(--black);
-    color: var(--languid-lavender);
+    background-color: var(--portfolio-purple);
+    color: var(--white);
     display:none;
     position: fixed;
-    margin: 0vw 50vw;
+    margin: 0vw 25vw;
     overflow: hidden;
     /* margin: 0; */
     z-index: 2;  
@@ -108,5 +108,5 @@ nav {
   
   .show{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
   }
