@@ -72,4 +72,11 @@
   .scroll-to-top a:hover {
     background-color: var(--portfolio-purple);
   }
- 
+ /* MOBILE STYLES  */
+  @media only screen and (max-width: 600px) {
+    .scroll-to-top a{
+      color: var(--persian-indigo);
+      background-color: var(--white);
+      border: solid 2px var(--persian-indigo);
+    }
+  }
