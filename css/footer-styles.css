@@ -74,7 +74,8 @@
   }
  /* MOBILE STYLES  */
   @media only screen and (max-width: 600px) {
-    .scroll-to-top a{      
-      background-color: var(--white);
+    .scroll-to-top a{
+      color: var(--persian-indigo);      
+      background-color: var(--white-50);
     }
   }
