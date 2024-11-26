@@ -58,7 +58,7 @@
     text-decoration: none;  
   }
 
-  .scroll-to-top a{      
+  .scroll-to-top-btn {      
     color: var(--white);
     background-color: var(--persian-indigo);
     width: fit-content;
@@ -69,14 +69,12 @@
     text-decoration: none;   
   }
 
-  .scroll-to-top a:hover {
+  .scroll-to-top-btn:hover {
     background-color: var(--portfolio-purple);
   }
  /* MOBILE STYLES  */
   @media only screen and (max-width: 600px) {
-    .scroll-to-top a{
-      color: var(--persian-indigo);
+    .scroll-to-top a{      
       background-color: var(--white);
-      border: solid 2px var(--persian-indigo);
     }
   }
