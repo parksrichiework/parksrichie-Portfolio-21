@@ -39,26 +39,30 @@ function changeEmailButton(){
 
     function changeNav(){
       let nav= document.querySelector('#nav-bar');
-      let consultation = document.querySelector('.openButton')
+      let consultation = document.querySelector('.openButton');
+      let scrollToTopBtnLink = document.querySelector('.scroll-to-top-btn');
 
 
     if(window.scrollY > 2800 && window.scrollY <= 11000){
       nav.className= "nav-visual-design";
       consultation.className= 'openButton-scroll';     
-     
+    //  scrollToTopBtnLink.style.background= 'var(--orange-crayola)';
 
      } else if(window.scrollY > 11000 && window.scrollY <= 16400){
       nav.className= "nav-web-design";
-      consultation.className= 'openButton-scroll'
+      consultation.className= 'openButton-scroll';
+      // scrollToTopBtnLink.style.background= 'var(--celadon-blue)';
     
      } else if(window.scrollY > 16400 && window.scrollY <= 21000){
       nav.className= "nav-illustration";
       consultation.className= 'openButton-scroll';
+      // scrollToTopBtnLink.style.background= 'var(--fiery-rose)';
+
      } else {
       nav.className= "";
       consultation.className= 'openButton' 
       consultation.classList.remove('openButton-scroll')
-     
+      // scrollToTopBtnLink.style.background= 'var(--persian-indigo)';
      }
     }
 
