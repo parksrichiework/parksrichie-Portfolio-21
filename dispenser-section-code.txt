@@ -1,0 +1,60 @@
+<section class="container">
+          <section class="row">
+            <div class="dispenser left noShow" id="dispenserScroll">            
+            <img class="dispenser-img" src="img/skills-dispenser-click-me.png" alt="dispenser icon image" id="dispenserClick"/>                 
+            </div>
+            <!-- RIGHT SIDE START -->          
+            <div class="all-capsules col-sm"  id="right-side">
+            <!-- visual design -->
+            <div> 
+              <img class="skills" onmouseover="" src="img/visual-design-closed.png" id="visualDesign" alt="Visual design icon image" />
+              <div class= "explain" alt="explanation of visual design skills" id="explainVisualDesign"></div>
+            </div>
+            <!-- design thinking -->
+            <div>
+              <img class='skills' src="img/design-thinking-closed.png" alt="design thinking icon image" id="designThinking"/>
+              <div class= "explain" alt="explanation of design thinking" id="explainDesignThinking"></div>
+            </div></br>
+            <!-- web design -->
+            <div class="skill3">
+              <img class='skills' src="img/web-design-closed.png" alt="web design icon image" id="webDesign"/>
+              <div class= "explain" alt="explanation of web design skills" id="explainWebDesign"></div>
+            </div>
+            <!-- illustration -->
+            <div class="skill4"> 
+              <img class='skills' src="img/illustration-closed.png" alt="illustration icon image" id="illustration"/>
+              <div class= "explain" alt="explanation of illustration skills" id="explainIllustration">
+              </div>
+            </div>
+            </div>
+          </section>
+        </section>
+
+-------------------------------------------------------
+
+
+JAVASCRIPT FOR NAV CHANGING COLORS
+
+
+    if(window.scrollY > 2800 && window.scrollY <= 11000){
+      nav.className= "nav-visual-design";
+      consultation.className= 'openButton-scroll';     
+    //  scrollToTopBtnLink.style.background= 'var(--orange-crayola)';
+
+     } else if(window.scrollY > 11000 && window.scrollY <= 16400){
+      nav.className= "nav-web-design";
+      consultation.className= 'openButton-scroll';
+      // scrollToTopBtnLink.style.background= 'var(--celadon-blue)';
+    
+     } else if(window.scrollY > 16400 && window.scrollY <= 21000){
+      nav.className= "nav-illustration";
+      consultation.className= 'openButton-scroll';
+      // scrollToTopBtnLink.style.background= 'var(--fiery-rose)';
+
+     } else {
+      nav.className= "";
+      consultation.className= 'openButton' 
+      consultation.classList.remove('openButton-scroll')
+      // scrollToTopBtnLink.style.background= 'var(--persian-indigo)';
+     }
+    }
