@@ -19,7 +19,7 @@ function changeEmailButton(){
         const scrollable= document.documentElement.scrollHeight - window.innerHeight
 
        if(window.scrollY >= 600){
-        dispenser.classList.remove('noShow');
+        // dispenser.classList.remove('noShow');
         rightSide.className= "right";
        }      
 
@@ -102,47 +102,47 @@ function changeEmailButton(){
                var explain1 = document.getElementById('explainVisualDesign');
 
               //when clicked, if capsule is closed this will open it and change closed capsule img to open capsule img
-               if (Image_Id.src.match("img/visual-design-closed.png")) {
-                   Image_Id.src = "img/visual-design-open.png";
+               if (Image_Id.src.match("img/graphic-design-closed_NEW_with-toy.png")) {
+                   Image_Id.src = "img/graphic-design-open_NEW-B.png";
                 }
                 //when clicked again it will close capsule
                else {
-                  Image_Id.src = "img/visual-design-closed.png";
+                  Image_Id.src = "img/graphic-design-closed_NEW_with-toy.png";
                 }
-                if (Image_Id.src.match("img/visual-design-open.png")) {
-                   explain1.innerHTML = "<p>Adobe(CC+CS6), Posters, Album Art, Style Guide, Logos, Iconography, Typography, Press Kit, Viewer's Guides, Film Posters, Social Media Templates</p>";
+                if (Image_Id.src.match("img/graphic-design-open_NEW-B.png")) {
+                   explain1.innerHTML = "<p>Posters, Album Art, Style Guide, Logos, Iconography, Typography, Press Kits, Film Posters, Social Media Templates</p>";
                                    
 
                 }
-                if (Image_Id.src.match("img/visual-design-closed.png")) {
+                if (Image_Id.src.match("img/graphic-design-closed_NEW_with-toy.png")) {
                    explain1.innerHTML = "<p> </p>"              
                 }           
                 };
 
             //click to reveal Design Thinking
-              document.querySelector("#designThinking").addEventListener('click', revealDesignThinking)
+              // document.querySelector("#designThinking").addEventListener('click', revealDesignThinking)
 
-                function revealDesignThinking() {
+              //   function revealDesignThinking() {
 
-               var Image_Id = document.querySelector('#designThinking');
-               var explain2 = document.querySelector('#explainDesignThinking');
+              //  var Image_Id = document.querySelector('#designThinking');
+              //  var explain2 = document.querySelector('#explainDesignThinking');
               
-               if (Image_Id.src.match("img/design-thinking-closed.png")) {
-                   Image_Id.src = "img/design-thinking-open.png";
-                }
-               else {
-                  Image_Id.src = "img/design-thinking-closed.png";
-                }
-                if (Image_Id.src.match("img/design-thinking-open.png")) {
-                   explain2.innerHTML = "<p>Brainstorming, Sketching, Mindmapping, Design Research, Branding</p>"
+              //  if (Image_Id.src.match("img/design-thinking-closed.png")) {
+              //      Image_Id.src = "img/design-thinking-open.png";
+              //   }
+              //  else {
+              //     Image_Id.src = "img/design-thinking-closed.png";
+              //   }
+              //   if (Image_Id.src.match("img/design-thinking-open.png")) {
+              //      explain2.innerHTML = "<p>Brainstorming, Sketching, Mindmapping, Design Research, Branding</p>"
 
-                }
-              if (Image_Id.src.match("img/design-thinking-closed.png")) {
-                   explain2.innerHTML = "<p> </p>"              
-                }           
-                };
+              //   }
+              // if (Image_Id.src.match("img/design-thinking-closed.png")) {
+              //      explain2.innerHTML = "<p> </p>"              
+              //   }           
+              //   };
 
-            //click to reveal Design Thinking
+            //click to reveal Web Design
               document.querySelector("#webDesign").addEventListener('click', revealWebDesign)
 
                 function revealWebDesign() {
@@ -150,17 +150,17 @@ function changeEmailButton(){
                var Image_Id = document.querySelector('#webDesign');
                var explain3 = document.querySelector('#explainWebDesign')
               
-               if (Image_Id.src.match("img/web-design-closed.png")) {
-                   Image_Id.src = "img/web-design-open.png";
+               if (Image_Id.src.match("img/web-design-closed_NEW_with-toy.png")) {
+                   Image_Id.src = "img/web-design-open_NEW-B.png";
                 }
                else {
-                  Image_Id.src = "img/web-design-closed.png";
+                  Image_Id.src = "img/web-design-closed_NEW_with-toy.png";
                 }
-                if (Image_Id.src.match("img/web-design-open.png")) {
+                if (Image_Id.src.match("img/web-design-open_NEW-B.png")) {
                    explain3.innerHTML = "<p>HTML, CSS, CSS Flex, CSS Grid, Javascript, Figma, Sublime Text, Atom, Visual Studio Code, OOP, Github, Codepen</p>"
 
                 }
-              if (Image_Id.src.match("img/web-design-closed.png")) {
+              if (Image_Id.src.match("img/web-design-closed_NEW_with-toy.png")) {
                    explain3.innerHTML = "<p> </p>"              
                 }           
                 };
@@ -174,19 +174,19 @@ function changeEmailButton(){
                var explain4 = document.querySelector('#explainIllustration');
                             
 
-             if (Image_Id.src.match("img/illustration-closed.png")) {
-                   Image_Id.src = "img/illustration-open.png"
+             if (Image_Id.src.match("img/illustration-closed_NEW_with-toy.png")) {
+                   Image_Id.src = "img/illustration-open_NEW-B.png"
                    explain4.innerHTML = "<p> </p>"               
                 }
                else {
-                  Image_Id.src = "img/illustration-closed.png";
+                  Image_Id.src = "img/illustration-closed_NEW_with-toy.png";
                 }
 
-              if (Image_Id.src.match("img/illustration-open.png")) {
-                   explain4.innerHTML = "<p>Sketchbook, Adobe(Ai+Ps)</p>"
+              if (Image_Id.src.match("img/illustration-open_NEW-B.png")) {
+                   explain4.innerHTML = "<p>Sketches, character design, portraits, print-ready graphics</p>"
 
                 }
-              if (Image_Id.src.match("img/illustration-closed.png")) {
+              if (Image_Id.src.match("img/illustration-closed_NEW_with-toy.png")) {
                    explain4.innerHTML = "<p> </p>"              
                 }          
                 };  
