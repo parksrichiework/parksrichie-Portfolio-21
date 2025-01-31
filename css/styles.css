@@ -44,10 +44,13 @@
  --ultramarine: #250e84;
  --deep-sky-blue: #00b8fe;
  --deep-sky-blue-opacity: #00b6feb1;
+ --brandeis-blue: #0071fe;
  --bright-pink-crayola: #f6718d;
  --bright-pink-crayola-opacity: #f6718eb1;
+ --tyrian-purple: #6f1e4b;
  --princeton-orange: #ff931e;
- --princeton-orange-opacity: #ff921eb1; 
+ --princeton-orange-opacity: #ff921eb1;
+ --seal-brown: #743008; 
 }
 
 body {

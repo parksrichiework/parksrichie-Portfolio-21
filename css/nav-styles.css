@@ -9,7 +9,7 @@ nav {
   }
   
   .nav-visual-design{
-    background-color: var(--orange-crayola);
+    background-color: var(--princeton-orange);
     color: var(--persian-indigo);
     transition: 0.2s ease-in-out;
   }
@@ -19,7 +19,7 @@ nav {
   }
   
   .nav-web-design{
-  background-color: var(--celadon-blue);
+  background-color: var(--deep-sky-blue);
   transition: 0.2s ease-in-out;
   }
   
@@ -28,7 +28,7 @@ nav {
   }
   
   .nav-illustration{
-    background-color: var(--fiery-rose);
+    background-color: var(--bright-pink-crayola);
     transition: 0.2s ease-in-out;
   }
   
