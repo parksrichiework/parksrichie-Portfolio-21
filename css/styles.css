@@ -39,12 +39,16 @@
  --pistachio: #A5CC6B;
  --coyote: #806D40;
  --dark-moss-green: #474B24;
- 
- 
+ --medium-slate-blue: #8259E2;
+ --electric-indigo: #6230db;
+ --ultramarine: #250e84;
+ --deep-sky-blue: #00b8fe;
+ --deep-sky-blue-opacity: #00b6feb1;
+ --bright-pink-crayola: #f6718d;
+ --bright-pink-crayola-opacity: #f6718eb1;
+ --princeton-orange: #ff931e;
+ --princeton-orange-opacity: #ff921eb1; 
 }
-
-
-
 
 body {
   /* font-family: 'Noto Sans Display', sans-serif; */
@@ -379,14 +383,13 @@ figcaption {
 /***************************** right side (dispenser capsules)**********************************/
   .right{
      position: relative;
-     max-width:  100%;
-     width:  50%;
-     height:  100%;
-     top:  0px;
-     right:  0px;
+     width: 100vw;
+     height: 100%;
+     top: 0px;
+     right: 0px;
      margin: 0 auto;
      display: flex;
-     flex-wrap: wrap;
+     flex-direction: row;     
      text-align: center;
       -webkit-animation-name: capsules;
     -webkit-animation-duration: 500ms;
@@ -406,12 +409,9 @@ figcaption {
     
     }
   }
-
-
-
   .right img{
       position: relative;
-      max-width: 50%;
+      max-width: 80%;
       transition: 100ms ease-in-out;
 
               }
@@ -509,12 +509,12 @@ figcaption {
            }
 
  .visual-design-bg{
-  background-image: url(../img/visual-design-closed.png);
+  background-image: url(../img/graphic-design-closed_NEW_with-toy.png);
   background-size: 200px;
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-color: var(--atomic-tangerine-opacity);
+  background-color: var(--princeton-orange-opacity);
   background-blend-mode: soft-light;
   background-clip:border-box;
   width: 100%;
@@ -526,12 +526,12 @@ figcaption {
 }
 
 .web-design-bg{
-  background-image: url(../img/web-design-closed.png);
+  background-image: url(../img/web-design-closed_NEW_with-toy.png);
   background-size: 200px;
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-color: var(--celadon-blue-opacity);
+  background-color: var(--deep-sky-blue-opacity);
   background-blend-mode: soft-light;
   width: 100%;
   /* height: auto; */
@@ -542,12 +542,12 @@ figcaption {
 }
 
 .illustration-bg{
-  background-image: url(../img/illustration-closed.png);
+  background-image: url(../img/illustration-closed_NEW_with-toy.png);
   background-size: 200px;
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-color: var(--fiery-rose-opacity);
+  background-color: var(--bright-pink-crayola-opacity);
   background-blend-mode:soft-light;
   width: 100%;
   /* height: auto; */
@@ -1464,6 +1464,19 @@ overflow: scroll;
   width: 85%;
 }
 
+.right{
+  position: relative;
+  max-width:  100%;
+  width:  90%;
+  height:  100%;
+  top:  0px;
+  right:  0px;
+  margin: 0 auto;
+  display: flex;  
+  flex-wrap: wrap;
+  text-align: center;  
+}
+
 .section-img{
   width: 250px;
   display:none;
@@ -1474,7 +1487,7 @@ overflow: scroll;
 }
 
 .visual-design-bg{
-  background-image: url(../img/visual-design-open.png);
+  background-image: url(../img/graphic-design-open_NEW-A.png);
   background-size:contain;
   background-position: center;
   background-repeat: none;
@@ -1483,7 +1496,7 @@ overflow: scroll;
   opacity: 0.8;
 }
 .web-design-bg{
-  background-image: url(../img/web-design-open.png);
+  background-image: url(../img/web-design-open_NEW-A.png);
   background-size:contain;
   background-position: center;
   background-repeat: none;
@@ -1494,7 +1507,7 @@ overflow: scroll;
 }
 
 .illustration-bg{
-  background-image: url(../img/illustration-open.png);
+  background-image: url(../img/illustration-open_NEW-A.png);
   background-size:contain;
   background-position: center;
   background-repeat: none;
