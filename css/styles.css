@@ -528,6 +528,10 @@ figcaption {
   opacity: 0.5;
 }
 
+.afroflare-project {
+
+}
+
 .web-design-bg{
   background-image: url(../img/web-design-closed_NEW_with-toy.png);
   background-size: 200px;
@@ -542,6 +546,10 @@ figcaption {
   transition: 0.5s ease-in-out;
   border-radius: 20px;
   opacity: 0.5;
+}
+
+.illustration-section h2{
+  text: var(--bright-pink-crayola);
 }
 
 .illustration-bg{
@@ -1219,7 +1227,8 @@ font-size: 25px;
   height: 25%;
 }
 
-.draw-somehting-text{
+.draw-something-text{
+  color: var(--darker-purple);
   padding: 50px;
 }
 
