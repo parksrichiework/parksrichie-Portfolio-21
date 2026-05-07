@@ -9,7 +9,7 @@
 @import "vibe-website-styles.css";
 @import "manifold-styles.css";
 @import "footer-styles.css";
-@import "illustration-section.css";
+@import "illustration-section-styles.css";
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Nabla&family=Sigmar&display=swap');
 
 :root{
@@ -1226,6 +1226,10 @@ font-size: 25px;
 .draw-something-container img{
   width: 25%;
   height: 25%;
+}
+
+.draw-something-container h2{
+  color: var(--bright-pink-crayola);
 }
 
 .draw-something-text{
