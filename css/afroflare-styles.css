@@ -70,3 +70,15 @@
     transform: translate(20px, 0px);
   }
 /* ------------------------  MANIFOLD END --------------------------------------  */
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 600px) {
+
+    .afroflare-posters-container{
+        height: 50%;
+    }
+
+    .afroflare-posters img {
+        height: 50%;
+    }
+}
