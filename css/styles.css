@@ -1204,6 +1204,25 @@ font-size: 25px;
   height: 200px;
 }
 
+.draw-something-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin: 300px 0px 300px;
+
+}
+
+.draw-something-container img{
+  width: 25%;
+  height: 25%;
+}
+
+.draw-somehting-text{
+  padding: 50px;
+}
+
 .illustration-images{
   
 }
