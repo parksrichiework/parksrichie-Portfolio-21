@@ -619,6 +619,10 @@ li.divider {
   margin-top: 150px;
 }
 
+.work-section h3 {
+  color:var(--darker-purple);
+}
+
 .portfolio-start{
   margin-top: 80px;
   max-width: 70vw;
