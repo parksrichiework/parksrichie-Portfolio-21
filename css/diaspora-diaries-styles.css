@@ -1,0 +1,84 @@
+.diaspora-diaries-container{    
+    grid-template-columns: 1fr;
+    gap: 0px;
+    margin: 80px 0px;
+}
+
+.diaspora-diaries-container h2,
+.diaspora-diaries-social h2{    
+    /* justify-self: right; */
+    margin-bottom: 50px;
+    color: var(--orange-crayola);
+}
+.diaspora-diaries-container a:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 50%;
+    transform: translate(20px, 0px);
+}
+
+.diaspora-diaries-branding-container img{
+    width: 50%;
+}
+
+.diaspora-diaries-social {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    /* border: solid 3px var(--fiery-rose);     */
+    align-items: top;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;       
+  }
+
+  .diaspora-diaries-social h2{    
+    /* justify-self: right; */
+    margin-bottom: 50px;
+  }
+
+  .diaspora-diaries-social a:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 50%;
+    transform: translate(20px, 0px);
+  }
+
+  .diaspora-diaries-social-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    row-gap: 30px;   
+  }
+
+    /* -------------------------------------------- */
+  /* MOBILE STYLES */
+
+  @media only screen and (max-width: 600px) {
+    .diaspora-diaries-social-container{      
+      grid-template-columns: 1fr;     
+      column-gap: 5px;
+      row-gap: 5px;      
+    }
+
+    .diaspora-diaries-social {
+      margin: 80px 0px;
+      /* border: solid 3px var(--fiery-rose);     */
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr;       
+    }
+
+    /* .diaspora-diaries-social-container div{
+        padding:0;
+    } */
+
+    /* .diaspora-diaries-branding-container{
+      width: 100vw;     
+      align-items: start;
+      margin: 0;
+    }
+
+    .diaspora-diaries-branding-container img{
+      width: 90vw;      
+      margin-left: -30px;
+    } */
+    
+  }
