@@ -916,9 +916,11 @@ text-decoration: none;
     color: var(--persian-indigo);
   }
 
-  div.web-design-title h3{
-    color: var(--aero-blue);
-  }
+
+.web-design-title {
+  Display: flex;
+  flex-direction: row;
+} 
 
   .web-design-title h3{
     display: flex;
